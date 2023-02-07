@@ -1,0 +1,9 @@
+# Abbreviations {.unnumbered}
+
+**ACEI:** Angiotensin-converting enzyme-inhibitors\
+**ARB:** Angiotensin receptor blockers\
+**GP:** General practitioner\
+**GDM:** Gestational diabetes mellitus\
+**HbA1c:** Hemoglobin-A1C\
+**T1D:** Type 1 diabetes mellitus\
+**T2D:** Type 2 diabetes mellitus\

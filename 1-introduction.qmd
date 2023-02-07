@@ -1,0 +1,75 @@
+# Introduction
+
+This chapter describes diabetes mellitus and the clinical guidelines for care, introduces the reader to identification of diabetes patients in Danish healthcare registers, and provides an outline of T2D in migrants.
+
+*This paragraph should introduce the overall context, and very briefly introduce the aims/niche of the project*
+
+## Diabetes
+
+Diabetes mellitus is a metabolic disorder defined by elevated levels of blood-glucose (hyperglycemia) that is classified into several types with distinct clinical . These include *type 1 diabetes* (T1D), *type 2 diabetes* (T2D), *gestational diabetes mellitus* (GDM), as well as other types[@ADA2022]. T2D constitutes the vast majority of all cases and is characterized by inadequate $\beta$-cell insulin secretion due to insulin resistance, while T1D is characterized by insulin deficiency due to autoimmune $\beta$-cell destruction.
+
+Diabetes complications include: xxx, yyy, zzz. T1D and T2D share the same types of complications, but are distinct clinical entities with different treatment options. T1D is typically treated in the hospital outpatient sector, while T2D care is typically provided by general practitioners (GPs).
+
+Prevalence of T2D is increasing worldwide, particularly in developing countries, due to factors such as increased energy-dense diets and sedentary lifestyles.
+
+## Danish national clinical guidelines for T2D care
+
+The Danish College of General Practitioners publishes national clinical guidelines for T2D in cooperation with the Danish Endocrine Society. The guidelines are continuously updated as new evidence emerges. The time period of care assessment in this PhD project is covered by the [2012 revision](https://vejledninger.dsam.dk/media/files/20/type-2-diabetes-2012-med-links.pdf) and the [2019 revision](https://vejledninger.dsam.dk/type2/), although only minor changes were made between the two revisions and none pertained to the areas of care under study in this PhD project.
+
+### Diagnosis
+
+HbA1c values $\ge48 mmol/mol$ are diagnostic of diabetes, but diagnosis must be confirmed with a repeated sample on a different day. Once diagnosed, patients with T2D should be considered permanently affected by the disease, and the associated risk factors for complications should be treated regardless of normalization of HbA1c.
+
+### Monitoring
+
+#### HbA1c
+
+#### LDL-C
+
+#### Diabetic kidney disease
+
+#### Retinopathy
+
+#### Diabetic foot
+
+### Biomarker goals
+
+#### HbA1c
+
+#### LDL-cholesterol
+
+### Pharmacological treatment
+
+#### Glucose-lowering drugs
+
+##### Combination therapy
+
+##### Individual drug types
+
+#### Lipid-lowering drugs
+
+#### Angiotensin-converting enzyme-inhibitors and angiotensin receptor blockers
+
+#### Anti-platelet therapy
+
+## Identification of diabetes cases in Danish healthcare registers
+
+### Challenges
+
+### Previous
+
+## T2D and migrants
+
+### Prevalence
+
+It is higher than in native populations in European countries\[ref\]
+
+### Monitoring
+
+Some aspec
+
+### Biomarker levels
+
+### Pharmacological treatment
+
+## Introduction at a glance

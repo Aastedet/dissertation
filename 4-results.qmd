@@ -1,0 +1,5 @@
+# Results
+
+What I found out.
+
+Results of supplementary analyses is available in [Supplementary @sec-supmat].

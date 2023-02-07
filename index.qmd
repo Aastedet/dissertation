@@ -1,0 +1,41 @@
+---
+execute: 
+  echo: false
+---
+
+::: {.content-visible when-format="pdf"}
+{{< include pdf1-supervisors.qmd >}}
+:::
+
+::: {.content-hidden when-format="pdf"}
+::: {style="opacity: 0"}
+# Cover Page {.unnumbered .unlisted}
+:::
+
+```{r}
+#| label: au-cover-fig
+#| fig-align: center
+#| out-width: 40%
+#| echo: false
+#| fig-alt: Aarhus University, Faculty of Health
+
+knitr::include_graphics("figures/ausegl_blaa.png")
+```
+
+::: {style="text-align: center"}
+### THIS IS A WORKING DRAFT, NOT A SUBMITTED OR APPROVED THESIS!
+**PhD Dissertation**\
+**Department of Public Health**\
+**Faculty of Health**\
+**Aarhus University**
+:::
+
+```{r}
+#| label: publichealth-logo
+#| fig-align: center
+#| out-width: 80%
+#| echo: false
+
+knitr::include_graphics("figures/au_health.png")
+```
+:::

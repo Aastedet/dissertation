@@ -1,0 +1,112 @@
+project:
+  type: book
+  output-dir: docs
+  
+book:
+  title: "Register-based analyses of type 2 diabetes care in migrants and native Danes"
+  author: "Anders Aasted Isaksen"
+  date: today
+  date-format: "MMMM YYYY"
+  number-sections: true
+  chapters:
+    - index.qmd
+#    - pdf1-acknowledgements.qmd         # uncomment this line to see acknowledgements in html (will appear twice in pfd)
+    - 0-disclosure.qmd
+    - 0-preface.qmd
+    - 0-abbreviations.qmd
+    - 1-introduction.qmd
+    - 2-aims.qmd
+    - 3-methods.qmd
+    - 4-results.qmd
+    - 5-discussion-methods.qmd
+    - 6-discussion-results.qmd
+    - 7-conclusions.qmd
+    - 8-perspectives.qmd
+    - references.qmd
+    - summary-english.qmd
+    - summary-danish.qmd
+  appendices:
+    - app1-supplementary.qmd
+
+bibliography: references.bib
+
+execute:
+  freeze: auto
+  echo: true # change to false to hide code
+  
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrbook
+    classoption:
+     - headsepline=true
+     - open=any
+#    pagestyle: headings
+    keep-tex: true 
+    toc: false
+    papersize: a4
+    header-includes: |
+     \usepackage{xcolor}
+     \usepackage[automark]{scrlayer-scrpage}
+     \clearpairofpagestyles
+     \cfoot*{\pagemark}
+     \chead{\headmark}
+     \addtokomafont{pagehead}{\bfseries\upshape\color{white}}
+     \addtokomafont{pagenumber}{\bfseries\color{blue!40!black}}
+     % shift the predefined head layers
+     \ForEachLayerOfPageStyle*{scrheadings}{%
+     \ifstrstart{#1}{scrheadings.head.}
+     {\ModifyLayer[addvoffset=-.5in-.5\voffset-.5\topmargin]{#1}}
+     {}%
+     }
+     \ForEachLayerOfPageStyle*{plain.scrheadings}{%
+     \ifstrstart{#1}{plain.scrheadings.head.}
+     {\ModifyLayer[addvoffset=-.5in-.5\voffset-.5\topmargin]{#1}}
+     {}%
+     }
+     % Defining the Layer
+     \DeclareLayer[
+     background,
+     topmargin,
+     addheight=\headheight,
+     contents={%
+        \color{blue!40!black}%
+        \rule{\layerwidth}{\layerheight}%
+     }%
+     ]{my.head.background}
+     %Adding the Layer to the pagestyles
+     \AddLayersAtBeginOfPageStyle{scrheadings}{my.head.background}
+     \AddLayersAtBeginOfPageStyle{plain.scrheadings}{my.head.background}
+      
+      
+      \usepackage{tocbibind}
+      \usepackage{titling}
+      \setlength{\droptitle}{-2cm}
+      \preauthor{
+        \begin{center}
+        \large
+        \lineskip 0.5em%
+        PhD dissertation\\
+        \vspace{25mm}
+      }
+      \postauthor{
+        \end{center}
+      }
+      \predate{
+        \begin{center}
+        \vspace*{\fill}
+        Faculty of Health\\        % Degree stream
+        Aarhus University\\                       % University
+      }
+      \postdate{
+        \\
+        \includegraphics[width=7in]{figures/au_health.png}\\
+        \end{center}
+        
+        
+       }
+
+
+
