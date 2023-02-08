@@ -7,7 +7,6 @@ book:
   author: "Anders Aasted Isaksen"
   date: today
   date-format: "MMMM YYYY"
-  number-sections: true
   chapters:
     - index.qmd
     - 0-disclosure.qmd
