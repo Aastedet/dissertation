@@ -3,7 +3,8 @@
 .RData
 .Ruserdata
 nul
-pdf*
 *.tex
 *.pdf
 /.quarto/
+make_thesis*
+/docs/
