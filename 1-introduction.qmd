@@ -12,9 +12,9 @@ Complications are traditionally divided into macrovascular (e.g. cardiovascular 
 
 Due to their effects on HbA1c, LDL-C, and blood pressure, glucose-lowering drugs (GLD), lipid-lowering drugs (LLD), and antihypertensive drugs are critical parts of T2D care. In T2D patients with particularly high risk of complications, pharmacological treatment also includes antiplatelet therapy (APT), as the complication risk-lowering effect outweighs the risk of adverse events in these patients. *mangler ref*
 
-In addition to their effect on biomarker levels, certain drug types within the above classes of drugs have other positive effects. Among GLD, SGLT2i and GLP1RA.... Among antihypertensive drugs, angiotensin-converting enzyme-inhibitors (ACEI) and angiotensin receptor blockers (ARB) reduce the risk and improve the prognosis of diabetic kidney disease (DKD).
+In addition to their effect on biomarker levels, certain drug types within the above classes of drugs have other positive effects. The novel GLD types sodium glucose co-transporter type 2 inhibitors (SGLT2i) and glucagon-like peptide-1 receptor agonists (GLP1RA) substantially reduce the risk of adverse cardiovascular and renal events beyond their effect on HbA1c. Similarly, the antihypertensive drugs types angiotensin-converting enzyme-inhibitors (ACEI) and angiotensin receptor blockers (ARB) reduce the risk and improve the prognosis of diabetic kidney disease (DKD) beyond their effect on blood pressure.
 
-Combination therapy - the use of multiple drug types with differing mechanisms of action - is a way to increase treatment intensity
+Combination therapy - the use of multiple drug types with differing mechanisms of action - is a way to increase treatment intensity and
 
 ACEI/ARB: nephroprotective effect in addition to AHT
 
