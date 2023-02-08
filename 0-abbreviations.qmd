@@ -2,8 +2,14 @@
 
 **ACEI:** Angiotensin-converting enzyme-inhibitors\
 **ARB:** Angiotensin receptor blockers\
+**CVD:** Cardiovascular disease\
+**DKD:** Diabetic kidney disease\
 **GP:** General practitioner\
 **GDM:** Gestational diabetes mellitus\
+**GLD:** Glucose-lowering drugs\
 **HbA1c:** Hemoglobin-A1C\
+**LDL-C:** low-density lipoprotein cholesterol\
+**LLD:** Lipid-lowering drugs\
 **T1D:** Type 1 diabetes mellitus\
 **T2D:** Type 2 diabetes mellitus\
+**UACR:** Urine albumin-to-creatinine ratio\

@@ -4,7 +4,20 @@
 
 ## Financial disclosures
 
-This PhD project was supported by a research training supplement grant from Aarhus University, and grants from the *Public Health in Central Denmark Region - a collaboration between municipalities and the region* foundation (Danish: *Folkesundhed i Midten*) and *Steno Diabetes Center Aarhus*, which is partially funded by an unrestricted donation from the *Novo Nordisk Foundation*.
+This PhD project was supported by a research training supplement grant from **Aarhus University**, and grants from the **Public Health in Central Denmark Region - a collaboration between municipalities and the region** foundation (Danish: *Folkesundhed i Midten*) and **Steno Diabetes Center Aarhus**, which is partially funded by an unrestricted donation from the *Novo Nordisk Foundation*.
+
+```{r}
+#| label: financial-disclosures
+#| fig-align: center
+#| out-width: 80%
+#| echo: false
+#| layout-ncol: 3
+
+knitr::include_graphics("figures/au_health_cropped.png")
+knitr::include_graphics("figures/fim.png")
+knitr::include_graphics("figures/sdca.png")
+```
+
 
 ::: {.content-visible when-format="pdf"}
 {{< include pdf2-acknowledgements.qmd >}}
@@ -14,5 +27,5 @@ This PhD project was supported by a research training supplement grant from Aarh
 
 ## Notes on website version {.unnumbered .unlisted}
 
-This website contains my PhD dissertation in html form. In terms of content, it is practically identical to the pdf-file submitted to the graduate school, as both were made with [Quarto®](https://quarto.org/), an open-source scientific and technical publishing system.
+This website contains my PhD dissertation in html form. In terms of content, it is practically identical to the pdf-file submitted to the graduate school - both were made with [Quarto®](https://quarto.org/), an open-source scientific and technical publishing system.
 :::

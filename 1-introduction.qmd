@@ -6,15 +6,25 @@ This chapter describes diabetes mellitus and the clinical guidelines for care, i
 
 ## Diabetes
 
-Diabetes mellitus is a metabolic disorder defined by elevated levels of blood-glucose (hyperglycemia) that is classified into several types with distinct clinical . These include *type 1 diabetes* (T1D), *type 2 diabetes* (T2D), *gestational diabetes mellitus* (GDM), as well as other types[@ADA2022]. T2D constitutes the vast majority of all cases and is characterized by inadequate $\beta$-cell insulin secretion due to insulin resistance, while T1D is characterized by insulin deficiency due to autoimmune $\beta$-cell destruction.
+Diabetes mellitus is a metabolic disorder defined by elevated levels of blood-glucose (hyperglycemia) that is classified into several types with distinct clinical . These include *type 1 diabetes* (T1D), *type 2 diabetes* (T2D), *gestational diabetes mellitus* (GDM), as well as other types[@ADA2022]. T2D constitutes the vast majority of all cases and is characterized by inadequate $\beta$-cell insulin secretion due to insulin resistance, while T1D is characterized by insulin deficiency due to autoimmune $\beta$-cell destruction. T2D prevalence exceeds half a billion individuals worldwide and is increasing, particularly in developing countries, due to factors such as ageing of populations, urbanization, increased energy-dense diets and sedentary lifestyles [@diabetesatlas]. While T1D and T2D both carry the risk of developing diabetic complications that lead to morbidity and mortality, they are distinct clinical entities, and T1D is typically treated in the hospital outpatient sector, while T2D care is often provided by general practitioners (GPs).
 
-Diabetes complications include: xxx, yyy, zzz. T1D and T2D share the same types of complications, but are distinct clinical entities with different treatment options. T1D is typically treated in the hospital outpatient sector, while T2D care is typically provided by general practitioners (GPs).
+Complications are traditionally divided into macrovascular (e.g. cardiovascular disease (CVD)) and microvascular complications (e.g. kidney disease, retinopathy, neuropathy), but additional complications exist. Several lifestyle and physiological factors influence the risk of developing complications, and clinical care revolves around management of these. In addition to being key risk factors of complications, blood pressure, hemoglobin-A1C (HbA1c), and low-density lipoprotein cholesterol (LDL-C) are parameters that drive treatment indications and clinical decision-making. *mangler ref*
 
-Prevalence of T2D is increasing worldwide, particularly in developing countries, due to factors such as increased energy-dense diets and sedentary lifestyles.
+Due to their effects on HbA1c, LDL-C, and blood pressure, glucose-lowering drugs (GLD), lipid-lowering drugs (LLD), and antihypertensive drugs are critical parts of T2D care. In T2D patients with particularly high risk of complications, pharmacological treatment also includes antiplatelet therapy (APT), as the complication risk-lowering effect outweighs the risk of adverse events in these patients. *mangler ref*
+
+In addition to their effect on biomarker levels, certain drug types within the above classes of drugs have other positive effects. Among GLD, SGLT2i and GLP1RA.... Among antihypertensive drugs, angiotensin-converting enzyme-inhibitors (ACEI) and angiotensin receptor blockers (ARB) reduce the risk and improve the prognosis of diabetic kidney disease (DKD).
+
+Combination therapy - the use of multiple drug types with differing mechanisms of action - is a way to increase treatment intensity
+
+ACEI/ARB: nephroprotective effect in addition to AHT
+
+and combination therapy is a way to intensify treatment and improve glycemic control
+
+SGLT2/GLP1RA: Cardio/nephroprotective
 
 ## Danish national clinical guidelines for T2D care
 
-The Danish College of General Practitioners publishes national clinical guidelines for T2D in cooperation with the Danish Endocrine Society. The guidelines are continuously updated as new evidence emerges. The time period of care assessment in this PhD project is covered by the [2012 revision](https://vejledninger.dsam.dk/media/files/20/type-2-diabetes-2012-med-links.pdf) and the [2019 revision](https://vejledninger.dsam.dk/type2/), although only minor changes were made between the two revisions and none pertained to the areas of care under study in this PhD project.
+The Danish College of General Practitioners publishes national clinical guidelines for T2D in cooperation with the Danish Endocrine Society. The guidelines are continuously updated as new evidence emerges. T2D care was studied in this PhD project during the years covered by the 2012[@dsam2012] and 2019[@dsam2019] revisions (only minor changes were made between the two revisions). The guidelines advise that monitoring intervals, biomarker goals and treatment intensity is adapted to fit the individual patient, but specify recommendations that may be used as indicators of care quality.
 
 ### Diagnosis
 
@@ -22,21 +32,15 @@ HbA1c values $\ge48 mmol/mol$ are diagnostic of diabetes, but diagnosis must be 
 
 ### Monitoring
 
-#### HbA1c
+Risk biomarkers Hemoglobin-A1C (HbA1c), low-density lipoprotein cholesterol (LDL-C), and urine albumin-to-creatinine ratio (UACR) should be screened yearly. UACR $\ge300mg/g$ in repeated samples is considering diagnostic of diabetic kidney disease (DKD).
 
-#### LDL-C
-
-#### Diabetic kidney disease
-
-#### Retinopathy
-
-#### Diabetic foot
+Diabetic retinopathy should be screened by an ophthalmologist every second year and screening for diabetic foot disease by a podiatrist every year. At the initial diagnosis of T2D, a baseline-screening of all five types of monitoring is recommended.
 
 ### Biomarker goals
 
-#### HbA1c
+**HbA1c**
 
-#### LDL-cholesterol
+**LDL-cholesterol**
 
 ### Pharmacological treatment
 

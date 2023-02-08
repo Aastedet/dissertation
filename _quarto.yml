@@ -32,7 +32,7 @@ bibliography: references.bib
 
 execute:
   freeze: auto
-  echo: true # change to false to hide code
+  echo: false # change to false to hide code
   
 
 format:
