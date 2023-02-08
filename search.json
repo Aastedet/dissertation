@@ -1,0 +1,163 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Register-based analyses of type 2 diabetes care in migrants and native Danes",
+    "section": "",
+    "text": "PhD Dissertation\nDepartment of Public Health\nFaculty of Health\nAarhus University"
+  },
+  {
+    "objectID": "0-disclosure.html",
+    "href": "0-disclosure.html",
+    "title": "Financial disclosure",
+    "section": "",
+    "text": "This PhD project was supported by a research training supplement grant from Aarhus University, and grants from the Public Health in Central Denmark Region - a collaboration between municipalities and the region foundation (Danish: Folkesundhed i Midten) and Steno Diabetes Center Aarhus, which is partially funded by an unrestricted donation from the Novo Nordisk Foundation."
+  },
+  {
+    "objectID": "0-disclosure.html#notes-on-website-version",
+    "href": "0-disclosure.html#notes-on-website-version",
+    "title": "Financial disclosure",
+    "section": "Notes on website version",
+    "text": "Notes on website version\nThis website contains my PhD dissertation in html form. In terms of content, it is practically identical to the pdf-file submitted to the graduate school - both were made with Quarto®, an open-source scientific and technical publishing system."
+  },
+  {
+    "objectID": "0-preface.html",
+    "href": "0-preface.html",
+    "title": "Preface",
+    "section": "",
+    "text": "During my work as a junior doctor in a general practice in Gellerup, a deprived suburb of Aarhus with a large migrant population, I was immediately struck by the high frequency of type 2 diabetes (T2D) and other chronic diseases among day-to-day consultations. I would quickly learn that T2D held more surprises for me than just a high prevalence, and after just a few weeks it seemed that much of what I had learned about the disease in medical school and studied in clinical guidelines did not apply in my new setting. Patients were not only more prevalent, they were also much younger, and hemoglobin-A1c (HbA1c) levels rarely came close to guideline targets despite our best efforts to intensify treatment. Sadly, these experiences would repeat themselves in my subsequent work with migrants as a general practitioner (GP) in health clinics of the Danish Red Cross at asylum residence centers and pre-removal detention centers.\nAs I reviewed the literature, I understood why medical school and guidelines had failed to prepare me for the challenges I faced as a clinician with T2D in migrants: the existing literature was inadequate. While increased prevalence of T2D appeared well-established, and migrants with T2D were also ascribed a higher mortality than their native counterparts, this provided little guidance for my day-to-day work. Contrarily, there was hardly any evidence on disparities in the time between diagnosis and death - the time when care from the GP is needed the most. So I was left to wonder what might cause this discordance between what I knew about T2D from books and guidelines, and what I encountered in migrants in the clinic.\nAre migrants with T2D more prone to under-treatment, and in which areas of care?\nAre some migrant groups more prone to under-treatment than others?\nAre their needs for T2D care simply greater?\nKnowledge on these clinical questions would enable GPs and healthcare planners to address disparities and improve care in migrants by prioritizing and focusing care accordingly. Migrants are currently a younger demographic than the rest of the population, but as time causes the migrant demographic to age, it is likely that migrants will constitute an increasing proportion of the T2D population in the coming years. Therefore, I was excited to explore these urgent clinical questions as a researcher, hoping I could provide answers to myself and fellow GPs that could lead to better care - and, ultimately, better health - in a vulnerable and challenging group of patients.\nDuring my time as a PhD student, I quickly encountered the first of many challenges on the way to studying migrants with T2D in the Danish registers: there was no validated definition of T2D, nor a common consensus among researchers. This led to the PhD project expanding its scope to develop and validate a tool to define T2D in the Danish registers, which allowed me to answer my research questions based on robust findings. This PhD project benefited greatly from open-source tools, and in the spirit of open science, the source code of the validated diabetes classifier was made available to other researchers in the osdc package for the R statistical programming language. As a final commitment to openness, this dissertation was made available to a global audience in website format at https://aastedet.github.io/dissertation/docs/index.html."
+  },
+  {
+    "objectID": "0-preface.html#outline-of-the-dissertation",
+    "href": "0-preface.html#outline-of-the-dissertation",
+    "title": "Preface",
+    "section": "Outline of the dissertation",
+    "text": "Outline of the dissertation\nChapter 1 introduces the reader to diabetes and identification of diabetes patients in Danish healthcare registers, describes the clinical guidelines for T2D care in Denmark as they relate to this PhD study, and provides an outline of T2D in migrants.\nChapter 2 states the overall aims of this PhD project and each individual study.\nChapter 3 describes the setting, data sources, methods and study designs used in the studies of this PhD project.\nChapter 4 presents the main results of the studies.\nChapter 5 contains a discussion of the methods used and their potential impact on results.\nChapter 6 discusses the findings in light of the methods used.\nChapter 7 presents the main conclusions and their clinical implications.\nChapter 8 draws up future perspectives of the PhD study and research field."
+  },
+  {
+    "objectID": "0-preface.html#papers-associated-with-the-dissertation",
+    "href": "0-preface.html#papers-associated-with-the-dissertation",
+    "title": "Preface",
+    "section": "Papers associated with the dissertation",
+    "text": "Papers associated with the dissertation\nComing soon"
+  },
+  {
+    "objectID": "0-abbreviations.html",
+    "href": "0-abbreviations.html",
+    "title": "Abbreviations",
+    "section": "",
+    "text": "ACEI: Angiotensin-converting enzyme-inhibitors\nARB: Angiotensin receptor blockers\nCVD: Cardiovascular disease\nDKD: Diabetic kidney disease\nGP: General practitioner\nGDM: Gestational diabetes mellitus\nGLD: Glucose-lowering drugs\nHbA1c: Hemoglobin-A1C\nLDL-C: low-density lipoprotein cholesterol\nLLD: Lipid-lowering drugs\nT1D: Type 1 diabetes mellitus\nT2D: Type 2 diabetes mellitus\nUACR: Urine albumin-to-creatinine ratio"
+  },
+  {
+    "objectID": "1-introduction.html",
+    "href": "1-introduction.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This chapter describes diabetes mellitus and the clinical guidelines for care, introduces the reader to identification of diabetes patients in Danish healthcare registers, and provides an outline of T2D in migrants.\nThis paragraph should introduce the overall context, and very briefly introduce the aims/niche of the project"
+  },
+  {
+    "objectID": "1-introduction.html#diabetes",
+    "href": "1-introduction.html#diabetes",
+    "title": "1  Introduction",
+    "section": "1.1 Diabetes",
+    "text": "1.1 Diabetes\nDiabetes mellitus is a metabolic disorder defined by elevated levels of blood-glucose (hyperglycemia) that is classified into several types with distinct clinical . These include type 1 diabetes (T1D), type 2 diabetes (T2D), gestational diabetes mellitus (GDM), as well as other types(American Diabetes Association Professional Practice Committee 2021). T2D constitutes the vast majority of all cases and is characterized by inadequate \\(\\beta\\)-cell insulin secretion due to insulin resistance, while T1D is characterized by insulin deficiency due to autoimmune \\(\\beta\\)-cell destruction. T2D prevalence exceeds half a billion individuals worldwide and is increasing, particularly in developing countries, due to factors such as ageing of populations, urbanization, increased energy-dense diets and sedentary lifestyles (Sun et al. 2022). While T1D and T2D both carry the risk of developing diabetic complications that lead to morbidity and mortality, they are distinct clinical entities, and T1D is typically treated in the hospital outpatient sector, while T2D care is often provided by general practitioners (GPs).\nComplications are traditionally divided into macrovascular (e.g. cardiovascular disease (CVD)) and microvascular complications (e.g. kidney disease, retinopathy, neuropathy), but additional complications exist. Several lifestyle and physiological factors influence the risk of developing complications, and clinical care revolves around management of these. In addition to being key risk factors of complications, blood pressure, hemoglobin-A1C (HbA1c), and low-density lipoprotein cholesterol (LDL-C) are parameters that drive treatment indications and clinical decision-making. mangler ref\nDue to their effects on HbA1c, LDL-C, and blood pressure, glucose-lowering drugs (GLD), lipid-lowering drugs (LLD), and antihypertensive drugs are critical parts of T2D care. In T2D patients with particularly high risk of complications, pharmacological treatment also includes antiplatelet therapy (APT), as the complication risk-lowering effect outweighs the risk of adverse events in these patients. mangler ref\nIn addition to their effect on biomarker levels, certain drug types within the above classes of drugs have other positive effects. Among GLD, SGLT2i and GLP1RA…. Among antihypertensive drugs, angiotensin-converting enzyme-inhibitors (ACEI) and angiotensin receptor blockers (ARB) reduce the risk and improve the prognosis of diabetic kidney disease (DKD).\nCombination therapy - the use of multiple drug types with differing mechanisms of action - is a way to increase treatment intensity\nACEI/ARB: nephroprotective effect in addition to AHT\nand combination therapy is a way to intensify treatment and improve glycemic control\nSGLT2/GLP1RA: Cardio/nephroprotective"
+  },
+  {
+    "objectID": "1-introduction.html#danish-national-clinical-guidelines-for-t2d-care",
+    "href": "1-introduction.html#danish-national-clinical-guidelines-for-t2d-care",
+    "title": "1  Introduction",
+    "section": "1.2 Danish national clinical guidelines for T2D care",
+    "text": "1.2 Danish national clinical guidelines for T2D care\nThe Danish College of General Practitioners publishes national clinical guidelines for T2D in cooperation with the Danish Endocrine Society. The guidelines are continuously updated as new evidence emerges. T2D care was studied in this PhD project during the years covered by the 2012(The Danish College of General Practitioners [Dansk Selskab for Almen Medicin] {2012; last accessed on 7 Feb 2023}) and 2019(The Danish College of General Practitioners [Dansk Selskab for Almen Medicin] {2019; last accessed on 7 Feb 2023}) revisions (only minor changes were made between the two revisions). The guidelines advise that monitoring intervals, biomarker goals and treatment intensity is adapted to fit the individual patient, but specify recommendations that may be used as indicators of care quality.\n\n1.2.1 Diagnosis\nHbA1c values \\(\\ge48 mmol/mol\\) are diagnostic of diabetes, but diagnosis must be confirmed with a repeated sample on a different day. Once diagnosed, patients with T2D should be considered permanently affected by the disease, and the associated risk factors for complications should be treated regardless of normalization of HbA1c.\n\n\n1.2.2 Monitoring\nRisk biomarkers Hemoglobin-A1C (HbA1c), low-density lipoprotein cholesterol (LDL-C), and urine albumin-to-creatinine ratio (UACR) should be screened yearly. UACR \\(\\ge300mg/g\\) in repeated samples is considering diagnostic of diabetic kidney disease (DKD).\nDiabetic retinopathy should be screened by an ophthalmologist every second year and screening for diabetic foot disease by a podiatrist every year. At the initial diagnosis of T2D, a baseline-screening of all five types of monitoring is recommended.\n\n\n1.2.3 Biomarker goals\nHbA1c\nLDL-cholesterol\n\n\n1.2.4 Pharmacological treatment\n\n1.2.4.1 Glucose-lowering drugs\n\n1.2.4.1.1 Combination therapy\n\n\n1.2.4.1.2 Individual drug types\n\n\n\n1.2.4.2 Lipid-lowering drugs\n\n\n1.2.4.3 Angiotensin-converting enzyme-inhibitors and angiotensin receptor blockers\n\n\n1.2.4.4 Anti-platelet therapy"
+  },
+  {
+    "objectID": "1-introduction.html#identification-of-diabetes-cases-in-danish-healthcare-registers",
+    "href": "1-introduction.html#identification-of-diabetes-cases-in-danish-healthcare-registers",
+    "title": "1  Introduction",
+    "section": "1.3 Identification of diabetes cases in Danish healthcare registers",
+    "text": "1.3 Identification of diabetes cases in Danish healthcare registers\n\n1.3.1 Challenges\n\n\n1.3.2 Previous"
+  },
+  {
+    "objectID": "1-introduction.html#t2d-and-migrants",
+    "href": "1-introduction.html#t2d-and-migrants",
+    "title": "1  Introduction",
+    "section": "1.4 T2D and migrants",
+    "text": "1.4 T2D and migrants\n\n1.4.1 Prevalence\nIt is higher than in native populations in European countries[ref]\n\n\n1.4.2 Monitoring\nSome aspec\n\n\n1.4.3 Biomarker levels\n\n\n1.4.4 Pharmacological treatment"
+  },
+  {
+    "objectID": "1-introduction.html#introduction-at-a-glance",
+    "href": "1-introduction.html#introduction-at-a-glance",
+    "title": "1  Introduction",
+    "section": "1.5 Introduction at a glance",
+    "text": "1.5 Introduction at a glance\n\n\n\n\nAmerican Diabetes Association Professional Practice Committee. 2021. “2. Classification and Diagnosis of Diabetes: Standards of Medical Care in Diabetes—2022.” Diabetes Care 45 (Supplement_1): S17–38. https://doi.org/10.2337/dc22-S002.\n\n\nSun, Hong, Pouya Saeedi, Suvi Karuranga, Moritz Pinkepank, Katherine Ogurtsova, Bruce B. Duncan, Caroline Stein, et al. 2022. “IDF Diabetes Atlas: Global, Regional and Country-Level Diabetes Prevalence Estimates for 2021 and Projections for 2045.” Diabetes Research and Clinical Practice 183: 109119. https://doi.org/https://doi.org/10.1016/j.diabres.2021.109119.\n\n\nThe Danish College of General Practitioners [Dansk Selskab for Almen Medicin]. {2012; last accessed on 7 Feb 2023}. “Type 2-diabetes - et metabolisk syndrom [Danish].” https://vejledninger.dsam.dk/media/files/20/type-2-diabetes-2012-med-links.pdf.\n\n\n———. {2019; last accessed on 7 Feb 2023}. “Type 2-diabetes - opfølgning og behandling [Danish].” https://vejledninger.dsam.dk/type2/."
+  },
+  {
+    "objectID": "2-aims.html",
+    "href": "2-aims.html",
+    "title": "2  Aims",
+    "section": "",
+    "text": "This is what we aimed to achieve."
+  },
+  {
+    "objectID": "3-methods.html",
+    "href": "3-methods.html",
+    "title": "3  Methods",
+    "section": "",
+    "text": "Stuff I did to get the results."
+  },
+  {
+    "objectID": "4-results.html",
+    "href": "4-results.html",
+    "title": "4  Results",
+    "section": "",
+    "text": "Results of supplementary analyses is available in Supplementary A."
+  },
+  {
+    "objectID": "5-discussion-methods.html",
+    "href": "5-discussion-methods.html",
+    "title": "5  Discussion of methods",
+    "section": "",
+    "text": "My methods in context"
+  },
+  {
+    "objectID": "6-discussion-results.html",
+    "href": "6-discussion-results.html",
+    "title": "6  Discussion of results",
+    "section": "",
+    "text": "My results in context"
+  },
+  {
+    "objectID": "7-conclusions.html",
+    "href": "7-conclusions.html",
+    "title": "7  Conclusions",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "American Diabetes Association Professional Practice Committee. 2021.\n“2. Classification and Diagnosis of Diabetes:\nStandards of Medical Care in Diabetes—2022.” Diabetes\nCare 45 (Supplement_1): S17–38. https://doi.org/10.2337/dc22-S002.\n\n\nSun, Hong, Pouya Saeedi, Suvi Karuranga, Moritz Pinkepank, Katherine\nOgurtsova, Bruce B. Duncan, Caroline Stein, et al. 2022. “IDF\nDiabetes Atlas: Global, Regional and Country-Level Diabetes Prevalence\nEstimates for 2021 and Projections for 2045.” Diabetes\nResearch and Clinical Practice 183: 109119. https://doi.org/https://doi.org/10.1016/j.diabres.2021.109119.\n\n\nThe Danish College of General Practitioners [Dansk Selskab for Almen\nMedicin]. {2012; last accessed on 7 Feb 2023}. “Type 2-diabetes - et metabolisk syndrom\n[Danish].” https://vejledninger.dsam.dk/media/files/20/type-2-diabetes-2012-med-links.pdf.\n\n\n———. {2019; last accessed on 7 Feb 2023}. “Type 2-diabetes - opfølgning og behandling\n[Danish].” https://vejledninger.dsam.dk/type2/."
+  },
+  {
+    "objectID": "summary-english.html",
+    "href": "summary-english.html",
+    "title": "English summary",
+    "section": "",
+    "text": "This is what I spent three years on…"
+  },
+  {
+    "objectID": "summary-danish.html",
+    "href": "summary-danish.html",
+    "title": "Dansk resumé",
+    "section": "",
+    "text": "Det her brugte jeg tre år på…"
+  },
+  {
+    "objectID": "app1-supplementary.html",
+    "href": "app1-supplementary.html",
+    "title": "Appendix A — Supplementary material",
+    "section": "",
+    "text": "Some results that wouldn’t fit into the main thesis"
+  }
+]
