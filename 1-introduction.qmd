@@ -6,17 +6,17 @@ This chapter describes diabetes mellitus and the clinical guidelines for care, i
 
 ## Diabetes
 
-Diabetes mellitus is a metabolic disorder defined by elevated levels of blood-glucose (hyperglycemia) that is classified into several types with distinct clinical . These include *type 1 diabetes* (T1D), *type 2 diabetes* (T2D), *gestational diabetes mellitus* (GDM), as well as other types.[@ADA2022] T2D constitutes the vast majority of all cases and is characterized by inadequate $\beta$-cell insulin secretion due to insulin resistance, while T1D is characterized by insulin deficiency due to autoimmune $\beta$-cell destruction. T2D prevalence exceeds half a billion individuals worldwide and is increasing, particularly in developing countries, due to factors such as ageing of populations, urbanization, increased energy-dense diets and sedentary lifestyles. [@diabetesatlas] While T1D and T2D both carry the risk of developing diabetic complications that lead to morbidity and mortality, they are distinct clinical entities, and T1D is typically treated in the hospital outpatient sector, while T2D care is often provided by *general practitioners* (GPs).
+Diabetes mellitus is a metabolic disorder defined by elevated levels of blood-glucose (hyperglycemia) that is classified into several types with distinct clinical . These include *type 1 diabetes* (T1D), *type 2 diabetes* (T2D), *gestational diabetes mellitus* (GDM), as well as other types.[@ADA2022] T2D constitutes the vast majority of all cases and is characterized by inadequate $\beta$-cell insulin secretion due to insulin resistance, while T1D is characterized by insulin deficiency due to autoimmune $\beta$-cell destruction. T2D prevalence exceeds half a billion individuals worldwide and is increasing, particularly in developing countries, due to factors such as ageing of populations, urbanization, increased energy-dense diets and sedentary lifestyles. [@diabetesatlas] While T1D and T2D both carry the risk of developing diabetic complications that lead to morbidity and mortality, they are distinct clinical entities, and T1D is typically treated in the hospital outpatient sector, while T2D care is often provided by *general practitioners* (GPs) and other primary sector actors.
 
-Complications are traditionally divided into macrovascular (e.g. *cardiovascular disease* (CVD)) and microvascular complications (e.g. kidney disease, retinopathy, neuropathy), but additional complications exist. Several lifestyle and physiological factors influence the risk of developing complications, and clinical care revolves around management of these. In addition to being key risk factors of complications, blood pressure, *hemoglobin-A1C* (HbA1c), and *low-density lipoprotein cholesterol* (LDL-C) are parameters that drive treatment indications and clinical decision-making. *mangler ref*
+Complications are traditionally divided into macrovascular (e.g. *cardiovascular disease* (CVD)) and microvascular complications (e.g. kidney disease, retinopathy, neuropathy), but additional complications exist. Several lifestyle and physiological factors influence the risk of developing complications, and clinical care revolves around management of these. In addition to being key risk factors of complications, blood pressure, *hemoglobin-A1C* (HbA1c), and *low-density lipoprotein cholesterol* (LDL-C) are parameters that drive treatment indications and clinical decision-making. *\[mangler ref\]*
 
 Due to their effects on HbA1c, LDL-C, and blood pressure, *glucose-lowering drugs* (GLD), *lipid-lowering drugs* (LLD), and antihypertensive drugs are critical parts of T2D care. In T2D patients with particularly high risk of complications, pharmacological treatment also includes *antiplatelet therapy* (APT), as the complication risk-lowering effect outweighs the risk of adverse events in these patients.[@haller2011arb; @zoungas2011advance]
 
-In addition to their effect on biomarker levels, certain drug types within the above classes of drugs have other positive effects. In particular, the GLD types *sodium glucose co-transporter type 2 inhibitors* (SGLT2i) and *glucagon-like peptide-1 receptor agonists* (GLP1RA) substantially reduce the risk of adverse cardiovascular and renal events beyond their effect on HbA1c. Similarly, the antihypertensive drugs types *angiotensin-converting enzyme-inhibitors* (ACEI) and *angiotensin receptor blockers* (ARB) reduce the risk and improve the prognosis of *diabetic kidney disease* (DKD) beyond their effect on blood pressure. *mangler ref*
+In addition to their effect on biomarker levels, certain drug types within the above classes of drugs have other positive effects. In particular, the GLD types *sodium glucose co-transporter type 2 inhibitors* (SGLT2i) and *glucagon-like peptide-1 receptor agonists* (GLP1RA) substantially reduce the risk of adverse cardiovascular and renal events beyond their effect on HbA1c. Similarly, the antihypertensive drugs types *angiotensin-converting enzyme-inhibitors* (ACEI) and *angiotensin receptor blockers* (ARB) reduce the risk and improve the prognosis of *diabetic kidney disease* (DKD) beyond their effect on blood pressure. *\[mangler ref\]*
 
-Combination therapy - the use of multiple drug types with differing mechanisms of action - is a way to increase treatment intensity and achieve treatment goals with fewer side-effects. Combination therapy is particularly important in T2D, as GLD monotherapy fails to achieve target levels of HbA1c in many patients, even at maximal dosage. *mangler ref*
+Combination therapy - the use of multiple drug types with differing mechanisms of action - is a way to increase treatment intensity and achieve treatment goals with fewer side-effects. Combination therapy is particularly important in T2D, as GLD monotherapy fails to achieve target levels of HbA1c in many patients, even at maximal dosage. *\[mangler ref\]*
 
-## Danish national clinical guidelines for T2D care
+## Clinical guidelines for type 2 diabetes care
 
 The Danish College of General Practitioners publishes national clinical guidelines for T2D in cooperation with the Danish Endocrine Society. The guidelines are continuously updated as new evidence emerges. In this PhD project, T2D care was studied in the time period covered by the 2012[@dsam2012] and 2019[@dsam2019] revisions (only minor changes were made between the two revisions). These guidelines advise that monitoring intervals, biomarker goals and treatment intensity is adapted to fit the individual patient, but specify recommendations that may be used as indicators of care quality. Guideline recommendations relevant to this PhD study are described below.
 
@@ -26,29 +26,39 @@ HbA1c values $\ge48 mmol/mol$ are diagnostic of diabetes, but diagnosis must be 
 
 ### Monitoring
 
-The risk biomarkers HbA1c and LDL-C should be measured yearly, as well as urine albumin-to-creatinine ratio (UACR) to screen for DKD. Repeated samples of UACR $\ge300mg/g$ is considering diagnostic of diabetic kidney disease (DKD). Diabetic retinopathy should be screened by an ophthalmologist every second year and screening for diabetic foot disease by a podiatrist every year. At the initial diagnosis of T2D, a baseline-screening of all five types of monitoring is recommended.
+The risk biomarkers HbA1c and LDL-C should be measured yearly, as well as urine albumin-to-creatinine ratio (UACR) to screen for DKD. Repeated samples of UACR $\ge 300mg/g$ is considering diagnostic of diabetic kidney disease (DKD). Diabetic retinopathy should be screened by an ophthalmologist every second year and screening for diabetic foot disease by a podiatrist every year. At the initial diagnosis of T2D, a baseline-screening of all five types of monitoring is recommended.
 
 ### Biomarker levels
 
-**Hemoglobin-A1c:** The goal should be the lowest possible HbA1c without hypoglycemia or inappropriate polypharmacy. Specific targets at $\lt48 mmol/mol$, $\lt53 mmol/mol$, $\lt58 mmol/mol$, and $\lt70 mmol/mol$ are provided depending on diabetes duration and severity, complications, age and comorbidities.
+#### Hemoglobin-A1c
 
-**LDL-cholesterol:** As low as possible, but at least below 2.6 mmol/L, and below 1.8 in individuals with complications.
+The goal should be the lowest possible HbA1c without hypoglycemia or inappropriate polypharmacy. Specific targets at $48 mmol/mol$, $53 mmol/mol$, $58 mmol/mol$, and $70 mmol/mol$ are provided depending on diabetes duration and severity, complications, age and comorbidities.
+
+#### Low-density lipoprotein cholesterol
+
+As low as possible, but at least below 2.6 mmol/L, and below 1.8 in individuals with complications.
 
 ### Pharmacological treatment
 
 #### Glucose-lowering drugs
 
-**Combination therapy:** GLD therapy is recommended in patients with HbA1c ≥ 48 mmol/mol, and metformin is the recommended first-line treatment. There is no overall recommendation of second- or third-line drugs, although SGLT2i or GLP1RA should be considered in patients with CVD when current treatment is insufficient to reach the patient's HbA1c target. Note that, although it was not in effect during the time under study, the recommendation for SGLT2i and GLP1RA was expanded in the 2022 revision to include all T2D patients with CVD, multiple risk factors for CVD, or chronic kidney disease, irrespective of HbA1c level.
+**Combination therapy:** GLD therapy is recommended in patients with HbA1c ≥ 48 mmol/mol, and metformin is the recommended first-line treatment. There is no overall recommendation of second- or third-line drugs, although SGLT2i or GLP1RA should be considered in patients with CVD when metformin or other treatment is insufficient to reach the patient's HbA1c target. Note that - although not in effect during the time under study - the recommendation for SGLT2i and GLP1RA was expanded in the 2022 revision to include all T2D patients with CVD, multiple risk factors for CVD, or chronic kidney disease, irrespective of HbA1c level.
 
 **Individual drug types**
 
-Metformin
+Without a clear hierarchy between GLD drug types, guidelines recommend factoring in all effects - positive and negative - and cost when choosing between the individual drug types. *Summarise guideline considerations on second- and third-line drugs, similar to* https://vejledninger.dsam.dk/media/238.png
 
 #### Lipid-lowering drugs
 
-#### Angiotensin-converting enzyme-inhibitors and angiotensin receptor blockers
+Individuals with prevalent CVD, diabetic nephropathy, or LDL-C above 2.5 mmol/L should receive LLD treatment
 
-#### Anti-platelet therapy
+#### **Antihypertensive drugs**
+
+In addition to their indication in the treatment of hypertension, ACEI or ARB is recommended in individuals with prevalent CVD, microalbuminuria, or diabetic kidney disease.
+
+#### Antiplatelet therapy
+
+APT is recommended in individuals with prevalent CVD, diabetic kidney disease or very high risk of CVD due to other risk factors. This recommendation was expanded in the 2022 revision to also include individuals with kidney failure and concurrent microalbuminuria.
 
 ## Identification of diabetes cases in Danish healthcare registers
 
@@ -56,18 +66,54 @@ Metformin
 
 ### Previous
 
-## T2D and migrants
+## Migrants and type 2 diabetes
 
-### Prevalence
+### Migrant origin
 
-It is higher than in native populations in European countries\[ref\]
+While migrant origin in research is often a simple variable used to capture socioeconomic position, it reflects both genetic disposition, cultural ethnicity, and potential language barriers, mental and physical trauma. *\[mangler ref\]*
+
+Historically, particularly in Europe and the United States, migrants have been defined by their racial appearance, and ethnic minority groups categorized accordingly. In research, these categories obscure the role of migrants in the modern era, [@erayil2021raceethnicity]. *\[something about how the sparse evidence on T2D in ethnic minorities is often based on race, which doesn't capture ethnicity in the modern era of global migration very well, and very little direct evidence is available on T2D in migrants\]*
+
+### Type 2 diabetes, complications and mortality
+
+In European countries, migrant origin is a well-established risk factor for T2D, with prevalence several times higher than that of the native populations *\[mangler ref\]*. The evidence on complication risk in migrants with T2D also indicates a higher risk of CVD, but is not as consistent, as complication risk differs between complication types, migrant groups and countries. Similarly, higher mortality among migrants with T2D has been reported in some studies *\[refs\]*, while other studies have found similar or lower risk *\[refs - se https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8563673/\]*.
 
 ### Monitoring
 
-Some aspec
+Evidence between countries and different aspects of monitoring is conflicting: Some times more monitoring is reported, other times less. *\[mangler ref\]*
 
 ### Biomarker levels
 
+#### Hemoglobin-A1c
+
+Higher
+
+#### Low-density lipoprotein cholesterol
+
+Pretty much unknown.
+
 ### Pharmacological treatment
 
+#### Glucose-lowering drugs
+
+GLD treatment is prescribed earlier and to a larger proportion of migrants than to the native populations, but disparities in the use of combination therapy or each type of GLD has not been studied. *\[something about indirect evidence: racial groups and socioeconomic disparities\]*
+
+#### Lipid-lowering drugs
+
+Studies from European countries have reported lower rates of prescribing of LLD in migrants with T2D *\[care_qual_migrants refs 40, 5\]* also when accounting for differences in treatment indications *\[Eastwood\].*
+
+#### Antihypertensive drugs and antiplatelet therapy
+
+Few studies have reported on ACEI/ARB and APT in migrants, but a study from Italy found lower odds of treatment in most migrant groups \[42\].
+
+### Guideline-recommendations on migrants (or the lack thereof)
+
+Despite the special challenges outlined above, migrants are not addressed in the Danish national clinical guidelines' appendix on pharmacological treatment of special groups. The few recommendations regarding migrants are limited to increased screening for diabetes and tailored patient education programs.
+
 ## Introduction at a glance
+
+T2D is a disease that carries serious risks, but several treatment options are available to control the risk factors in T2D and reduce the risk of complications and death, and guidelines are available to direct clinicians and patients towards the best possible outcomes.
+
+Migrants are particularly vulnerable to T2D, having increased prevalence and higher mortality than native populations in many countries.
+
+*Something about why register-based studies are suited to study care quality and migrants.* Carrying out register-based studies on care is challenging, as no
