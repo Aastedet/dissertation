@@ -18,12 +18,13 @@ jobs:
         
       - name: Setup R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
-        with:
+        r-version: '4.2.2'
           packages:
             any::knitr
             any::rmarkdown
             any::downlit
             any::xml2
+            any::jsonlite
             
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
