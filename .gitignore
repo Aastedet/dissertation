@@ -5,6 +5,7 @@
 nul
 *.tex
 *.pdf
+*.html
 /.quarto/
 make_thesis*
 /docs/

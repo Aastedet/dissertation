@@ -7,7 +7,7 @@
 **GP:** General practitioner\
 **GDM:** Gestational diabetes mellitus\
 **GLD:** Glucose-lowering drugs\
-**HbA1c:** Hemoglobin-A1C\
+**HbA1c:** Hemoglobin-A1c\
 **LDL-C:** low-density lipoprotein cholesterol\
 **LLD:** Lipid-lowering drugs\
 **T1D:** Type 1 diabetes mellitus\

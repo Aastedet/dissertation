@@ -6,49 +6,43 @@ This chapter describes diabetes mellitus and the clinical guidelines for care, i
 
 ## Diabetes
 
-Diabetes mellitus is a metabolic disorder defined by elevated levels of blood-glucose (hyperglycemia) that is classified into several types with distinct clinical . These include *type 1 diabetes* (T1D), *type 2 diabetes* (T2D), *gestational diabetes mellitus* (GDM), as well as other types[@ADA2022]. T2D constitutes the vast majority of all cases and is characterized by inadequate $\beta$-cell insulin secretion due to insulin resistance, while T1D is characterized by insulin deficiency due to autoimmune $\beta$-cell destruction. T2D prevalence exceeds half a billion individuals worldwide and is increasing, particularly in developing countries, due to factors such as ageing of populations, urbanization, increased energy-dense diets and sedentary lifestyles [@diabetesatlas]. While T1D and T2D both carry the risk of developing diabetic complications that lead to morbidity and mortality, they are distinct clinical entities, and T1D is typically treated in the hospital outpatient sector, while T2D care is often provided by general practitioners (GPs).
+Diabetes mellitus is a metabolic disorder defined by elevated levels of blood-glucose (hyperglycemia) that is classified into several types with distinct clinical . These include *type 1 diabetes* (T1D), *type 2 diabetes* (T2D), *gestational diabetes mellitus* (GDM), as well as other types.[@ADA2022] T2D constitutes the vast majority of all cases and is characterized by inadequate $\beta$-cell insulin secretion due to insulin resistance, while T1D is characterized by insulin deficiency due to autoimmune $\beta$-cell destruction. T2D prevalence exceeds half a billion individuals worldwide and is increasing, particularly in developing countries, due to factors such as ageing of populations, urbanization, increased energy-dense diets and sedentary lifestyles. [@diabetesatlas] While T1D and T2D both carry the risk of developing diabetic complications that lead to morbidity and mortality, they are distinct clinical entities, and T1D is typically treated in the hospital outpatient sector, while T2D care is often provided by *general practitioners* (GPs).
 
-Complications are traditionally divided into macrovascular (e.g. cardiovascular disease (CVD)) and microvascular complications (e.g. kidney disease, retinopathy, neuropathy), but additional complications exist. Several lifestyle and physiological factors influence the risk of developing complications, and clinical care revolves around management of these. In addition to being key risk factors of complications, blood pressure, hemoglobin-A1C (HbA1c), and low-density lipoprotein cholesterol (LDL-C) are parameters that drive treatment indications and clinical decision-making. *mangler ref*
+Complications are traditionally divided into macrovascular (e.g. *cardiovascular disease* (CVD)) and microvascular complications (e.g. kidney disease, retinopathy, neuropathy), but additional complications exist. Several lifestyle and physiological factors influence the risk of developing complications, and clinical care revolves around management of these. In addition to being key risk factors of complications, blood pressure, *hemoglobin-A1C* (HbA1c), and *low-density lipoprotein cholesterol* (LDL-C) are parameters that drive treatment indications and clinical decision-making. *mangler ref*
 
-Due to their effects on HbA1c, LDL-C, and blood pressure, glucose-lowering drugs (GLD), lipid-lowering drugs (LLD), and antihypertensive drugs are critical parts of T2D care. In T2D patients with particularly high risk of complications, pharmacological treatment also includes antiplatelet therapy (APT), as the complication risk-lowering effect outweighs the risk of adverse events in these patients. *mangler ref*
+Due to their effects on HbA1c, LDL-C, and blood pressure, *glucose-lowering drugs* (GLD), *lipid-lowering drugs* (LLD), and antihypertensive drugs are critical parts of T2D care. In T2D patients with particularly high risk of complications, pharmacological treatment also includes *antiplatelet therapy* (APT), as the complication risk-lowering effect outweighs the risk of adverse events in these patients.[@haller2011arb; @zoungas2011advance]
 
-In addition to their effect on biomarker levels, certain drug types within the above classes of drugs have other positive effects. The novel GLD types sodium glucose co-transporter type 2 inhibitors (SGLT2i) and glucagon-like peptide-1 receptor agonists (GLP1RA) substantially reduce the risk of adverse cardiovascular and renal events beyond their effect on HbA1c. Similarly, the antihypertensive drugs types angiotensin-converting enzyme-inhibitors (ACEI) and angiotensin receptor blockers (ARB) reduce the risk and improve the prognosis of diabetic kidney disease (DKD) beyond their effect on blood pressure.
+In addition to their effect on biomarker levels, certain drug types within the above classes of drugs have other positive effects. In particular, the GLD types *sodium glucose co-transporter type 2 inhibitors* (SGLT2i) and *glucagon-like peptide-1 receptor agonists* (GLP1RA) substantially reduce the risk of adverse cardiovascular and renal events beyond their effect on HbA1c. Similarly, the antihypertensive drugs types *angiotensin-converting enzyme-inhibitors* (ACEI) and *angiotensin receptor blockers* (ARB) reduce the risk and improve the prognosis of *diabetic kidney disease* (DKD) beyond their effect on blood pressure. *mangler ref*
 
-Combination therapy - the use of multiple drug types with differing mechanisms of action - is a way to increase treatment intensity and
-
-ACEI/ARB: nephroprotective effect in addition to AHT
-
-and combination therapy is a way to intensify treatment and improve glycemic control
-
-SGLT2/GLP1RA: Cardio/nephroprotective
+Combination therapy - the use of multiple drug types with differing mechanisms of action - is a way to increase treatment intensity and achieve treatment goals with fewer side-effects. Combination therapy is particularly important in T2D, as GLD monotherapy fails to achieve target levels of HbA1c in many patients, even at maximal dosage. *mangler ref*
 
 ## Danish national clinical guidelines for T2D care
 
-The Danish College of General Practitioners publishes national clinical guidelines for T2D in cooperation with the Danish Endocrine Society. The guidelines are continuously updated as new evidence emerges. T2D care was studied in this PhD project during the years covered by the 2012[@dsam2012] and 2019[@dsam2019] revisions (only minor changes were made between the two revisions). The guidelines advise that monitoring intervals, biomarker goals and treatment intensity is adapted to fit the individual patient, but specify recommendations that may be used as indicators of care quality.
+The Danish College of General Practitioners publishes national clinical guidelines for T2D in cooperation with the Danish Endocrine Society. The guidelines are continuously updated as new evidence emerges. In this PhD project, T2D care was studied in the time period covered by the 2012[@dsam2012] and 2019[@dsam2019] revisions (only minor changes were made between the two revisions). These guidelines advise that monitoring intervals, biomarker goals and treatment intensity is adapted to fit the individual patient, but specify recommendations that may be used as indicators of care quality. Guideline recommendations relevant to this PhD study are described below.
 
 ### Diagnosis
 
-HbA1c values $\ge48 mmol/mol$ are diagnostic of diabetes, but diagnosis must be confirmed with a repeated sample on a different day. Once diagnosed, patients with T2D should be considered permanently affected by the disease, and the associated risk factors for complications should be treated regardless of normalization of HbA1c.
+HbA1c values $\ge48 mmol/mol$ are diagnostic of diabetes, but diagnosis must be confirmed with a repeated sample on a different day. Once diagnosed, patients with T2D should be considered permanently affected by the disease, and the associated risk factors for complications should be treated regardless of subsequent normalization of HbA1c.
 
 ### Monitoring
 
-Risk biomarkers Hemoglobin-A1C (HbA1c), low-density lipoprotein cholesterol (LDL-C), and urine albumin-to-creatinine ratio (UACR) should be screened yearly. UACR $\ge300mg/g$ in repeated samples is considering diagnostic of diabetic kidney disease (DKD).
+The risk biomarkers HbA1c and LDL-C should be measured yearly, as well as urine albumin-to-creatinine ratio (UACR) to screen for DKD. Repeated samples of UACR $\ge300mg/g$ is considering diagnostic of diabetic kidney disease (DKD). Diabetic retinopathy should be screened by an ophthalmologist every second year and screening for diabetic foot disease by a podiatrist every year. At the initial diagnosis of T2D, a baseline-screening of all five types of monitoring is recommended.
 
-Diabetic retinopathy should be screened by an ophthalmologist every second year and screening for diabetic foot disease by a podiatrist every year. At the initial diagnosis of T2D, a baseline-screening of all five types of monitoring is recommended.
+### Biomarker levels
 
-### Biomarker goals
+**Hemoglobin-A1c:** The goal should be the lowest possible HbA1c without hypoglycemia or inappropriate polypharmacy. Specific targets at $\lt48 mmol/mol$, $\lt53 mmol/mol$, $\lt58 mmol/mol$, and $\lt70 mmol/mol$ are provided depending on diabetes duration and severity, complications, age and comorbidities.
 
-**HbA1c**
-
-**LDL-cholesterol**
+**LDL-cholesterol:** As low as possible, but at least below 2.6 mmol/L, and below 1.8 in individuals with complications.
 
 ### Pharmacological treatment
 
 #### Glucose-lowering drugs
 
-##### Combination therapy
+**Combination therapy:** GLD therapy is recommended in patients with HbA1c ≥ 48 mmol/mol, and metformin is the recommended first-line treatment. There is no overall recommendation of second- or third-line drugs, although SGLT2i or GLP1RA should be considered in patients with CVD when current treatment is insufficient to reach the patient's HbA1c target. Note that, although it was not in effect during the time under study, the recommendation for SGLT2i and GLP1RA was expanded in the 2022 revision to include all T2D patients with CVD, multiple risk factors for CVD, or chronic kidney disease, irrespective of HbA1c level.
 
-##### Individual drug types
+**Individual drug types**
+
+Metformin
 
 #### Lipid-lowering drugs
 

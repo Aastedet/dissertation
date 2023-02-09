@@ -1,10 +1,12 @@
 # Acknowledgements {.unnumbered}
 
-Lots of nostalgia and thank yous to a lot of people, not least Gregers and the SDCC epi group. Also thanks to the R-foundation, RStudio/Posit, open-source package developers and the R biostatistics group at University of Bergen for providing a Quarto template for this dissertation.
+Thanks yous and nostalgia go here....
+
+Not least Gregers and the SDCC epi group. Also thanks to the R-foundation, RStudio/Posit, open-source package developers and the R biostatistics group at University of Bergen for providing a Quarto template for this dissertation.
 
 Also thanks to family, friends & colleagues at the Department of Public Health and the Research Unit for General Practice being nice. Thanks to supervisors for discovering when I didn't know what I was doing and for being patient, supportive and insightful throughout.
 
 Thank you to fellow researchers at Steno Diabetes Center Aarhus for great discussions about diabetes, tools and methodology.
 
-Also a special thanks to Luke Johnston, for inspiring me to strive for openness and better programming practices, and thank you to fellow teachers and contributors to the *R for Reproducible Research* courses. I hope my work honors the spirit of open science.
+Also a special thanks to Luke Johnston for inspiring me to strive for openness and better programming practices, and having a lot of fun learning along the way. Thank you to fellow teachers and contributors to the *R for Reproducible Research* courses. I hope my work honors the spirit of open science.
 

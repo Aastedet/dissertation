@@ -27,6 +27,7 @@ book:
     - app1-supplementary.qmd
 
 bibliography: references.bib
+csl: citestyle.csl
 
 execute:
   freeze: auto
