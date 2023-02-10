@@ -1,1 +1,13 @@
-# Perspectives
+# Perspectives and future research
+
+## Perspectives
+
+The findings call for bla bla bla updated guidelines, increased awareness....
+
+## Future research
+
+Validated diabetes classifiers, or similar, should be used. Validation studies on diabetes duration/age at onset of diabetes should be performed.
+
+Qualitative studies? The reasons for the observed disparities should be studied, and intervention studies are needed to address these reasons in migrants in an evidence-based way.
+
+Other vulnerable groups?

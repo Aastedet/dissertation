@@ -1,3 +1,21 @@
 # Discussion of results
 
-My results in context
+## Key main findings
+
+Register-based classifiers identified valid populations of T1D and T2D in a general population, but diabetes type in cases with atypical age at onset of diabetes should be interpreted with caution.
+
+Disparities between migrant groups and native Danes, yes, but much can be attributed to differences in clinical characteristics. Largest disparities in podiatrist monitoring, control of HbA1c and LDL-cholesterol and GLP1RA use. Migrants from Somalia received "poorer" care in all outcomes, and poorest care of all groups in most.
+
+In the following sections, the main findings out each study will be discussed separately in light of existing literature.
+
+### Study I
+
+*\[probably mostly CP from paper?\]*
+
+### Study II
+
+*\[probably mostly CP from paper?\]*
+
+### Study III
+
+*\[probably mostly CP from paper?\]*

@@ -1,3 +1,27 @@
 # Discussion of methods
 
-My methods in context
+## Study designs
+
+## Internal validity
+
+### Selection bias
+
+### Information bias
+
+T2D was validated! Diabetes duration Migrant ethnicity based on country of origin is more accurate than race or continent, but does not capture ethnic differences within the countries of origin.
+
+### Confounding
+
+Studies II and III mapped risks, not causal associations
+
+## External validity
+
+### Generalizability
+
+Population-wide: representative of the Danish healthcare system and migrant populations in their current state. Risks are likely to be representative of other, similar healthcare systems and migrant populations found in other Nordic countries - but not in other contexts.
+
+Migrant group characteristics, such as distribution of other covariables may provide different results between countries, as well as difference outcome prevalence in the native population.
+
+## Analyses
+
+Robust poisson regression provides more intuitive estimates of relative risk than logistic regression in studies where the outcome of interest is not rare.

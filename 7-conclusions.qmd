@@ -1,5 +1,17 @@
-# Conclusions
+# Conclusions and implications
 
-In summary, this book has no content whatsoever.
+## Main conclusions
 
+*\[probably mostly CP from papers\]*
 
+## Implications
+
+Validation: Diabetes researchers can trust OSDC and RSCD, and very likely also classifiers with similar algorithms used on similar source data and populations.
+
+osdc-package
+
+Atypical age at onset of diabetes
+
+Migrants:
+
+*\[Structure similar to discussion in paper III\]*

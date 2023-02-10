@@ -1,5 +1,37 @@
 # Results in summary
 
-What I found out.
+*\[Align structure with each individual study? Or split into themes? Kind of doing both for now\]*
 
-Results of supplementary analyses is available in [Supplementary @sec-supmat].
+## Study I
+
+In this study, we identified... Number of participants, diabetes cases etc.
+
+### Register-based classification of type 1 diabetes
+
+metrics
+
+### Register-based classification of type 2 diabetes
+
+metrics
+
+## Study II
+
+\[Maybe for each outcome?\] In this study, we identified... Number of participants, diabetes cases etc.
+
+### Prevalence
+
+### Monitoring
+
+### Biomarker control
+
+### Pharmacological treatment
+
+### 
+
+## Study III
+
+In this study, we identified... Number of participants, diabetes cases etc.
+
+### Combination therapy
+
+### Drug types
