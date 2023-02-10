@@ -1,3 +1,11 @@
 # Supplementary material {#sec-supmat}
 
 Some results that wouldn't fit into the main thesis
+
+## To do/Questions:
+
+-   Chapter 3: Methods
+
+    -   Describe HICD cohort before diabetes classifiers?
+
+        -   Nationwide data sources -\> classifiers -\> HICD survey?

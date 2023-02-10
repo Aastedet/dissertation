@@ -1,3 +1,13 @@
 # Aims
 
-This is what we aimed to achieve.
+## Overall aims
+
+The overall aim of this PhD dissertation is to provide robust knowledge on specific areas of T2D care where disparities between migrant groups and native Danes may be present.
+
+## Specific aims
+
+I.  Develop and validate a register-based definition of type 1 and type 2 diabetes.
+
+II. Assess prevalence of T2D in migrant minorities of Denmark, and explore disparities between migrant groups and native Danes in indicators of guideline-recommendations on monitoring, biomarker control, and pharmacological treatment.
+
+III. Evaluate disparities in the quality of glucose-lowering pharmacological treatment between migrants and native Danes in terms of combination therapy and drug types.

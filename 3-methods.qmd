@@ -1,3 +1,125 @@
-# Methods
+# Material and methods
 
-Stuff I did to get the results.
+## Setting
+
+### The Danish healthcare system
+
+Describe the danish public healthcare system: sectors, actors, reimbursement and patient-incurred costs.
+
+### Migrants in Denmark
+
+Describe overall proportion of migrants and migration patterns/groups/causes: Summarise https://www.dst.dk/da/Statistik/nyheder-analyser-publ/bagtal/2022/2022-08-18-fakta-om-indvandrere
+
+## Data sources
+
+Describe the overall CPR number system and acquisition and how it related to civil registration, healthcare contacts and prescription drug use, and how it allows linkage of the data sources.
+
+### The Danish Civil Registration System
+
+CRS ref
+
+### The Danish National Patient Register
+
+NPR ref Validation refs e.g. for CVD goes in discussion chapter 5.
+
+### The Danish National Health Service Register
+
+NHSR ref
+
+### The Danish National Prescription Registry
+
+NPrR ref
+
+### The Danish Register of Laboratory Results for Research
+
+RLRR ref? RLRR covers all of Denmark...
+
+### The Clinical Laboratory Information System of Central Denmark Region
+
+At the time of data acquisition, RLRR did not yet cover the Central Denmark Region, and laboratory results from this part of the the population was extracted from the CLIS/LABKA ref
+
+## Diabetes classification algorithms
+
+*\[A short intro on why we decided to develop a novel algorithm to classify diabetes instead of just validating the existing classifier\].* Introduce OSDC and RSCD abbreviations
+
+As a point of reference in validation, we developed an implementation of the algorithms of the RSCD diabetes classifier (version 1.0, August 2016) according to official documentation.^27^
+
+The following sections describe the algorithms behind each diabetes classifier.
+
+*\[detailed discussion of choices in OSDC, e.g. on obstetric coding, and pros/cons of RSCD goes in chapter 5\]*
+
+### The Open-Source Diabetes Classifier
+
+*\[CP from validation paper\]*
+
+### The Register of Selected Chronic Diseases
+
+*\[CP from validation paper\]*
+
+## Validation Questionnaire data
+
+### The Health In Central Denmark survey
+
+Describe population, inclusion, responses etc. HICD ref
+
+### The National Health Survey
+
+Describe population, inclusion, responses etc. NHS ref. This survey was only used for supplementary validation analyses.
+
+## Study design and population
+
+Study I was designed to examine the validity of register-based definitions of T1D and T2D, the latter of which was used to identify the population-wide study populations in studies II and III.
+
+*\[Overview table of the three studies\]*
+
+### Study populations
+
+#### Study I
+
+From nationwide healthcare registers, data covering the Central Denmark Region was used to identify diabetes populations using the OSDC and RSCD classifiers.
+
+#### Study II
+
+*\[Describe the different study populations in the analyses of study II, "indication for treatment", and the reason for exclusions\]*
+
+#### Study III
+
+*\[Describe the study populations in study III\]*
+
+### Outcomes
+
+#### Study I
+
+The validation outcomes
+
+#### Study II
+
+Prevalence and the indicators of care quality
+
+#### Study III
+
+*Combinations therapy and individual drug types*
+
+#### Timeline of all outcomes across the three studies
+
+Make a figure.
+
+### Primary variable of interest: migrant status
+
+*\[CP from papers\]*
+
+### Other explanatory variables
+
+*\[CP from papers\]*
+
+## Statistical analysis
+
+#### Study I
+
+Validation: Introduce sensitivity, PPV and other validation metrics.
+
+#### Study II & III
+
+Robust poisson regression. Why we chose the models that we did.
+
+## Ethics and approval

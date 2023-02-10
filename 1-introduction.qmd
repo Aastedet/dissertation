@@ -6,7 +6,7 @@ This chapter describes diabetes mellitus and the clinical guidelines for care, i
 
 ## Diabetes
 
-Diabetes mellitus is a metabolic disorder defined by elevated levels of blood-glucose (hyperglycemia) that is classified into several types with distinct clinical . These include *type 1 diabetes* (T1D), *type 2 diabetes* (T2D), *gestational diabetes mellitus* (GDM), as well as other types.[@ADA2022] T2D constitutes the vast majority of all cases and is characterized by inadequate $\beta$-cell insulin secretion due to insulin resistance, while T1D is characterized by insulin deficiency due to autoimmune $\beta$-cell destruction. T2D prevalence exceeds half a billion individuals worldwide and is increasing, particularly in developing countries, due to factors such as ageing of populations, urbanization, increased energy-dense diets and sedentary lifestyles. [@diabetesatlas] While T1D and T2D both carry the risk of developing diabetic complications that lead to morbidity and mortality, they are distinct clinical entities, and T1D is typically treated in the hospital outpatient sector, while T2D care is often provided by *general practitioners* (GPs) and other primary sector actors.
+Diabetes mellitus is a metabolic disorder defined by elevated levels of blood-glucose (hyperglycemia) that is classified into several types with distinct clinical . These include *type 1 diabetes* (T1D), *type 2 diabetes* (T2D), *gestational diabetes mellitus* (GDM), as well as other types.[@ADA2022] T2D constitutes the vast majority of all cases and is characterized by inadequate $\beta$-cell insulin secretion due to insulin resistance, while T1D is characterized by insulin deficiency due to autoimmune $\beta$-cell destruction. T2D prevalence exceeds half a billion individuals worldwide and is increasing, particularly in developing countries, due to factors such as ageing of populations, urbanization, increased energy-dense diets and sedentary lifestyles. [@diabetesatlas] While T1D and T2D both carry the risk of developing diabetic complications that lead to morbidity and mortality, they are distinct clinical entities, and T1D is typically treated in the hospital outpatient sector, while T2D care is often provided by *general practitioners* (GPs) and other actors in the primary care sector.
 
 Complications are traditionally divided into macrovascular (e.g. *cardiovascular disease* (CVD)) and microvascular complications (e.g. kidney disease, retinopathy, neuropathy), but additional complications exist. Several lifestyle and physiological factors influence the risk of developing complications, and clinical care revolves around management of these. In addition to being key risk factors of complications, blood pressure, *hemoglobin-A1C* (HbA1c), and *low-density lipoprotein cholesterol* (LDL-C) are parameters that drive treatment indications and clinical decision-making. *\[mangler ref\]*
 
@@ -15,6 +15,12 @@ Due to their effects on HbA1c, LDL-C, and blood pressure, *glucose-lowering drug
 In addition to their effect on biomarker levels, certain drug types within the above classes of drugs have other positive effects. In particular, the GLD types *sodium glucose co-transporter type 2 inhibitors* (SGLT2i) and *glucagon-like peptide-1 receptor agonists* (GLP1RA) substantially reduce the risk of adverse cardiovascular and renal events beyond their effect on HbA1c. Similarly, the antihypertensive drugs types *angiotensin-converting enzyme-inhibitors* (ACEI) and *angiotensin receptor blockers* (ARB) reduce the risk and improve the prognosis of *diabetic kidney disease* (DKD) beyond their effect on blood pressure. *\[mangler ref\]*
 
 Combination therapy - the use of multiple drug types with differing mechanisms of action - is a way to increase treatment intensity and achieve treatment goals with fewer side-effects. Combination therapy is particularly important in T2D, as GLD monotherapy fails to achieve target levels of HbA1c in many patients, even at maximal dosage. *\[mangler ref\]*
+
+Timely monitoring of risk factors and complications allows for prompt adjustment of treatment, and monitoring has previously been used as a process indicator of care quality, although the direct evidence on its influence on outcomes is sparse. *\[see refs*
+\[[7](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8#ref-CR7 "Nicolucci A, Greenfield S, Mattke S. Selecting indicators for the quality of diabetes care at the health systems level in OECD countries. Int J Qual Health Care. 2006;18(Suppl 1):26–30."),[8](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8#ref-CR8 "Glasgow RE, Peeples M, Skovlund SE. Where is the patient in diabetes performance measures? The case for including patient-centered and self-management measures. Diabetes Care. 2008;31:1046–50."),[9](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8#ref-CR9 "Gray PA, Drayton-Brooks S, Williamson KM. Diabetes: follow-up support for patients with uncontrolled diabetes. Nurse Pract. 2013;38:49–53."),[10](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8#ref-CR10 "Agency for Healthcare Research and Quality. 
+                    https://www.ahrq.gov
+                    
+                  ."),[11](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8#ref-CR11 "Calsbeek H, Ketelaar NABM, Faber MJ, Wensing M, Braspenning J. Performance measurements in diabetes care: the complex task of selecting quality indicators. Int J Qual Health Care. 2013;25:704–9."),[12](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8#ref-CR12 "Borgermans LAD, Goderis G, Ouwens M, Wens J, Heyrman J, Grol RPTM. Diversity in diabetes care programmes and views on high quality diabetes care: are we in need of a standardized framework? Int J Integr Care. 2008;8:e07.")\] *in https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8, e.g. https://doi.org/10.1093/intqhc/mzl023, , evt. DVDD rapport\]*
 
 ## Clinical guidelines for type 2 diabetes care
 
@@ -60,23 +66,19 @@ In addition to their indication in the treatment of hypertension, ACEI or ARB is
 
 APT is recommended in individuals with prevalent CVD, diabetic kidney disease or very high risk of CVD due to other risk factors. This recommendation was expanded in the 2022 revision to also include individuals with kidney failure and concurrent microalbuminuria.
 
-## Identification of diabetes cases in Danish healthcare registers
-
-### Challenges
-
-### Previous
-
 ## Migrants and type 2 diabetes
 
 ### Migrant origin
 
 While migrant origin in research is often a simple variable used to capture socioeconomic position, it reflects both genetic disposition, cultural ethnicity, and potential language barriers, mental and physical trauma. *\[mangler ref\]*
 
-Historically, particularly in Europe and the United States, migrants have been defined by their racial appearance, and ethnic minority groups categorized accordingly. In research, these categories obscure the role of migrants in the modern era, [@erayil2021raceethnicity]. *\[something about how the sparse evidence on T2D in ethnic minorities is often based on race, which doesn't capture ethnicity in the modern era of global migration very well, and very little direct evidence is available on T2D in migrants\]*
+Historically, particularly in Europe and the United States, migrants have been defined by their racial appearance, and ethnic minority groups categorized accordingly. In research, these categories obscure the role of migrants in the modern era, [@erayil2021raceethnicity]. *\[something about how the sparse evidence on T2D in ethnic minorities is often based on race, which doesn't capture ethnicity in the modern era of global migration very well, and very little direct evidence is available on T2D in migrants\]*.
+
+Research on migrant groups faces several challenges that may explain the lack of direct evidence on T2D care in these groups. Compared to the native populations, migrants are a minority comprised of younger individuals, which limits the size of migrant T2D study populations available to researchers. In addition, migrants are often a hard-to-reach group in studies that require patient engagement for inclusion, which exacerbates sample size problems and induces selection bias in such study designs.
 
 ### Type 2 diabetes, complications and mortality
 
-In European countries, migrant origin is a well-established risk factor for T2D, with prevalence several times higher than that of the native populations *\[mangler ref\]*. The evidence on complication risk in migrants with T2D also indicates a higher risk of CVD, but is not as consistent, as complication risk differs between complication types, migrant groups and countries. Similarly, higher mortality among migrants with T2D has been reported in some studies *\[refs\]*, while other studies have found similar or lower risk *\[refs - se https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8563673/\]*.
+In European countries, migrant origin is a well-established risk factor for T2D, with prevalence several times higher than that of the native populations *\[mangler ref\]*. The evidence on complication risk in migrants with T2D also indicates a higher risk of CVD compared to native populations, but not as consistent, as complication risk differs between complication types, migrant groups and countries. Similarly, higher mortality among migrants with T2D has been reported in some studies *\[refs\]*, while other studies have found similar or lower risk *\[refs - se https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8563673/\]*.
 
 ### Monitoring
 
@@ -86,7 +88,7 @@ Evidence between countries and different aspects of monitoring is conflicting: S
 
 #### Hemoglobin-A1c
 
-Higher
+Higher than in native populations. Is likely to contribute to a higher complication risk and mortality.
 
 #### Low-density lipoprotein cholesterol
 
@@ -96,7 +98,7 @@ Pretty much unknown.
 
 #### Glucose-lowering drugs
 
-GLD treatment is prescribed earlier and to a larger proportion of migrants than to the native populations, but disparities in the use of combination therapy or each type of GLD has not been studied. *\[something about indirect evidence: racial groups and socioeconomic disparities\]*
+GLD treatment is prescribed earlier and to a larger proportion of migrants than to the native populations, but disparities in the use of combination therapy or each type of GLD has not been studied. *\[something about indirect evidence: racial groups and socioeconomic disparities, and the Italian study\]*
 
 #### Lipid-lowering drugs
 
@@ -110,10 +112,36 @@ Few studies have reported on ACEI/ARB and APT in migrants, but a study from Ital
 
 Despite the special challenges outlined above, migrants are not addressed in the Danish national clinical guidelines' appendix on pharmacological treatment of special groups. The few recommendations regarding migrants are limited to increased screening for diabetes and tailored patient education programs.
 
+## Identification of type 2 diabetes cases in healthcare registers
+
+### Benefits
+
+Healthcare registers provide a powerful data source for population-wide studies without the need to engage the patient for inclusion. The ability to include all individuals in the population makes them particularly suited for studies of migrants with T2D, where sample size is a limiting factor and other data sources are vulnerable to selection bias in these groups.
+
+### Challenges
+
+*\[CP/Similar to validation study intro, rephrase and add refs\]*
+General-purpose registers and other administrative databases often provide the basis of
+diabetes epidemiology, but rarely contain validated diabetes-specific data. If
+the diabetes-specific data is not accurate, bias may be induced into studies. Thus, it is important to have an accurate tool to identify individuals with diabetes in the registers, as findings may differ with various diabetes definitions.^1,2^ Considerable efforts have been made towards establishing such a tool for diabetes research in several countries, including Denmark.^3-6^
+
+Databases requiring reporting from GPs... low reporting in T2D from primary sector: DVDD
+
+Some algorithms to classify T1D and T2D have been validated in cohorts of individuals with diabetes, but none have been validated in a general population, which leaves population-wide register-based studies vulnerable to biases.
+
+Validation study recommended HbA1c inclusion
+
+### Register-based diabetes classifiers
+
+In Denmark, the Register of Selected Chronic Diseases (RSCD) is currently the only publicly available resource to identify diabetes cases in Danish register data (by application to the Danish Health Data Authority), but it has not been
+publicly validated nor is the source code behind the algorithm publicly
+available. Notably, the algorithm lacks inclusion based on elevated HbA1c
+levels.
+
 ## Introduction at a glance
 
-T2D is a disease that carries serious risks, but several treatment options are available to control the risk factors in T2D and reduce the risk of complications and death, and guidelines are available to direct clinicians and patients towards the best possible outcomes.
+*\[Summarises introduction in a format that naturally leads to the aims of the study (the next chapter)\]*
 
-Migrants are particularly vulnerable to T2D, having increased prevalence and higher mortality than native populations in many countries.
+T2D is a disease that carries serious risks, but several treatment options are available to control the risk factors in T2D and reduce the risk of complications and death, and guidelines are available to direct clinicians and patients towards the best possible outcomes. Migrants are particularly vulnerable to T2D, having increased prevalence and - possibly - higher complication risk and mortality than native European populations. Despite this, there is very limited knowledge on specific areas of care that may contribute to an excess risk in migrants with T2D.
 
-*Something about why register-based studies are suited to study care quality and migrants.* Carrying out register-based studies on care is challenging, as no
+Research on migrant groups faces several challenges that may explain the lack of evidence. The sample size is limited, since migrants are a minority group and often hard-to-reach for intervention and survey studies. Register-based studies are well-suited to handle these limitations, as they are able to include the whole population, but registers rarely contain validated diabetes-specific data. Currently, there is no validated method to identify T2D cases in a general population, which leaves register-based studies in this area vulnerable to biases.
