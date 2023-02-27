@@ -3,7 +3,7 @@ project:
   output-dir: docs
   
 book:
-  title: "Register-based analyses of type 2 diabetes care in migrants and native Danes"
+  title: "Type 2 diabetes in migrants: register-based analyses"
   author: "Anders Aasted Isaksen"
   date: today
   date-format: "MMMM YYYY"

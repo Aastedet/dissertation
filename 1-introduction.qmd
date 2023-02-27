@@ -2,9 +2,9 @@
 
 This chapter describes diabetes mellitus and the clinical guidelines for care, introduces the reader to identification of diabetes patients in Danish healthcare registers, and provides an outline of T2D in migrants.
 
-*This paragraph should introduce the overall context, and very briefly introduce the aims/niche of the project*
+*This paragraph should introduce the overall context, and very briefly introduce the aims/niche of the project: Why did I do this?*
 
-## Diabetes
+## Diabetes in migrants
 
 Diabetes mellitus is a metabolic disorder defined by elevated levels of blood-glucose (hyperglycemia) that is classified into several types with distinct clinical . These include *type 1 diabetes* (T1D), *type 2 diabetes* (T2D), *gestational diabetes mellitus* (GDM), as well as other types.[@ADA2022] T2D constitutes the vast majority of all cases and is characterized by inadequate $\beta$-cell insulin secretion due to insulin resistance, while T1D is characterized by insulin deficiency due to autoimmune $\beta$-cell destruction. T2D prevalence exceeds half a billion individuals worldwide and is increasing, particularly in developing countries, due to factors such as ageing of populations, urbanization, increased energy-dense diets and sedentary lifestyles. [@diabetesatlas] While T1D and T2D both carry the risk of developing diabetic complications that lead to morbidity and mortality, they are distinct clinical entities, and T1D is typically treated in the hospital outpatient sector, while T2D care is often provided by *general practitioners* (GPs) and other actors in the primary care sector.
 
@@ -16,11 +16,7 @@ In addition to their effect on biomarker levels, certain drug types within the a
 
 Combination therapy - the use of multiple drug types with differing mechanisms of action - is a way to increase treatment intensity and achieve treatment goals with fewer side-effects. Combination therapy is particularly important in T2D, as GLD monotherapy fails to achieve target levels of HbA1c in many patients, even at maximal dosage. *\[mangler ref\]*
 
-Timely monitoring of risk factors and complications allows for prompt adjustment of treatment, and monitoring has previously been used as a process indicator of care quality, although the direct evidence on its influence on outcomes is sparse. *\[see refs*
-\[[7](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8#ref-CR7 "Nicolucci A, Greenfield S, Mattke S. Selecting indicators for the quality of diabetes care at the health systems level in OECD countries. Int J Qual Health Care. 2006;18(Suppl 1):26–30."),[8](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8#ref-CR8 "Glasgow RE, Peeples M, Skovlund SE. Where is the patient in diabetes performance measures? The case for including patient-centered and self-management measures. Diabetes Care. 2008;31:1046–50."),[9](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8#ref-CR9 "Gray PA, Drayton-Brooks S, Williamson KM. Diabetes: follow-up support for patients with uncontrolled diabetes. Nurse Pract. 2013;38:49–53."),[10](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8#ref-CR10 "Agency for Healthcare Research and Quality. 
-                    https://www.ahrq.gov
-                    
-                  ."),[11](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8#ref-CR11 "Calsbeek H, Ketelaar NABM, Faber MJ, Wensing M, Braspenning J. Performance measurements in diabetes care: the complex task of selecting quality indicators. Int J Qual Health Care. 2013;25:704–9."),[12](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8#ref-CR12 "Borgermans LAD, Goderis G, Ouwens M, Wens J, Heyrman J, Grol RPTM. Diversity in diabetes care programmes and views on high quality diabetes care: are we in need of a standardized framework? Int J Integr Care. 2008;8:e07.")\] *in https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8, e.g. https://doi.org/10.1093/intqhc/mzl023, , evt. DVDD rapport\]*
+Timely monitoring of risk factors and complications allows for prompt adjustment of treatment, and monitoring has previously been used as a process indicator of care quality, although the direct evidence on its influence on outcomes is sparse. *\[see refs* \[[7-12](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8), e.g. https://doi.org/10.1093/intqhc/mzl023, , evt. DVDD rapport\]\*
 
 ## Clinical guidelines for type 2 diabetes care
 
@@ -120,10 +116,7 @@ Healthcare registers provide a powerful data source for population-wide studies 
 
 ### Challenges
 
-*\[CP/Similar to validation study intro, rephrase and add refs\]*
-General-purpose registers and other administrative databases often provide the basis of
-diabetes epidemiology, but rarely contain validated diabetes-specific data. If
-the diabetes-specific data is not accurate, bias may be induced into studies. Thus, it is important to have an accurate tool to identify individuals with diabetes in the registers, as findings may differ with various diabetes definitions.^1,2^ Considerable efforts have been made towards establishing such a tool for diabetes research in several countries, including Denmark.^3-6^
+*\[CP/Similar to validation study intro, rephrase and add refs\]* General-purpose registers and other administrative databases often provide the basis of diabetes epidemiology, but rarely contain validated diabetes-specific data. If the diabetes-specific data is not accurate, bias may be induced into studies. Thus, it is important to have an accurate tool to identify individuals with diabetes in the registers, as findings may differ with various diabetes definitions.^1,2^ Considerable efforts have been made towards establishing such a tool for diabetes research in several countries, including Denmark.^3-6^
 
 Databases requiring reporting from GPs... low reporting in T2D from primary sector: DVDD
 
@@ -133,10 +126,7 @@ Validation study recommended HbA1c inclusion
 
 ### Register-based diabetes classifiers
 
-In Denmark, the Register of Selected Chronic Diseases (RSCD) is currently the only publicly available resource to identify diabetes cases in Danish register data (by application to the Danish Health Data Authority), but it has not been
-publicly validated nor is the source code behind the algorithm publicly
-available. Notably, the algorithm lacks inclusion based on elevated HbA1c
-levels.
+In Denmark, the Register of Selected Chronic Diseases (RSCD) is currently the only publicly available resource to identify diabetes cases in Danish register data (by application to the Danish Health Data Authority), but it has not been publicly validated nor is the source code behind the algorithm publicly available. Notably, the algorithm lacks inclusion based on elevated HbA1c levels.
 
 ## Introduction at a glance
 

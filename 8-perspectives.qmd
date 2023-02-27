@@ -4,6 +4,8 @@
 
 The findings call for bla bla bla updated guidelines, increased awareness....
 
+Action card for physicians: which areas of care to pay particular attention in each migrant group, when delivering care to a migrant with T2D.
+
 ## Future research
 
 Validated diabetes classifiers, or similar, should be used. Validation studies on diabetes duration/age at onset of diabetes should be performed.
