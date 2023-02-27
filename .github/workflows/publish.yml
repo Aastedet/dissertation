@@ -20,9 +20,10 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages:
-            knitr
-            rmarkdown
-            jsonlite
+            any::knitr
+            any::rmarkdown
+            any::jsonlite
+          pak-version: devel
             
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
