@@ -37,6 +37,10 @@ execute:
 format:
   html:
     theme: cosmo
+  docx: 
+    toc: true
+    number-sections: true
+    number-depth: 3
   pdf:
     documentclass: scrbook
     classoption:

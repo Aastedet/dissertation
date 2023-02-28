@@ -4,11 +4,31 @@ This chapter describes diabetes mellitus and the clinical guidelines for care, i
 
 *This paragraph should introduce the overall context, and very briefly introduce the aims/niche of the project: Why did I do this?*
 
-## Diabetes in migrants
+## Migrants and type 2 diabetes
 
-Diabetes mellitus is a metabolic disorder defined by elevated levels of blood-glucose (hyperglycemia) that is classified into several types with distinct clinical . These include *type 1 diabetes* (T1D), *type 2 diabetes* (T2D), *gestational diabetes mellitus* (GDM), as well as other types.[@ADA2022] T2D constitutes the vast majority of all cases and is characterized by inadequate $\beta$-cell insulin secretion due to insulin resistance, while T1D is characterized by insulin deficiency due to autoimmune $\beta$-cell destruction. T2D prevalence exceeds half a billion individuals worldwide and is increasing, particularly in developing countries, due to factors such as ageing of populations, urbanization, increased energy-dense diets and sedentary lifestyles. [@diabetesatlas] While T1D and T2D both carry the risk of developing diabetic complications that lead to morbidity and mortality, they are distinct clinical entities, and T1D is typically treated in the hospital outpatient sector, while T2D care is often provided by *general practitioners* (GPs) and other actors in the primary care sector.
+Type 2 diabetes (T2D) constitutes the vast majority of all diabetes cases, and disproportionally affects the socially deprived demographics in societies across the globe\[manglerref\]. The prevalence of type 2 diabetes (T2D) today exceeds half a *billion* people globally and is on the rise due to several factors, including population aging, urbanization, adoption of energy-dense diets, and sedentary lifestyles. These transitions are occurring at a rapid pace in developing countries, where they affect the largest number of people.[@diabetesatlas] Many developing countries have populations with a genetic predisposition to developing T2D, which exacerbates the impact of these transitions.
+
+Migrants are particularly vulnerable to T2D, as they are positioned at the point of convergence of these exposures: genetic predisposition, rapid lifestyle transitions, and the disparate social impact of T2D. After being granted residence permit in Denmark and other developed nations, migrants are often housed in densely-populated urban areas and exposed to drastic lifestyle transitions. Migrants may also suffer from previous mental and physical trauma, which - in addition to cultural and language barriers - can limit their ability to gain higher-income employment and escape their disadvantageous socioeconomic position.
+
+In Denmark and many other developed nations, healthcare systems are facing a challenge to sustain the expected high quality of care in an aging population with a growing burden of chronic diseases and comorbidities. Prioritization of limited resources is crucial to ensure that those with the highest need for (and potential benefit from) healthcare receive adequate care. Today, migrants have a higher prevalence of T2D compared to native populations\[manglerref\], but the increased risk of developing T2D is partially mitigated by their younger age. However, this only delays the impact of their increased T2D risk, and as these migrant populations age in the coming years, they will make up a growing proportion of T2D patients in the country. Therefore, understanding potential disparities in care and the specific healthcare needs of migrant populations with T2D can inform the prioritization of healthcare resources, ultimately ensuring that all individuals with T2D can continue to receive appropriate care.
+
+## Type 2 diabetes care
+
+Most evidence on type 2 diabetes is generated in
+
+-   **Overall**
+
+-   **Migrants**
+
+### Monitoring
+
+Timely monitoring of risk factors and complications allows for prompt adjustment of treatment, and monitoring has previously been used as a process indicator of care quality, although the direct evidence on its influence on outcomes is sparse. *\[see refs* \[[7-12](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8), e.g. https://doi.org/10.1093/intqhc/mzl023, , evt. DVDD rapport\]\*
+
+### Complications and risk factors
 
 Complications are traditionally divided into macrovascular (e.g. *cardiovascular disease* (CVD)) and microvascular complications (e.g. kidney disease, retinopathy, neuropathy), but additional complications exist. Several lifestyle and physiological factors influence the risk of developing complications, and clinical care revolves around management of these. In addition to being key risk factors of complications, blood pressure, *hemoglobin-A1C* (HbA1c), and *low-density lipoprotein cholesterol* (LDL-C) are parameters that drive treatment indications and clinical decision-making. *\[mangler ref\]*
+
+### Pharmacological treatment
 
 Due to their effects on HbA1c, LDL-C, and blood pressure, *glucose-lowering drugs* (GLD), *lipid-lowering drugs* (LLD), and antihypertensive drugs are critical parts of T2D care. In T2D patients with particularly high risk of complications, pharmacological treatment also includes *antiplatelet therapy* (APT), as the complication risk-lowering effect outweighs the risk of adverse events in these patients.[@haller2011arb; @zoungas2011advance]
 
@@ -16,11 +36,9 @@ In addition to their effect on biomarker levels, certain drug types within the a
 
 Combination therapy - the use of multiple drug types with differing mechanisms of action - is a way to increase treatment intensity and achieve treatment goals with fewer side-effects. Combination therapy is particularly important in T2D, as GLD monotherapy fails to achieve target levels of HbA1c in many patients, even at maximal dosage. *\[mangler ref\]*
 
-Timely monitoring of risk factors and complications allows for prompt adjustment of treatment, and monitoring has previously been used as a process indicator of care quality, although the direct evidence on its influence on outcomes is sparse. *\[see refs* \[[7-12](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8), e.g. https://doi.org/10.1093/intqhc/mzl023, , evt. DVDD rapport\]\*
-
 ## Clinical guidelines for type 2 diabetes care
 
-The Danish College of General Practitioners publishes national clinical guidelines for T2D in cooperation with the Danish Endocrine Society. The guidelines are continuously updated as new evidence emerges. In this PhD project, T2D care was studied in the time period covered by the 2012[@dsam2012] and 2019[@dsam2019] revisions (only minor changes were made between the two revisions). These guidelines advise that monitoring intervals, biomarker goals and treatment intensity is adapted to fit the individual patient, but specify recommendations that may be used as indicators of care quality. Guideline recommendations relevant to this PhD study are described below.
+The Danish College of General Practitioners publishes national clinical guidelines for T2D in cooperation with the Danish Endocrine Society. The guidelines are continuously updated as new evidence emerges. In this PhD project, T2D care was studied in the time period covered by the 2012[@dsam2012] and 2019[@dsam2019] revisions (only minor changes were made between the two revisions). These guidelines advise that monitoring intervals, biomarker goals and treatment intensity are adapted to fit the individual patient, but specify recommendations that may be used as indicators of care quality. Guideline recommendations relevant to this PhD study are described below.
 
 ### Diagnosis
 
@@ -61,6 +79,22 @@ In addition to their indication in the treatment of hypertension, ACEI or ARB is
 #### Antiplatelet therapy
 
 APT is recommended in individuals with prevalent CVD, diabetic kidney disease or very high risk of CVD due to other risk factors. This recommendation was expanded in the 2022 revision to also include individuals with kidney failure and concurrent microalbuminuria.
+
+## OLD REVISION
+
+While T1D and T2D both carry the risk of developing diabetic complications that lead to morbidity and mortality, they are distinct clinical entities, and T1D is typically treated in the hospital outpatient sector, while T2D care is often provided by *general practitioners* (GPs) and other actors in the primary care sector.
+
+Diabetes mellitus is a metabolic disorder defined by elevated levels of blood-glucose (hyperglycemia) that is classified into several types with distinct clinical . These include *type 1 diabetes* (T1D), *type 2 diabetes* (T2D), *gestational diabetes mellitus* (GDM), as well as other types.[@ADA2022] T2D constitutes the vast majority of all cases and is characterized by inadequate $\beta$-cell insulin secretion due to insulin resistance, while T1D is characterized by insulin deficiency due to autoimmune $\beta$-cell destruction. T2D prevalence exceeds half a billion individuals worldwide and is increasing, particularly in developing countries, due to factors such as ageing of populations, urbanization, increased energy-dense diets and sedentary lifestyles. [@diabetesatlas] While T1D and T2D both carry the risk of developing diabetic complications that lead to morbidity and mortality, they are distinct clinical entities, and T1D is typically treated in the hospital outpatient sector, while T2D care is often provided by *general practitioners* (GPs) and other actors in the primary care sector.
+
+Complications are traditionally divided into macrovascular (e.g. *cardiovascular disease* (CVD)) and microvascular complications (e.g. kidney disease, retinopathy, neuropathy), but additional complications exist. Several lifestyle and physiological factors influence the risk of developing complications, and clinical care revolves around management of these. In addition to being key risk factors of complications, blood pressure, *hemoglobin-A1C* (HbA1c), and *low-density lipoprotein cholesterol* (LDL-C) are parameters that drive treatment indications and clinical decision-making. *\[mangler ref\]*
+
+Due to their effects on HbA1c, LDL-C, and blood pressure, *glucose-lowering drugs* (GLD), *lipid-lowering drugs* (LLD), and antihypertensive drugs are critical parts of T2D care. In T2D patients with particularly high risk of complications, pharmacological treatment also includes *antiplatelet therapy* (APT), as the complication risk-lowering effect outweighs the risk of adverse events in these patients.[@haller2011arb; @zoungas2011advance]
+
+In addition to their effect on biomarker levels, certain drug types within the above classes of drugs have other positive effects. In particular, the GLD types *sodium glucose co-transporter type 2 inhibitors* (SGLT2i) and *glucagon-like peptide-1 receptor agonists* (GLP1RA) substantially reduce the risk of adverse cardiovascular and renal events beyond their effect on HbA1c. Similarly, the antihypertensive drugs types *angiotensin-converting enzyme-inhibitors* (ACEI) and *angiotensin receptor blockers* (ARB) reduce the risk and improve the prognosis of *diabetic kidney disease* (DKD) beyond their effect on blood pressure. *\[mangler ref\]*
+
+Combination therapy - the use of multiple drug types with differing mechanisms of action - is a way to increase treatment intensity and achieve treatment goals with fewer side-effects. Combination therapy is particularly important in T2D, as GLD monotherapy fails to achieve target levels of HbA1c in many patients, even at maximal dosage. *\[mangler ref\]*
+
+Timely monitoring of risk factors and complications allows for prompt adjustment of treatment, and monitoring has previously been used as a process indicator of care quality, although the direct evidence on its influence on outcomes is sparse. *\[see refs* \[[7-12](https://dmsjournal.biomedcentral.com/articles/10.1186/s13098-019-0428-8), e.g. https://doi.org/10.1093/intqhc/mzl023, , evt. DVDD rapport\]\*
 
 ## Migrants and type 2 diabetes
 

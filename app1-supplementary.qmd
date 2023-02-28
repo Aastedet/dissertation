@@ -4,8 +4,36 @@ Some results that wouldn't fit into the main thesis
 
 ## To do/Questions:
 
--   Chapter 3: Methods
+-   Intro:
 
-    -   Describe HICD cohort before diabetes classifiers?
+-   1.1: Hvorfor?
 
-        -   Nationwide data sources -\> classifiers -\> HICD survey?
+-   1.1.1: Migrants & type 2 diabetes
+
+    -   Prævalens af T2D er stigende: aldrende befolkning. Sundhedsvæsenets resourcer er begrænsede - hvem skal prioriteres for at resourcerne udnyttes bedst?
+
+        -   Kort intro: T2D rammer skævt socioøkonomisk: Livsstil, arbejde
+
+            -   hvorfor er migranter særligt interessante? (er en sociøkonomisk skæv gruppe. Desuden højere prævalens af T2D, ung demografi -\> kommer til at udgøre en stigende andel af T2D i fremtiden),
+
+-   1.1.2: Diabetes
+
+    -   prævalens
+
+    -   Komplikationer og risikofaktorer
+
+        -   Evidens generelt
+
+        -   Migranter
+
+    -   Medicinsk behandling
+
+        -   Evidens generelt
+
+        -   Migranter
+
+    -   Guidelines
+
+        -   Evidens generelt
+
+        -   Migranter
