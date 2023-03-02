@@ -14,7 +14,7 @@ During my time as a PhD student, I quickly encountered the first of many challen
 
 ## Outline of the dissertation
 
-**Chapter 1** introduces the reader to diabetes and identification of diabetes patients in Danish healthcare registers, describes the clinical guidelines for T2D care in Denmark as they relate to this PhD study, and provides an outline of T2D in migrants.
+**Chapter 1** introduces type 2 diabetes (T2D) and the special risk it poses to migrants. It then describes the context of T2D care in Denmark and summarizes clinical guideline recommendations and how they relate migrants with T2D. Finally, it introduces the reader to identification of diabetes patients in Danish healthcare registers.
 
 **Chapter 2** states the overall aims of this PhD project and each individual study.
 
