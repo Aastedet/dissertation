@@ -8,4 +8,4 @@ This is a Quarto website for my PhD dissertation. Note that the dissertation is 
 
 The dissertation is built on a template adapted from the [quartothesis skeleton](https://github.com/biostats-r/quartothesis) originally created by Richard Telford at the Department of Biological Sciences, University of Bergen.
 
-You can view the rendered website [here](https://aastedet.github.io/dissertation/).
+You can view the rendered website [here](https://aastedet.github.io/dissertation/) and download the pdf version [here](https://aastedet.github.io/dissertation/Type-2-diabetes-in-migrants--register-based-analyses.pdf)
