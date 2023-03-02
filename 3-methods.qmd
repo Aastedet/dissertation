@@ -4,11 +4,17 @@
 
 ### The Danish healthcare system
 
-Describe the danish public healthcare system: sectors, actors, reimbursement and patient-incurred costs.
+*\[Describe the danish public healthcare system: sectors, actors, reimbursement and patient-incurred costs.\]*
+
+Denmark has a population of approximately 5.8 million residents (2019 numbers), of whom 600.000 (10%) are migrants, and 1 million (18%) are aged 66 years and older.[@befpyramide] The country is divided into 5 administrative regions that are responsible for providing healthcare to their residents through public hospitals and contract agreements with private actors in the primary care sector. Private actors include GPs and other specialist practices (e.g. ophthalmologists), as well as other healthcare professionals (e.g. podiatrists).
+
+In the tax-funded Danish public healthcare system, services are provided to citizens and migrants with residence permits free of charge, although T2D patients incur some out-of-pocket copayments for podiatrist care and prescription drug purchases at pharmacies. Patients with T2D are primarily treated at the GP, which native Danes and migrants with residence permits have free access to.
 
 ### Migrants in Denmark
 
 Describe overall proportion of migrants and migration patterns/groups/causes: Summarise https://www.dst.dk/da/Statistik/nyheder-analyser-publ/bagtal/2022/2022-08-18-fakta-om-indvandrere
+
+Contrast age
 
 ## Data sources
 

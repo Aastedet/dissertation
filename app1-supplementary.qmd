@@ -37,3 +37,9 @@ Some results that wouldn't fit into the main thesis
         -   Evidens generelt
 
         -   Migranter
+
+## Various snippets
+
+While migrant origin in research is often a simple variable used to capture socioeconomic position, it reflects both genetic disposition, cultural ethnicity, and potential language barriers, mental and physical trauma. *\[mangler ref\]*
+
+Historically, particularly in Europe and the United States, migrants have been defined by their racial appearance, and ethnic minority groups categorized accordingly. In research, these categories obscure the role of migrants in the modern era, [@erayil2021raceethnicity]. *\[something about how the sparse evidence on T2D in ethnic minorities is often based on race, which doesn't capture ethnicity in the modern era of global migration very well, and very little direct evidence is available on T2D in migrants\]*.
