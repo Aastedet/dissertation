@@ -8,7 +8,7 @@ The overall aim of this PhD dissertation is to provide robust knowledge on speci
 
 I.  Develop a register-based classification of type 1 and type 2 diabetes and make it available to other researchers.
 
-II. Validate available register-based diabetes classifiers.
+II. Validate register-based diabetes classifiers available to researchers in Denmark.
 
 III. Assess prevalence of T2D in migrant minorities of Denmark, and explore disparities between migrant groups and native Danes in indicators of guideline-recommendations on monitoring, biomarker control, and pharmacological treatment.
 
