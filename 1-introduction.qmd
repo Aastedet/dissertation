@@ -14,6 +14,56 @@ In Denmark and many other developed nations, healthcare systems are facing a cha
 
 Currently, there is a lack of evidence on T2D care in migrants, and research in this area faces several challenges that may explain the scarsity of evidence. Not only are migrants a minority, which limits the size of potential study populations, they are often a hard-to-reach group in studies that require patient engagement for inclusion, which exacerbates sample size problems and can induce selection bias in such study designs. Furthermore, migrants have historically been defined by their racial appearance and ethnic minorities categorized accordingly, particularly in Europe and the United States. While these categories allow researchers to identify racial minorities, they obscure the role of migrants in the modern era, and provide only indirect evidence on migrant minority groups[@erayil2021raceethnicity].
 
+## Migrants in Denmark
+
+\[Describe overall proportion of migrants and migration patterns/groups/causes: Summarise https://www.dst.dk/da/Statistik/nyheder-analyser-publ/bagtal/2022/2022-08-18-fakta-om-indvandrere & for 2019: https://www.dst.dk/da/Statistik/nyheder-analyser-publ/Publikationer/VisPub?cid=29446\]
+
+Individuals migrate between countries for various reasons, such as the pursuit of work, education and family reunification, or to seek protection. Due to different international rights, a clear legal distinction is made between 'refugees' and 'migrants'. Refugees are defined by the United Nations High Commissioner for Refugees, and protected in accordance with international law:
+
+> Refugees are persons who are outside their country of origin for reasons of feared persecution, conflict, generalized violence, or other circumstances that have seriously disturbed public order and, as a result, require international protection.[@unhcrfaq]
+
+By contrast, there is no formal legal definition of an international migrant, although anyone changing country of usual residence, irrespective of the reason for migration or legal status, is generally considered a migrant.[@unhcrfaq]
+
+In Denmark, migrants seeking protection are processed by authorities to determine whether they quality for refugee status, and whether they have previously applied for asylum elsewhere in the European Union per the Dublin Regulation.[@dublinregulation] Individuals qualifying for refugee status are granted asylum and receive residence permits. Conversely, individuals with immediate family members holding Danish citizenship (or with residence permit granted for reasons other than refugee status) can apply for a residence permit on grounds of family reunification before entering the country,[@familyreunion] and residence permits can also be granted to citizens of the European Union, as well as individuals with work or study obligations in Denmark.[@residencework; @residencestudy] Citizens of Finland, Iceland, Norway and Sweden are free to enter, reside and work in Denmark.[@residencenordic]
+
+Once residence has been granted, regardless of the reason, these individuals have access to the same public healthcare services as Danish citizens.
+
+### Infrastructure of Danish data on migrants
+
+In the context of Danish statistics and this PhD project, both refugees and immigrants are referred to as migrants after obtaining residence. In Danish register data, a migrant's country of origin is defined by Statistics Denmark according to the following rules (paraphrased):
+
+> An immigrant is a person born abroad to non-Danish citizens. If Danish civil records contain data on a migrant's mother, country of origin is defined by the mother's country of birth. Otherwise the father's country of birth is used, or - if no data is available - country of origin is defined by the country of birth of the immigrant themselves.[@migrantsdenmark2019]
+
+Civil registration data on migrants is collected during the residence application process. Generally, registrations pertaining to events that occurred prior to the migration require technical evidence or legal proof from the issuing authority of the country where the event occurred. However, in cases where such documentation is unavailable, e.g. date of birth, registrations may be supported by undocumented information provided by the migrant. [@eventsabroad] In cases where information was not systematically collected at the time of migration, e.g. level of education attained before migration, surveys may be used to collect this data retrospectively, or it may be imputed based on the available data.[@educationmigrants]
+
+### Migrant groups in Denmark
+
+Migrants from more than 200 different countries of origin reside in Denmark, making it a very heterogenous group.
+
+-   
+
+    -   \>200 countries of origin among immigrants in Denmark: heterogeneous group
+
+    -   Migration patterns in Denmark governed by migration politics: fig. 1.11 (reason for residence permits through time)
+
+    -   Migrants with different origins have different contexts:
+
+        -   reason for residence permit (tab. 1.9 + 1.10)
+
+            -   Reason correlates with origin
+
+        -   Time of migration (fig. 1.4) and current age (tab. 1.3)
+
+-   Very specific categories - rarely used, and not in a population-wide study of this size?
+
+-   Migrants vs. descendants:
+
+    -   diff. ages: fig. 1.4
+
+    -   Indications of different diabetes risk (Bennet)
+
+-   Context of each migrant category.
+
 ## Type 2 diabetes care
 
 ### Complications and risk factors
@@ -62,7 +112,7 @@ Danish guidelines provide virtually no specific recommendations on T2D care in m
 
 #### Overall
 
-HbA1c values $\ge48 mmol/mol$ are diagnostic of diabetes, but diagnosis must be confirmed with a repeated sample on a different day. Once diagnosed, patients with T2D should be considered permanently affected by the disease, and the associated risk factors for complications should be treated regardless of subsequent normalization of HbA1c.
+HbA1c values $\ge48 mmol/mol$ are diagnostic of type 2 diabetes, but diagnosis must be confirmed with a repeated sample on a different day. Once diagnosed, patients with T2D should be considered permanently affected by the disease, and the associated risk factors for complications should be treated regardless of subsequent normalization of HbA1c.
 
 #### In migrants
 
