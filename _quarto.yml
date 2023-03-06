@@ -5,9 +5,6 @@ project:
 book:
   title: "Type 2 diabetes in migrants: register-based analyses"
   author: "Anders Aasted Isaksen"
-  url: https://github.com/Aastedet
-    affiliation: Department of Public Health, Aarhus University
-    affiliation-url: https://ph.au.dk/
   date: today
   date-format: "MMMM YYYY"
   chapters:
