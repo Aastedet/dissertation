@@ -158,11 +158,11 @@ APT is recommended in individuals with prevalent CVD, diabetic kidney disease or
 
 Guidelines provide no specific recommendations on any aspect of pharmacological treatment in migrants.
 
-## Identification of type 2 diabetes cases in healthcare registers
+## Identification of type 2 diabetes cases in healthcare registers {#sec-id-t2d-registers}
 
 ### Danish register data infrastructure
 
-What is collected on whom, and how?
+What is collected on whom, and how? Details in chapter 3.
 
 How is the data structured and stored, who can get access - to what, and how?
 

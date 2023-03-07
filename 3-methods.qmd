@@ -14,43 +14,39 @@ Although referral to outpatient hospital care is possible, patients with T2D are
 
 *\[Describe the overall CPR number system and acquisition and how it related to civil registration, healthcare contacts and prescription drug use, and how it allows linkage of the data sources.\]*
 
-The Danish registers contain
-
-Data for this study was gathered from several sources and linked on an
-
-individual level using the unique personal identifier given to all Danish residents at immigration or birth. Civil registration, all healthcare contacts and drug prescriptions in Denmark are recorded with this identifier, thus enabling complete data linkage and coverage of the entire population.
+In Denmark, civil registration, public healthcare contacts, and drug prescriptions are recorded with a unique personal identifier (the *CPR number*) given to all Danish residents at immigration or birth. This enables coverage of the entire population and complete linkage between data sources, and forms the foundation of several nationwide Danish healthcare registers.[@regsoverview] The following section briefly describes the data extracted from these registers, as well as other data sources used in the PhD project.
 
 ### The Danish Civil Registration System
 
-CRS ref
+The Danish Civil Registration System contains civil registration data on all residents in Denmark. Information on migrations and country of origin was extracted, in addition to data on age, sex, equivalised disposable household income,[@eurostat_equiv] employment status, and region of residence.
 
 ### The Danish National Patient Register
 
-NPR ref Validation refs e.g. for CVD goes in discussion chapter 5.
+The Danish National Patient Register contains information on all hospital admissions and outpatient contacts. Data on diagnoses of diabetes and cardiovascular complications, and procedures relating to retinal screening and treatment of cardiovascular complications was extracted from 1994 through 2018. At the time of this PhD project, the clinical coding system in use was the International Classification of Diseases, $10th$ revision (*ICD-10*), implemented in 1994.[@icd10]
 
 ### The Danish National Health Service Register
 
-NHSR ref
+The Danish National Health Service Register contains information on all public healthcare services provided in the primary care sector. The data is essentially billing information, and serves as the basis for payment to the healthcare provider from the Danish regions. Each type of service has a unique *SPECIALE*-code (e.g. all diabetes-specific podiatrist care services are contained as sub-codes under *SPECIALE*-code 54) Information on diabetes-specific services performed at podiatrist and ophthalmologist practices from 1990 through 2018 was extracted, as well as point-of-care HbA1c testing performed at GPs.
 
 ### The Danish National Prescription Registry
 
-NPrR ref
+The Danish National Prescription Registry contains information on all prescription drug purchases at Danish pharmacies, classified according to the Anatomical Therapeutic Chemical (ATC) Classification. These registrations serve to determine reimbursement awarded to each purchase from the public health insurance. Information on purchases of GLD, LLD, ACEI, ARB, and APT from 1995 through 2018 was extracted.
 
 ### The Danish Register of Laboratory Results for Research
 
-RLRR ref? RLRR covers all of Denmark...
+The Danish Register of Laboratory Results for Research contains information on clinical biomarker samples analysed at clinical biochemistry departments in hospitals around Denmark. With the exception of point-of-care tests, all biomarker samples taken in the primary healthcare sector are sent for analysis in hospital laboratories. Compared to the other registers, this is a relatively new register, initially launched in 2013, and only recently achieved nationwide coverage.[@rlrr]
 
-### The Clinical Laboratory Information System of Central Denmark Region
-
-At the time of data acquisition, RLRR did not yet cover the Central Denmark Region, and laboratory results from this part of the the population was extracted from the CLIS/LABKA ref
+At the time of data extraction, the Central Denmark Region was not yet covered in the register, and laboratory results from this part of the the population were extracted directly from the *Clinical Laboratory Information System*, a clinical database that stores all laboratory results analysed in Central Denmark Region. Data on HbA1c, LDL-C, and UACR analyses were extracted from 2011 through 2018.
 
 ## Diabetes classification algorithms
 
 *\[A short intro on why we decided to develop a novel algorithm to classify diabetes instead of just validating the existing classifier\].* Introduce OSDC and RSCD abbreviations
 
+As described above, nationwide laboratory data on HbA1c testing has become available in the Danish register ecosystem, but the currently available register-based diabetes classifiers have yet to incorporate this data despite previous recommendations, as described in @sec-id-t2d-registers. Wishing to take advantage of this data, we developed a new classifier, the OSDC.
+
 As a point of reference in validation, we developed an implementation of the algorithms of the RSCD diabetes classifier (version 1.0, August 2016) according to official documentation.^27^
 
-The following sections describe the algorithms behind each diabetes classifier.
+The following sections describe the algorithms behind these diabetes classifiers.
 
 *\[detailed discussion of choices in OSDC, e.g. on obstetric coding, and pros/cons of RSCD goes in chapter 5\]*
 

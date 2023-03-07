@@ -6,7 +6,7 @@ The overall aim of this PhD dissertation is to provide robust knowledge on speci
 
 ## Specific aims
 
-I.  Develop a register-based classification of type 1 and type 2 diabetes and make it available to other researchers.
+I.  Develop a register-based classification of type 1 and type 2 diabetes incorporating previous recommendations on data sources and make it available to other researchers.
 
 II. Validate register-based diabetes classifiers available to researchers in Denmark.
 
@@ -16,4 +16,4 @@ IV. Evaluate disparities in the quality of glucose-lowering pharmacological trea
 
 ## Outputs
 
-Aims II, III, and IV were pursued in the respective papers I, II, and III associated with this dissertation, while aim I was pursued in the creation of the open-source R package *osdc*.
+Aims II, III, and IV were pursued in the respective papers I, II, and III associated with this dissertation, while aim I was pursued in the creation of the *Open-Source Diabetes Classifier* (OSDC), available in the open-source R package *osdc*.[@osdc]
