@@ -1,4 +1,4 @@
-# Introduction
+# Introduction {#sec-introduction}
 
 *\[This paragraph should introduce the overall context, and very briefly introduce the aims/niche of the project: Why did I do this?\]*
 
@@ -16,7 +16,15 @@ Currently, there is a lack of evidence on T2D care in migrants, and research in 
 
 ## Migrants in Denmark
 
-\[Describe overall proportion of migrants and migration patterns/groups/causes: Summarise https://www.dst.dk/da/Statistik/nyheder-analyser-publ/bagtal/2022/2022-08-18-fakta-om-indvandrere & for 2019: https://www.dst.dk/da/Statistik/nyheder-analyser-publ/Publikationer/VisPub?cid=29446\]
+In 2019, Denmark had a population of approximately 5.8 million residents, of whom 600.000 (10%) were migrants and 1 million (18%) were aged 66 years and older. By 2039, the population is expected to have grown to 6.2 million, with a migrant population of 750.000 (12%) and 1.5 million individuals (23%) aged 66 years and older.[@befpyramide] @fig-demo-pyramids shows the projected demographics of native Danes and migrants.
+
+::: {#fig-demo-pyramids layout-ncol="2"}
+![Native Danes 2019-2039](figures/pyramid_native_danes.png){#fig-pyramid-native-danes}
+
+![Migrants 2019-2039](figures/pyramid_migrants.png){#fig-pyramid-migrants}
+
+Demographic projections of native Danes (a) and migrants (b) in 2039. Demographics in 2019 are outlined in green. Adapted from Statistics Denmark [@befpyramide]
+:::
 
 ### Migration
 
@@ -42,7 +50,7 @@ In Danish civil register data, a migrant's country of origin is defined by Stati
 
 > An immigrant is a person born abroad to non-Danish citizens. If Danish civil records contain data on a migrant's mother, country of origin is defined by the mother's country of birth. Otherwise the father's country of birth is used, or - if no data is available - country of origin is defined by the country of birth of the immigrant themselves.[@migrantsdenmark2019]
 
-Migrants from more than 200 different countries of origin reside in Denmark, making the migrant group very heterogenous with respect to geographic and cultural background.[@migrantsdenmark2019] Furthermore, the context for migration differs greatly between migrants of different origins. For example, the vast majority of migrants from Turkey were granted residence due to work and family reunification, and almost all migrants from Bosnia-Herzegovina were refugees and given asylum, while migrants from other European countries reside in Denmark mainly for work, education or other reasons. @fig-reason-migration shows the primary reason for migration among the largest migrant origin groups residing in Denmark in 2022.
+Migrants from more than 200 different countries of origin reside in Denmark, making the migrant group very heterogenous with respect to geographic and cultural background.[@migrantsdenmark2019] Furthermore, the context of migration differs greatly between migrants of different origins in terms of when and why a particular minority migrated to Denmark. For example, the vast majority of migrants from Turkey were granted residence due to work and family reunification in the 1960s and 1970s, while almost all migrants from Bosnia-Herzegovina were refugees from the Yugoslav wars of the 1990s. Migrants from other European countries reside in Denmark mainly for work, education or other reasons and came at various points in time. @fig-reason-migration shows the primary reason for migration among the largest migrant origin groups residing in Denmark, while @fig-time-migration shows the calendar year of immigration in different migrant groups.
 
 ::: {#fig-reason-migration layout-ncol="1"}
 ![Reason for migration: Western countries](figures/reason_migration_origin_west_2022.png){#fig-reason-western}
@@ -52,29 +60,17 @@ Migrants from more than 200 different countries of origin reside in Denmark, mak
 Primary reason for migration among the 10 largest migrant groups in Denmark from Western (a) and Non-western countries (b). Adapted from Statistics Denmark.[@dst2022migrants]
 :::
 
-The context also differs greatly between each country of origin in terms of when the migration took place, as illustrated in @fig-time-migration.
-
 ::: {#fig-time-migration}
 ![](figures/time_migration.png)
 
 Calendar year of first immigration among the 12 largest migrant groups residing in Denmark in 2019. Adapted from Statistics Denmark.[@migrantsdenmark2019]
 :::
 
-The limited size of each ethnic minority and the strongly contrasting characteristics between them poses a challenge to statistical processing. Researchers must strike a balance between aggregation to achieve adequate sample sizes while preserving clinically meaningful minority groups, and avoid introducing biases due to aggregation of dissimilar groups.[@challengesdatamultiethnic] For statistical purposes, different geoschemes have been used by different institutions depending on the context and purpose. The Statistical Division of the United Nations developed the *M49 Standard Country or Area Codes for Statistical Use,[@m49]* while Statistics Denmark aggregate migrants based on origin in Western and Non-western countries, respectively, which somewhat resembles United Nations classification of developed and developing countries.[@docmigrants]
+The limited size of each ethnic minority and the strongly contrasting characteristics between them poses a challenge to statistical processing. Researchers must strike a balance between aggregation to achieve adequate sample sizes while preserving clinically meaningful minority groups, and avoid introducing biases due to aggregation of dissimilar groups.[@challengesdatamultiethnic] For statistical purposes, different geoschemes have been used by different institutions depending on the context and purpose. The Statistical Division of the United Nations developed the *M49 Standard Country or Area Codes for Statistical Use,[@m49]* while Statistics Denmark group migrants into Western and Non-western countries, respectively, a grouping that resembles the more widely-used classification of developed and developing countries.[@docmigrants] See [Chapter -@sec-methods] for a description of grouping of countries of origin in the context of this PhD project.
 
 ### Descendants
 
-Descendants of migrants pose another challenge, whetA potential third dimension
-
--   Very specific categories - rarely used, and not in a population-wide study of this size?
-
--   Migrants vs. descendants:
-
-    -   diff. ages: fig. 1.4
-
-    -   Indications of different diabetes risk (Bennet)
-
--   Context of each migrant category.
+Descendants of migrants pose an additional challenge to classification for research purposes, as they can be considered part of the migrant group, the native population, or their own distinct demographic. In the context of T2D today, descendants of migrants in Denmark are a very young demographic unlikely to constitute a substantial proportion of the patient population (less than 1% of descendants are aged 66 years or older).[@befpyramide] There is also some evidence from Sweden suggesting that descendants are a distinct group from first-generation immigrants in terms of T2D and mortality.[@bennetfirstsecondgen] In the context of this PhD project, descendants were not a focus of investigation, and the term migrants specifically refers to first-generation migrants.
 
 ## Type 2 diabetes care
 
@@ -172,7 +168,7 @@ How is the data structured and stored, who can get access - to what, and how?
 
 Researchers get access to the same raw data, stored in the same structure (unless a data manager on the recipient end edits the raw data during the access data transfer process)
 
-Enables potentially reproducible research, if code is shared publicly (which it is not).
+The shared data potentially enables reproducible research, if code were also shared publicly (which it is not).
 
 ### Benefits
 

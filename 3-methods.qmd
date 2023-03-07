@@ -1,4 +1,4 @@
-# Material and methods
+# Material and methods {#sec-methods}
 
 ## Setting
 
@@ -6,13 +6,19 @@
 
 *\[Describe the danish public healthcare system: sectors, actors, reimbursement and patient-incurred costs.\]*
 
-Denmark has a population of approximately 5.8 million residents (2019 numbers), of whom 600.000 (10%) are migrants, and 1 million (18%) are aged 66 years and older.[@befpyramide] The country is divided into 5 administrative regions that are responsible for providing public healthcare services to their residents through public hospitals and contract agreements with private actors in the primary care sector. Private actors include GPs and other specialist practices (e.g. ophthalmologists), as well as other healthcare professionals (e.g. podiatrists). In the tax-funded Danish public healthcare system, services are provided to citizens and migrants with residence permits free of charge, although T2D patients incur some out-of-pocket copayments for podiatrist care and prescription drug purchases at pharmacies. Patients with T2D are primarily treated at the GP, which native Danes and migrants with residence permits have free access to.
+Denmark is divided into 5 administrative regions that are responsible for providing public healthcare services to their residents through public hospitals and contract agreements with private actors in the primary care sector. Private actors include GPs and other specialist practices (e.g. ophthalmologists), as well as other healthcare professionals (e.g. podiatrists). In addition, the 98 Danish municipalities are obliged to offer resources to prevent and/or manage chronic disease, such as programs on managing T2D through diet and physical exercise.
 
-Contrast age migrants and native Danes (pyramid-site)
+Although referral to outpatient hospital care is possible, patients with T2D are primarily treated at the GP, which native Danes and migrants with residence permit have free access to. In the tax-funded Danish public healthcare system, Danish citizens and migrants with residence permit have equal access to services, and nearly all services are provided free of charge, although T2D patients incur some out-of-pocket co-payments for podiatrist care and prescription drug purchases at pharmacies. Yearly co-payments towards medication expenditures are partially covered from €132 and expenditures beyond €553 are fully covered (2019 limits),[@reimbursement] while 50% of all expenditures towards diabetes-specific podiatrist care are covered by the the public health insurance.[@okportal]
 
 ## Data sources
 
-Describe the overall CPR number system and acquisition and how it related to civil registration, healthcare contacts and prescription drug use, and how it allows linkage of the data sources.
+*\[Describe the overall CPR number system and acquisition and how it related to civil registration, healthcare contacts and prescription drug use, and how it allows linkage of the data sources.\]*
+
+The Danish registers contain
+
+Data for this study was gathered from several sources and linked on an
+
+individual level using the unique personal identifier given to all Danish residents at immigration or birth. Civil registration, all healthcare contacts and drug prescriptions in Denmark are recorded with this identifier, thus enabling complete data linkage and coverage of the entire population.
 
 ### The Danish Civil Registration System
 
