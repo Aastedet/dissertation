@@ -56,7 +56,10 @@ format:
      \usepackage{xcolor}
      \usepackage[automark]{scrlayer-scrpage}
      \clearpairofpagestyles
-     \cfoot*{\pagemark}
+     
+     \lofoot*{\vspace{20mm} \\ \pagemark}
+     \refoot*{\vspace{20mm} \\ \pagemark}
+     
      \chead{\headmark}
      \addtokomafont{pagehead}{\bfseries\upshape\color{white}}
      \addtokomafont{pagenumber}{\bfseries\color{blue!40!black}}
@@ -84,7 +87,6 @@ format:
      %Adding the Layer to the pagestyles
      \AddLayersAtBeginOfPageStyle{scrheadings}{my.head.background}
      \AddLayersAtBeginOfPageStyle{plain.scrheadings}{my.head.background}
-      
       
       \usepackage{tocbibind}
       \usepackage{titling}
