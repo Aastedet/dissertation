@@ -10,6 +10,8 @@
 **HbA1c:** Hemoglobin-A1c\
 **LDL-C:** low-density lipoprotein cholesterol\
 **LLD:** Lipid-lowering drugs\
+**OSDC:** Open-Source Diabetes Classifier\
+**RSCD:** Register of Selected Chronic Diseases\
 **T1D:** Type 1 diabetes mellitus\
 **T2D:** Type 2 diabetes mellitus\
 **UACR:** Urine albumin-to-creatinine ratio\

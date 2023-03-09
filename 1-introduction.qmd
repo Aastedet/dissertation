@@ -50,7 +50,7 @@ In Danish civil register data, a migrant's country of origin is defined by Stati
 
 > An immigrant is a person born abroad to non-Danish citizens. If Danish civil records contain data on a migrant's mother, country of origin is defined by the mother's country of birth. Otherwise the father's country of birth is used, or - if no data is available - country of origin is defined by the country of birth of the immigrant themselves.[@migrantsdenmark2019]
 
-Migrants from more than 200 different countries of origin reside in Denmark, making the migrant group very heterogenous with respect to geographic and cultural background.[@migrantsdenmark2019] Furthermore, the context of migration differs greatly between migrants of different origins in terms of when and why a particular minority migrated to Denmark. For example, the vast majority of migrants from Turkey were granted residence due to work and family reunification in the 1960s and 1970s, while almost all migrants from Bosnia-Herzegovina were refugees from the Yugoslav wars of the 1990s. Migrants from other European countries reside in Denmark mainly for work, education or other reasons and came at various points in time. @fig-reason-migration shows the primary reason for migration among the largest migrant origin groups residing in Denmark, while @fig-time-migration shows the calendar year of immigration in different migrant groups.
+Migrants from more than 200 different countries of origin reside in Denmark, making the migrant group very heterogenous with respect to geographic and cultural background.[@migrantsdenmark2019] Furthermore, the context of migration differs greatly between migrants of different origins in terms of when and why a particular minority migrated to Denmark. For example, the vast majority of migrants from Turkey were granted residence due to work and family reunification in the 1960s and 1970s, while almost all migrants from Bosnia-Herzegovina were refugees from the Yugoslav wars of the 1990s. By contrast, migrants from other European countries came to Denmark mainly for work, education or other reasons at various points in time. @fig-reason-migration shows the primary reason for migration among the largest migrant origin groups residing in Denmark, while @fig-time-migration shows the calendar year of immigration in different migrant groups.
 
 ::: {#fig-reason-migration layout-ncol="1"}
 ![Reason for migration: Western countries](figures/reason_migration_origin_west_2022.png){#fig-reason-western}
@@ -180,11 +180,13 @@ General-purpose registers and other administrative databases often provide the b
 
 Internationally, some algorithms classifying T1D and T2D have been validated in cohorts of individuals with diabetes, but none have been validated in a general population. In a general population, classification algorithms (classifiers) must not only discern type 1 diabetes (T1D) from T2D, but also identify diabetes while accounting for events that might lead to inclusion of non-cases, such as use of GLD in the treatment of other conditions. Currently, no type-specific diabetes classifier has been validated in a general population, which leaves register-based studies in this area vulnerable to biases.
 
-### Register-based diabetes classifiers
+### Register-based diabetes classifiers {#sec-register-based-diabetes-classifiers}
 
 In Denmark, the first resource readily available to researchers to identify diabetes cases using register data was the National Diabetes Register, established in 2006. The National Diabetes Register was discontinued in 2012, and a later validation study questioned its validity and called for future registers to adopt inclusion based on elevated HbA1c levels.
 
-Currently, the Register of Selected Chronic Diseases (RSCD) is the only publicly available resource to identify diabetes cases in Danish register data (by application to the Danish Health Data Authority), but it has not been publicly validated nor is the source code behind the algorithm publicly available. Notably, the algorithm lacks inclusion based on elevated HbA1c levels.
+Launched in 2014, the Register of Selected Chronic Diseases (RSCD) is currently the only publicly available resource to identify diabetes cases in Danish register data (by application to the Danish Health Data Authority), but it has not been publicly validated nor is the source code behind the algorithm publicly available. Notably, the algorithm lacks inclusion based on elevated HbA1c levels.
+
+Since the launch of RSCD, nationwide laboratory data on HbA1c testing has become available in the Danish register ecosystem,[@rlrr] but have yet to be incorporated into available diabetes classifiers.
 
 ## Introduction at a glance
 

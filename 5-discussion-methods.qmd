@@ -1,4 +1,4 @@
-# Discussion of methods
+# Discussion of methods {#sec-discussion-of-methods}
 
 ## Study designs
 
@@ -9,6 +9,10 @@
 ### Information bias
 
 T2D was validated! Diabetes duration Migrant ethnicity based on country of origin is more accurate than race or continent, but does not capture ethnic differences within the countries of origin.
+
+Pros and cons of algorithm design choices.
+
+RLRR coverage, LDL-C in 2018
 
 ### Confounding
 

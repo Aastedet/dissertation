@@ -1,10 +1,11 @@
-# Supplementary material {#sec-supmat}
+# Supplementary material {#sec-supplementary-material}
 
 Some results that wouldn't fit into the main thesis
 
 ## To do/Questions:
 
 -   Translate figures from DST
+-   Statistical analyses section describes only main analyses. Should a summary of supplementary analyses be included (elsewhere?)?
 
 ### Introduction:
 

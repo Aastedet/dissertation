@@ -2,6 +2,18 @@
 
 *\[Align structure with each individual study? Or split into themes? Kind of doing both for now\]*
 
+## Exploratory results during development of diabetes classifiers
+
+Insulin non-users among T1D -\> Women with diabetes onset before 1997.
+
+Self-reported no diabetes (or previous diabetes)
+
+Insufficient obstetric coding practices before 1997.
+
+Arguments for and against design choices goes into discussion chapter
+
+*\[detailed discussion of choices in OSDC, e.g. on obstetric coding, and pros/cons of RSCD goes in chapter 5\]*
+
 ## Study I
 
 In this study, we identified... Number of participants, diabetes cases etc.

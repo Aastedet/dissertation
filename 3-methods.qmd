@@ -1,20 +1,16 @@
 # Material and methods {#sec-methods}
 
-## Setting
+This chapter describes the healthcare setting and the register data sources underlying the studies of this PhD project. Secondly, the diabetes classification algorithms used in the project are described, as well as the sources of survey data used to validate them. The last half of the chapter goes over the study designs, populations and statistical methods of the three papers associated with the dissertation.
 
-### The Danish healthcare system
-
-*\[Describe the danish public healthcare system: sectors, actors, reimbursement and patient-incurred costs.\]*
+## Setting: The Danish healthcare system
 
 Denmark is divided into 5 administrative regions that are responsible for providing public healthcare services to their residents through public hospitals and contract agreements with private actors in the primary care sector. Private actors include GPs and other specialist practices (e.g. ophthalmologists), as well as other healthcare professionals (e.g. podiatrists). In addition, the 98 Danish municipalities are obliged to offer resources to prevent and/or manage chronic disease, such as programs on managing T2D through diet and physical exercise.
 
 Although referral to outpatient hospital care is possible, patients with T2D are primarily treated at the GP, which native Danes and migrants with residence permit have free access to. In the tax-funded Danish public healthcare system, Danish citizens and migrants with residence permit have equal access to services, and nearly all services are provided free of charge, although T2D patients incur some out-of-pocket co-payments for podiatrist care and prescription drug purchases at pharmacies. Yearly co-payments towards medication expenditures are partially covered from €132 and expenditures beyond €553 are fully covered (2019 limits),[@reimbursement] while 50% of all expenditures towards diabetes-specific podiatrist care are covered by the the public health insurance.[@okportal]
 
-## Data sources
+## Register data sources
 
-*\[Describe the overall CPR number system and acquisition and how it related to civil registration, healthcare contacts and prescription drug use, and how it allows linkage of the data sources.\]*
-
-In Denmark, civil registration, public healthcare contacts, and drug prescriptions are recorded with a unique personal identifier (the *CPR number*) given to all Danish residents at immigration or birth. This enables coverage of the entire population and complete linkage between data sources, and forms the foundation of several nationwide Danish healthcare registers.[@regsoverview] The following section briefly describes the data extracted from these registers, as well as other data sources used in the PhD project.
+In Denmark, civil registration, public healthcare contacts, and drug prescriptions are recorded with a unique personal identifier (the *CPR number*) given to all Danish residents at immigration or birth. This enables coverage of the entire population and complete linkage between data sources, and forms the foundation of several nationwide Danish healthcare registers.[@regsoverview] The following section briefly describes the data extracted from these registers, as well as other data sources used in the PhD project. A detailed list of variables and code values used is available in [Supplementary material -@sec-supplementary-material].
 
 ### The Danish Civil Registration System
 
@@ -40,37 +36,85 @@ At the time of data extraction, the Central Denmark Region was not yet covered i
 
 ## Diabetes classification algorithms
 
-*\[A short intro on why we decided to develop a novel algorithm to classify diabetes instead of just validating the existing classifier\].* Introduce OSDC and RSCD abbreviations
+As described previously in @sec-register-based-diabetes-classifiers, currently available register-based diabetes classifiers have yet to incorporate the emerging register data on routine HbA1c testing, despite recommendations to do so. Wishing to take advantage of this data, we developed a new classifier, the OSDC. As a point of reference, we developed an implementation of the RSCD diabetes classifier (version 1.0, August 2016) according to official documentation.[@ruks1doc]
 
-As described above, nationwide laboratory data on HbA1c testing has become available in the Danish register ecosystem, but the currently available register-based diabetes classifiers have yet to incorporate this data despite previous recommendations, as described in @sec-id-t2d-registers. Wishing to take advantage of this data, we developed a new classifier, the OSDC.
-
-As a point of reference in validation, we developed an implementation of the algorithms of the RSCD diabetes classifier (version 1.0, August 2016) according to official documentation.^27^
-
-The following sections describe the algorithms behind these diabetes classifiers.
-
-*\[detailed discussion of choices in OSDC, e.g. on obstetric coding, and pros/cons of RSCD goes in chapter 5\]*
+The following sections describe the algorithms behind these diabetes classifiers. Pros and cons of their design are discussed in [Chapter -@sec-discussion-of-methods].
 
 ### The Open-Source Diabetes Classifier
 
-*\[CP from validation paper\]*
+This classifier first identifies a population of individuals with any type of diabetes mellitus, and then splits this population into T1D and T2D by identifying individuals with T1D and classifying the remainder of the diabetes population as T2D.
+
+In OSDC, diabetes is defined at the second occurrence of any event across the four types of inclusion events listed below. All available data is used, except purchases of GLD, which are restricted to data from 1997 onwards.
+
+i.  HbA1c measurements of ≥48 mmol/mol, after censoring:
+    -   Results of samples taken during pregnancies - potential gestational diabetes mellitus (GDM).
+ii. Hospital diagnoses of diabetes.
+iii. Diabetes-specific services received at podiatrist.
+iv. Purchases of GLD after censoring:
+    1.  Brand drugs for weight loss, e.g. *Saxenda.*
+
+    2.  Purchases during pregnancies - potential treatment of GDM.
+
+    3.  Metformin purchases in women below age 40 - potential treatment of polycystic ovary syndrome (PCOS).
+
+Diabetes type is classified as either T1D or T2D based on patterns of purchases of insulins (including analogues) and hospital primary diagnoses of T1D and T2D. Classification as T1D requires an individual to fulfill either of the following criteria:
+
+a.  Must have purchased only insulins and never any other type of GLD, and have at least one diagnosis of T1D
+
+b.  Must have a majority of T1D diagnoses from endocrinological departments (or from other medical departments, in the absence of contacts to endocrinological departments), and a purchase of insulin within 180 days after onset of diabetes, with insulin contributing at least two thirds of all defined daily doses of GLD purchased.[@ddd]
+
+In populations generated on a fixed index date (such as the cross-sectional studies associated with this dissertation), individuals classified as T1D must have purchased insulins in the last year prior to the index date.
+
+Individuals not classified as T1D are classified as T2D.
 
 ### The Register of Selected Chronic Diseases
 
-*\[CP from validation paper\]*
+Formally, the RSCD includes two separate algorithms, RSCD-T1D and RSCD-T2D, that identify T1D and T2D, respectively. In practice, however, they are inter-dependent, as individuals identified by the T2D classifier are excluded from the T1D classifier.
 
-## Validation Questionnaire data
+In RSCD, diabetes is defined by type-specific diagnoses of T1D or T2D, and purchases of GLD. Individuals are defined as having T1D or T2D if they meet any of the algorithm's inclusion criteria without fulfilling any of its exclusion criteria.
+
+#### Classification of type 2 diabetes
+
+For classification of T2D, inclusion criteria include:
+
+i.  Any purchases of non-insulin GLD.
+ii. A hospital diagnosis of T2D as the most recent type-specific diabetes diagnosis.
+
+Exclusions from the T2D population include:
+
+a.  Women that have only purchased metformin and have any diagnoses of PCOS, purchases of clomifene or combination drugs containing antiandrogens and estrogens.
+b.  Individuals with only one recorded inclusion event.
+c.  Individuals with no recorded inclusion events in the last 10 years prior to the index date.
+
+#### Classification of type 1 diabetes
+
+For classification of T1D, inclusion criteria include:
+
+i.  Any purchases of insulins.
+ii. A hospital diagnosis of T1D as the most recent type-specific diabetes diagnosis.
+
+Exclusions from the T1D population include:
+
+a.  Women with any diagnoses of GDM, who have made purchases of GLD only in the period between 280 days prior to their first diagnosis of GDM and 280 days after their last diagnosis of GDM.
+b.  Individuals classified as T2D.
+c.  Individuals without any purchases of GLD, or have made only one purchase and have no hospital records of T1D.
+d.  Individuals with no insulin purchases in the last 10 years prior to the index date.
+
+## Questionnaire data used in validation
+
+To validate the above diabetes classifiers, self-reported data from two surveys was retrieved. The design and contents of these surveys is described below.
 
 ### The Health In Central Denmark survey
 
-Describe population, inclusion, responses etc. HICD ref
+Health in Central Denmark is a digital and postal questionnaire survey conducted in 2020 on all inhabitants of Central Denmark Region aged 18 to 74 years identified as prevalent diabetes cases by OSDC on 31 Dec 2018, plus an equally-sized group of OSDC non-diabetes cases (matched to diabetes cases by sex, age, and municipality). The survey collected self-reported data related to health in general, with an additional focus on items related to diabetes mellitus, such as current disease, diabetes type, and age at onset.In total, 44,659 OSDC diabetes cases and 46,195 matched OSDC non-diabetes cases were invited to the survey, and 51,854 (57%) responded.[@hicd]
 
 ### The National Health Survey
 
-Describe population, inclusion, responses etc. NHS ref. This survey was only used for supplementary validation analyses.
+The National Health Survey is a repeated digital and postal questionnaire survey conducted among a representative sample of Danish residents aged 16 or above. It collects self-reported data related to mental and physical health in general, such as current or former chronic diseases, and includes a question on diabetes of any type.[@nhs] In the 2017 survey of Central Denmark Region, 52,000 individuals were invited and 32,400 (62%) responded. Data from this survey was used in supplementary validation analyses.
 
 ## Study design and population
 
-Study I was designed to examine the validity of register-based definitions of T1D and T2D, the latter of which was used to identify the population-wide study populations in studies II and III.
+In addition to developing a code package for the statistical programming language *R* containing the source-code behind the diabetes classifiers, three studies were conducted. Study I was designed to examine the validity of register-based definitions of T1D and T2D, the latter of which was used to identify the study populations in studies II and III.
 
 *\[Overview table of the three studies\]*
 
@@ -116,12 +160,89 @@ Make a figure.
 
 ## Statistical analysis
 
+Statistical analyses were performed in RStudio[@RStudio] using R version 4[@R] and a range of open-source code packages for computations[@datatable; @Epi; @finalfit; @tidyverse; @geepack] and visualisation.[@diagrammer; @khroma]
+
+This section describes our overall statistical analysis strategy, followed by the specific statistical analyses of each study.
+
+Logistic regression - a statistical model that computes odds ratios (OR) between groups - is often applied in cross-sectional studies to estimate relative risk (RR, or risk ratio). However, odds ratios approximate relative risk **only** when the outcome is *rare*. If this is not the case, interpreting ORs as RRs will exaggerate risk estimates,[@Grant2014] as illustrated in @fig-or-rr (adapted from [D Wells - CC-BY-SA](https://commons.wikimedia.org/w/index.php?curid=100175653)).
+
+```{r}
+#| label: fig-or-rr
+#| fig-cap: "Relationship between odds ratio and relative risk depending on baseline risk."
+
+RR2OR <- function(RR, baseline){
+  ((1 - baseline) * RR) / (1 - RR * baseline)
+}
+
+library(ggplot2)
+p <- ggplot() +
+  scale_x_continuous(limits=c(0,2.5)) +
+  scale_y_continuous(limits=c(0,2.5)) +
+  geom_abline(intercept=0, slope=1, linetype="dashed", colour='blue') +
+  geom_function(aes(colour = "0.01"), fun = RR2OR, args = list(baseline=0.01)) +
+  geom_function(aes(colour = "0.10"), n=200, fun = RR2OR, args = list(baseline=0.10)) +
+  geom_function(aes(colour = "0.30"), n=300, fun = RR2OR, args = list(baseline=0.30)) +
+  geom_function(aes(colour = "0.60"), n=400, fun = RR2OR, args = list(baseline=0.60)) +
+  geom_function(aes(colour = "0.90"), n=1200, fun = RR2OR, args = list(baseline=0.90)) +
+  scale_colour_manual(values = c("black","#BD0026","#F03B20","#FD8D3C","#FECC5C"), name="Baseline\nRisk") +
+  theme_classic() +
+  coord_fixed(expand=F) +
+  xlab("Relative risk") +
+  ylab("Odds ratio")
+
+suppressWarnings(print(p))
+```
+
+None of the outcomes in studies II & III were expected to be rare, and thus logistic regression was unsuitable. While log-binomial regression models are the most natural choice for computing relative risk in a mathematical sense, they are prone to convergence failure.\[@convergencefail\] Given the large number of outcomes and models that needed fitting, this presented a serious (although not insurmountable) inconvenience, and log-binomial regression was also discarded.
+
+Robust Poisson regression (sometimes termed modified Poisson regression)\[@Zou2004\] presented an appealing alternative for modeling RR. A comprehensive description of the technique is beyond the scope of this dissertation, but a brief explanation is in order, since ordinary Poisson regression is not the right tool for modeling binary outcomes as such data violate the assumptions behind the model.\[@regresscounts\] When applied to binomial data, the error for the estimated relative risk will be overestimated in an ordinary Poisson model. However, this problem can be addressed by using robust generalized estimating equations (so-called *sandwich*) variance estimates, which provide accurate standard errors in the presence of over-dispersion and excess zeros,[@Greenland2004] such as in a binary distribution. Ultimately, this allows robust Poisson regression to estimate RR with valid confidence intervals in data with binary outcomes.[@compareperformance]
+
+In all three studies, the characteristics of study populations were presented, describing continuous variables with means and standard differences, and categorical variables by absolute numbers and percentage proportions. In study I, characteristics were tabulated according to self-reported, OSDC-classified, and RSCD-classified diabetes type, while study II and III tabulated characteristics by origin group.
+
+The following sections describes the statistical analyses of each study.
+
 #### Study I
 
-Validation: Introduce sensitivity, PPV and other validation metrics.
+Validation analyses were performed separately for T1D and T2D, where each register-based diabetes classifier was validated against self-reported diabetes type. Within analyses of each diabetes type, diabetes type was modeled as a distinct binary variable: does the individual have this diabetes type or not (e.g. in the analyses of T1D, diabetes type was modeled as a binary variable of T1D vs. no T1D, the latter category including both T2D and non-diabetes cases).
 
-#### Study II & III
+Concordance tables and associated validation metrics were computed (with 95% confidence intervals) as defined in equations [-@eq-sens], [-@eq-spec], [-@eq-ppv], and [-@eq-npv]: sensitivity, specificity, positive predictive value (PPV), and negative predictive value (NPV). These validation analyses were bootstrapped in 1000 random subsamples in order to assess robustness.
 
-Robust poisson regression. Why we chose the models that we did.
+$$ Sensitivity = \frac{N_{true positives}}{N_{true positives}+N_{false negatives}}$$ {#eq-sens}
+
+$$ Specificity = \frac{N_{true negatives}}{N_{true negatives}+N_{false positives}}$$ {#eq-spec}
+
+$$ PPV = \frac{N_{true positives}}{N_{true positives}+N_{false positives}}$$ {#eq-ppv}
+
+$$ NPV = \frac{N_{true negatives}}{N_{true negatives}+N_{false negatives}}$$ {#eq-npv}
+
+Furthermore, analyses stratified by self-reported age at onset of diabetes (including all self-reported non-diabetes cases in both strata of age at onset) were performed to assess the influence of age at onset of diabetes on sensitivity and PPV.
+
+#### Study II
+
+Relative risks (RR) and 95% confidence intervals were computed using
+
+robust Poisson regression with robust (generalized estimating equations,
+
+\\emph{sandwich}) variance estimates\~\\cite{Zou2004,Greenland2004}. In the analysis of T2D
+
+prevalence, RR of prevalent T2D was computed in a crude model and in two
+
+models with different levels of adjustment to explore the effects of
+
+clinical and socioeconomic factors on migrant risks. The first model
+
+adjusted for sex and age (model 1); the second model further adjusted
+
+for employment status, household income, duration of residence, and
+
+region of residence (model 2). Additionally, age-specific T2D prevalence
+
+in each migrant group was modeled using a binomial model with log-link
+
+and restricted cubic splines as a function of age.
+
+#### Study III
+
+Robust poisson regression. Why we chose the models that we did (and differences in clinical variables included btw II and III)
 
 ## Ethics and approval
