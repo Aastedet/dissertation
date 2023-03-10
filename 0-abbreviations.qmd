@@ -2,6 +2,7 @@
 
 **ACEI:** Angiotensin-converting enzyme-inhibitors\
 **ARB:** Angiotensin receptor blockers\
+**ATC:** Anatomical Therapeutic Chemical (classification)\
 **CVD:** Cardiovascular disease\
 **DKD:** Diabetic kidney disease\
 **GP:** General practitioner\
