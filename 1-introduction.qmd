@@ -36,7 +36,7 @@ By contrast, there is no formal legal definition of an international migrant, al
 
 In Denmark, migrants seeking protection are processed by authorities to determine if they quality for refugee status, and whether they have previously applied for asylum elsewhere in the European Union per the Dublin Regulation.[@dublinregulation] Individuals qualifying for refugee status are granted asylum and receive residence permits. Conversely, individuals with immediate family members holding Danish citizenship (or with residence permit granted for reasons other than refugee status) can apply for a residence permit on grounds of family reunification before entering the country,[@familyreunion] and residence permits can also be granted to citizens of the European Union, as well as individuals with work or study obligations in Denmark.[@residencework; @residencestudy] Citizens of Finland, Iceland, Norway and Sweden are free to enter, reside and work in Denmark.[@residencenordic]
 
-Once residence has been granted, regardless of the reason, these individuals have access to the same public healthcare services as Danish citizens.
+Once residence has been granted, regardless of the reason, these individuals have access to the same public healthcare services as Danish citizens. In addition, any patient in the public healthcare system who is deemed in need of interpreting assistance (by the treating physician) has a right to a professional interpreter. The public healthcare system covers the initial cost of interpreter services, but since February 2018, they have been obliged by law to charge a fee to patients residing in Denmark for more than three years at the time of interpreting assistance.[@interpreterlaw]
 
 ### Migrants in the Danish data infrastructure
 
@@ -63,7 +63,7 @@ Primary reason for migration among the 10 largest migrant groups in Denmark from
 ::: {#fig-time-migration}
 ![](figures/time_migration.png)
 
-Calendar year of first immigration among the 12 largest migrant groups residing in Denmark in 2019. Adapted from Statistics Denmark.[@migrantsdenmark2019]
+Calendar year of first immigration among the 12 largest migrant groups residing in Denmark in 2019. Viewer discretion is advised: Y-axes vary between plots, and the line graphs should be interpreted as histograms with a bin for every calendar year. Adapted from Statistics Denmark.[@migrantsdenmark2019]
 :::
 
 The limited size of each ethnic minority and the strongly contrasting characteristics between them poses a challenge to statistical processing. Researchers must strike a balance between aggregation to achieve adequate sample sizes while preserving clinically meaningful minority groups, and avoid introducing biases due to aggregation of dissimilar groups.[@challengesdatamultiethnic] For statistical purposes, different geoschemes have been used by different institutions depending on the context and purpose. The Statistical Division of the United Nations developed the *M49 Standard Country or Area Codes for Statistical Use,[@m49]* while Statistics Denmark group migrants into Western and Non-western countries, respectively, a grouping that resembles the more widely-used classification of developed and developing countries.[@docmigrants] See [Chapter -@sec-methods] for a description of grouping of countries of origin in the context of this PhD project.
@@ -112,19 +112,43 @@ The evidence on monitoring of T2D in migrants is inconsistent between countries 
 
 ## Clinical guidelines for type 2 diabetes care
 
-In Denmark, T2D care is most often provided by *general practitioners* (GPs) and other actors in the primary care sector, although some patients are treated in the outpatient hospital setting. The Danish College of General Practitioners publishes national clinical guidelines for T2D in cooperation with the Danish Endocrine Society. The guidelines are continuously updated as new evidence emerges. In this PhD project, T2D care was studied in the time period covered by the 2012[@dsam2012] and 2019[@dsam2019] revisions (only minor changes were made between the two revisions). These guidelines advise that monitoring intervals, biomarker goals and treatment intensity are adapted to fit the individual patient, but specify recommendations that may be used as indicators of care quality.
+### Context
 
-Danish guidelines provide virtually no specific recommendations on T2D care in migrants, and migrants are not addressed in the appendix on pharmacological treatment of special groups. Guideline recommendations relevant to this PhD study are described below.
+In Denmark, T2D care is most often provided by *general practitioners* (GPs) and other actors in the primary care sector, although some patients are treated in the outpatient hospital setting. The Danish College of General Practitioners publishes national clinical guidelines for T2D in cooperation with the Danish Endocrine Society, and as well as separate guidelines for pharmacological treatment. Although these guidelines advise that monitoring intervals, biomarker goals and treatment intensity are adapted to fit the individual patient, they do provide specific recommendations that may be used as indicators of care quality.
+
+#### Migrants in guidelines
+
+Danish guidelines contain a chapter on vulnerable populations, which features a section on cultural and language barriers. Here, the special challenges facing migrants in T2D are noted (high prevalence and early onset of disease, poor metabolic control and early onset of complications), and guideline recommend the use of a professional interpreted when facing language barriers, but specific recommendations on care are not provided. An appendix on ethnic minorities further notes how diabetes-friendly diet and physical exercise can be particularly challenging in these groups, but does not provide recommendations for specific care, except on accomodation of insulin-therapy during religious fasting. In guidelines on pharmacological treatment, migrants are not addressed in the main contents, nor in the appendix on treatment of special groups.[@fbv2022]
+
+The sparse recommendations on clinical management of migrants with T2D is not unique to Denmark, however, as guidelines in nearby countries are similarly lacking:
+
+-   Sweden: Besides stating the need for providing care regardless of ethnicity or other personal and sociodemographic characteristics, Swedish guidelines contain no mentioning of migrants at all.[@swedenguidelines]
+
+-   Germany: Ethnicity is noted as one of several contextual factors influencing morbidity in T2D, but migrants or ethnic minorities are not mentioned otherwise.[@germanguidelines]
+
+-   The Netherlands: Dutch guidelines recommend increased screening for T2D in individuals of Hindustani, Turkish, Moroccan or Surinamese origin. Guidelines state that provision of diabetes care in these groups should be similar to that in the native Dutch population, and no specific recommendations on care in migrants are provided, although it is noted that some treatment options appears to be less effective in these groups (lifestyle interventions, bariatric surgery).[@dutchguidelines]
+
+-   UK: In UK guidelines, BMI-thresholds for obesity are adjusted in ethnic minorities, and an increased risk of complications in some ethnic groups is noted. No specific recommendations for clinical management of migrants is made, however, citing a lack of evidence on ethnicity-specific effects of pharmacological treatment - instead, a recommendation for research into the effectiveness of SGLT2i in different ethnic groups is made.[@niceguidelines]
+
+-   Norway: The special needs of migrants were recognized in Norwegian guidelines, and a reference group on migrants and diabetes was established among the authors. However, the topic did not receive a separate guideline chapter (the only topic among 13 author group topics without a separate chapter), and recommendations specific to migrants are limited to more liberal screening for diabetes, use of a professional interpreter, and attention to diet and religious fasting.[@norwayguidelines]
+
+#### Historical revisions
+
+Danish guidelines for type 2 diabetes care have existed for several decades, but a strictly evidence-based format was first introduced in the 2004 revision. This edition included a chapter on T2D in migrants that recommended the use of a professional interpreter when encountering language barriers, and noted the high prevalence and early incidence of T2D in migrants from third-world countries. Notably, this separate chapter on migrants was not included in revisions after 2004.[@dsam2004]
+
+The guidelines are continuously updated as new evidence emerges. In this PhD project, T2D care was studied in the time period covered by the 2012[@dsam2012] and 2019[@dsam2019] revisions. These revision brought minimal changes to the recommendations relevant to this PhD project, which were largely unchanged from 2004 until the time period of the studies associated with this dissertation. These recommendations are described below as they appeared in guidelines in effect at the time - with highlights of any mentioning of migrants.
+
+Current and future readers will note that some recommendations on pharmacological treatment have been rendered obsolete by newer evidence (e.g. recommendations for SGLT2i and GLP1RA were expanded to include all T2D patients with CVD, multiple risk factors for CVD, or chronic kidney disease, irrespective of HbA1c level in the 2022 revision, which also expanded the recommendation for APT to include individuals with kidney failure and concurrent microalbuminuria).
 
 ### Diagnosis
 
-HbA1c values $\ge48 mmol/mol$ are diagnostic of type 2 diabetes, but diagnosis must be confirmed with a repeated sample on a different day. Once diagnosed, patients with T2D should be considered permanently affected by the disease, and the associated risk factors for complications should be treated regardless of subsequent normalization of HbA1c.
+HbA1c values $\ge48 mmol/mol$ are diagnostic of type 2 diabetes, but diagnosis must be confirmed with a repeated sample on a different day, unless symptoms of diabetes are present. HbA1c is not suitable for diagnosis of T2D in certain groups, e.g. pregnant women and individuals with hemoglobinopathy. Once diagnosed, patients with T2D should be considered permanently affected by the disease, and the associated risk factors for complications should be treated regardless of subsequent normalization of HbA1c.
 
-Migrant origin is mentioned as a risk factor of T2D, and guidelines recommend increased HbA1c screening in certain migrant groups.
+Guidelines mention ethnicity as a risk factor for T2D, and recommend considering HbA1c screening in migrants from Asia, Africa and the Middle East, depending on other risk factors and age.
 
 ### Monitoring
 
-The risk biomarkers HbA1c and LDL-C should be measured yearly, as well as urine albumin-to-creatinine ratio (UACR) to screen for DKD. Repeated samples of UACR $\ge 300mg/g$ is considering diagnostic of diabetic kidney disease (DKD). Diabetic retinopathy should be screened by an ophthalmologist every second year and screening for diabetic foot disease by a podiatrist every year. At the initial diagnosis of T2D, a baseline-screening of all five types of monitoring is recommended.
+The risk biomarkers HbA1c and LDL-C should be measured at least once a year, as well as urine albumin-to-creatinine ratio (UACR) to screen for DKD. Repeated samples of UACR $\ge 300mg/g$ is considering diagnostic of diabetic kidney disease (DKD). Diabetic retinopathy should be screened by an ophthalmologist every second year, although ophthalmologists can adapt flexible intervals depending on individual retinopathy status and other risk factors.[@dos2018] Similarly, screening for diabetic foot disease should be performed by a podiatrist every year - or, alternatively, by the GP if podiatrist service is unfeasible for the patient. At the initial diagnosis of T2D, a baseline-screening of all five types of monitoring is recommended.
 
 Guidelines provide no specific recommendations on monitoring in migrants.
 
@@ -140,7 +164,7 @@ Guidelines provide no specific recommendations on HbA1c or LDL-C targets in migr
 
 #### Glucose-lowering drugs
 
-**Combination therapy:** GLD therapy is recommended in patients with HbA1c ≥ 48 mmol/mol, and metformin is the recommended first-line treatment. There is no overall recommendation of second- or third-line drugs, although SGLT2i or GLP1RA should be considered in patients with CVD when metformin or other treatment is insufficient to reach the patient's HbA1c target (note that, although not in effect during the time period studied in this PhD project, the recommendations for SGLT2i and GLP1RA were expanded in the 2022 revision to include all T2D patients with CVD, multiple risk factors for CVD, or chronic kidney disease, irrespective of HbA1c level).
+**Combination therapy:** GLD therapy is recommended in patients with HbA1c ≥ 48 mmol/mol, and metformin is the recommended first-line treatment. There is no overall recommendation of second- or third-line drugs, although SGLT2i or GLP1RA should be considered in patients with CVD when metformin or other treatment is insufficient to reach the patient's HbA1c target.
 
 **Individual drug types:** Guidelines recommend factoring in all effects - positive and negative - as well as cost when choosing between individual drug types, and do not present a fixed hierarchy between GLD drug type. \[*maybe* *summarise guideline considerations on second- and third-line drugs, similar to* https://vejledninger.dsam.dk/media/238.png\]
 
@@ -154,7 +178,7 @@ In addition to treatment of hypertension, use of either ACEI or ARB is recommend
 
 #### Antiplatelet therapy
 
-APT is recommended in individuals with prevalent CVD, diabetic kidney disease or very high risk of CVD due to other risk factors (this recommendation was expanded in the 2022 revision to also include individuals with kidney failure and concurrent microalbuminuria).
+APT is recommended in individuals with prevalent CVD, diabetic kidney disease or very high risk of CVD due to other risk factors.
 
 Guidelines provide no specific recommendations on any aspect of pharmacological treatment in migrants.
 
@@ -162,13 +186,9 @@ Guidelines provide no specific recommendations on any aspect of pharmacological 
 
 ### Danish register data infrastructure
 
-What is collected on whom, and how? Details in chapter 3.
+Several types of individual-level data, e.g. civil registration, public healthcare contacts, and drug prescriptions, are automatically collected on all residents in Denmark and stored in nationwide Danish registers by Statistics Denmark and the Danish Health Data Authority (see @sec-methods for details on contents of registers). These agencies are legally allowed to share the register data for research purposes, thus creating a set of common data sources shared by researchers with access to the data. Any researcher associated with an approved Danish research institute (mainly Danish universities) can apply for access, but fees and conditions apply.
 
-How is the data structured and stored, who can get access - to what, and how?
-
-Researchers get access to the same raw data, stored in the same structure (unless a data manager on the recipient end edits the raw data during the access data transfer process)
-
-The shared data potentially enables reproducible research, if code were also shared publicly (which it is not).
+Register data is generally accessed and processed by approved researchers on remote servers operated by Statistics Denmark and the Danish Health Data Authority, and all researchers can potentially access the same raw data - stored in the same structure, unless altered by the researcher (or their data manager). The identical raw data and virtual working environment potentially enables reproducible research. That is, any data processing workflow should be transferable between research projects if the underlying code is designed with reproducibility in mind - if the code is shared ("open-sourced"). While reproducibility in research relates to transparent reporting of methods to enable others to reproduce analyses and experiments, this also applies to a diabetes classification program, which - if reproducible - could be reused by any researcher with access to the necessary register data to dynamically identify a study population of individuals with diabetes for their research needs.
 
 ### Benefits
 
@@ -182,9 +202,9 @@ Internationally, some algorithms classifying T1D and T2D have been validated in 
 
 ### Register-based diabetes classifiers {#sec-register-based-diabetes-classifiers}
 
-In Denmark, the first resource readily available to researchers to identify diabetes cases using register data was the National Diabetes Register, established in 2006. The National Diabetes Register was discontinued in 2012, and a later validation study questioned its validity and called for future registers to adopt inclusion based on elevated HbA1c levels.
+In Denmark, the first resource readily available to researchers to identify diabetes cases using register data was the National Diabetes Register, established in 2006.[@ndr] The National Diabetes Register was discontinued in 2012, and a later validation study questioned its validity and called for future registers to adopt inclusion based on elevated HbA1c levels.[@validationndr]
 
-Launched in 2014, the Register of Selected Chronic Diseases (RSCD) is currently the only publicly available resource to identify diabetes cases in Danish register data (by application to the Danish Health Data Authority), but it has not been publicly validated nor is the source code behind the algorithm publicly available. Notably, the algorithm lacks inclusion based on elevated HbA1c levels.
+Launched in 2014, the Register of Selected Chronic Diseases (RSCD) is currently the only publicly available resource to identify diabetes cases in Danish register data (by application to the Danish Health Data Authority), but it has not been publicly validated nor is the source code behind the algorithm publicly available. Notably, the algorithm lacks inclusion based on elevated HbA1c levels.[@ruks1doc]
 
 Since the launch of RSCD, nationwide laboratory data on HbA1c testing has become available in the Danish register ecosystem,[@rlrr] but have yet to be incorporated into available diabetes classifiers.
 

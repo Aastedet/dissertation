@@ -24,7 +24,8 @@ book:
     - summary-english.qmd
     - summary-danish.qmd
   appendices:
-    - app1-supplementary.qmd
+    - app1-papers.qmd
+    - app2-supplementary.qmd
 
 citation:
   url: https://aastedet.github.io/dissertation/
@@ -39,21 +40,26 @@ execute:
 format:
   html:
     theme: cosmo
+    default-image-extension: svg
   docx: 
     toc: true
     number-sections: true
     number-depth: 3
+    default-image-extension: tif
   pdf:
     documentclass: scrbook
+    default-image-extension: pdf
     classoption:
      - headsepline=true
      - open=any
-#    pagestyle: headings
     keep-tex: true 
     toc: false
     papersize: a4
     header-includes: |
      \usepackage{xcolor}
+     \usepackage{float}
+     \floatplacement{figure}{H}
+     \raggedbottom
      \usepackage[automark]{scrlayer-scrpage}
      \clearpairofpagestyles
      
@@ -109,7 +115,11 @@ format:
       }
       \postdate{
         \\
-        \includegraphics[width=7in]{figures/au_health.png}\\
+        \resizebox{.9\textwidth}{!}{%
+        \includegraphics[width=7in]{figures/au_health.png}%
+        \quad
+        \includegraphics[width=1in]{figures/static_qr.png}%
+        }
         \end{center}
         
         

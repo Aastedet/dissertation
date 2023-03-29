@@ -13,3 +13,7 @@ Validated diabetes classifiers, or similar, should be used. Validation studies o
 Qualitative studies? The reasons for the observed disparities should be studied, and intervention studies are needed to address these reasons in migrants in an evidence-based way.
 
 Other vulnerable groups?
+
+
+Discerning T1D from T2D using insulin vs. non-insulin GLD purchases is likely to become a greater challenge in the future, as SGLT2i and GLP1RA may establish themselves as treatment options in T1D due to their effects on cardiovascular and kidney risk.
+With novel GLD types becoming indicated in heart and kidney patients without diabetes, inclusion criteria in register-based algorithms will have to adapt accordingly.

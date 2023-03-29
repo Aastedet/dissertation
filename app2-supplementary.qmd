@@ -1,0 +1,87 @@
+# Appendix B {#sec-supplementary-material}
+
+## Supplementary material
+
+### Study I
+
+#### Coding scheme
+
+Link to blob
+
+#### Supplementary analyses
+
+Link to blob
+
+### Study II
+
+#### Coding scheme
+
+Link to blob
+
+#### Supplementary analyses
+
+Link to blob
+
+### Study III
+
+#### Coding scheme
+
+Link to blob
+
+#### Supplementary analyses
+
+Link to blob
+
+## To do/Questions:
+
+-   Revisit the prefacing section of each chapter after revisions
+-   Figures of OSDC logic flow need nationwide counts
+    -   Update main text in results chapter accordingly.
+
+        -   And each inclusion criteria should perhaps also show counts of unique contributions?
+-   Consider revising classifierdiffs figures for improve legibility/nationwide counts.
+-   Translate/revise figures from DST
+-   Tilføj NHS analyser fra methods selection bias discussion i (separat?) supplementary?
+-   Statistical analyses section describes only main analyses. Should a summary of supplementary/sensitivity analyses be included (elsewhere?)?
+
+### Introduction:
+
+#### Clinical guidelines:
+
+*Social ulighed: Beskriv evt. kort begreb og relation/forskelle ift. projektet. Henvis til supplementary analyser i results?*
+
+Fig. 1.3: Indvandringsår: Skal den med, og hvor meget skal der skrives for at redde den.
+
+### Methods
+
+Table: Overview of 3 studies
+
+### Results
+
+Ret tal
+
+Fortløbende figurer 1 - Inf, eller samlet optælling af figurer + tabeller i TOC?
+
+Hvor meget skal med? Alle figurerne fra artiklerne, så man kan få et overblik over alle hoved-resultaterne ét sted (minus ECD-grafer for HbA1c og LDL-C).
+
+Opbryd teksten med figurerne for hvert outcome.
+
+#### Study I:
+
+4.1: Flyttes til diskussion. Erstattes af den endelige algoritme, pastelflowchart osv.: Sådan har vi defineret T2D, og sådan påvirker designet den endelige population undervejs.
+
+Alle resultater som i artiklen, eller mere overfladisk som i det øverste og nederste afsnit?
+
+### Discussion
+
+Diskutér det forskellige fokus fra studie 2 til 3: Guideline-anbefalinger er mere absolutte, derfor primært fokus på ujusterede estimater i studie II. Der er ikke sort-hvide mål for kombinationsbehandling/præparatvalg, så behandlingen hviler på et samlet klinisk billede, hvorfor det primære fokus på justerede estimater i studie III.
+
+OSDC: Censoring of PCOS: incidens-spike ved 40-års alder, evt. histogram for incidente cases 2012/16 og frem.
+
+Migrants: Some of the risks in migrants are due to other clinical and socioeconomic risk factors that are more prevalent in migrants compared to native Danes. These risk factors are not the focus of this dissertation and are not presented in the main results. However, these risk factors are of key importance in a greater scope of equity in T2D care provision, and readers are urged to explore the online appendix, where they are presented. The following section provides a brief summary of overall patterns found among covariates of analyses:
+
+BLOB:
+
+Kap 5.1.2: PCOS:
+
+The age-based censoring constituted the vast majority of censored events, as data on indication codes was available in only a minority of prescriptions (contrary to the 72% of all prescriptions described by official documentation).\[\@lmdbdoc\]

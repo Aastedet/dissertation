@@ -20,7 +20,7 @@ knitr::include_graphics("figures/sdca.png")
 {{< include pdf2-acknowledgements.qmd >}}
 :::
 
-::: {.content-hidden when-format="pdf"}
+::: {.content-hidden unless-format="html"}
 ## Notes on website version {.unnumbered .unlisted}
 
 This website contains my PhD dissertation in html form. In terms of content, it is practically identical to the pdf-file submitted to the graduate school - both were made with [Quarto®](https://quarto.org/), an open-source scientific and technical publishing system. The latest render of the pdf-file can be found [here](https://aastedet.github.io/dissertation/Type-2-diabetes-in-migrants--register-based-analyses.pdf).

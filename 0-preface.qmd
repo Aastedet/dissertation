@@ -40,4 +40,9 @@ During my time as a PhD student, I quickly encountered the first of many challen
 \newpage
 
 {\let\clearpage\relax \tableofcontents} 
+
+\listoffigures
+
+\listoftables
+
 ```
