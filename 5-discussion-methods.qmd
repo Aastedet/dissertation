@@ -4,7 +4,7 @@ Before discussing the methodological design of the studies associated with the d
 
 ## Development of diabetes classifier
 
-Identification of diabetes cases and classification of their specific type in data from general-purpose healthcare registers faces several limitations. This section discusses issues and challenged identified during the development and implementation of diabetes classifiers in this PhD project. Future perspectives of register-based diabetes classification are discussed in [Chapter -@8-perspectives].
+Identification of diabetes cases and classification of their specific type in data from general-purpose healthcare registers faces several limitations. This section discusses issues and challenged identified during the development and implementation of diabetes classifiers in this PhD project. Future perspectives of register-based diabetes classification are discussed in [Chapter -@sec-perspectives-and-future-research].
 
 ### Approaches to censoring gestational diabetes mellitus
 
