@@ -1,22 +1,21 @@
 # Discussion of methods {#sec-discussion-of-methods}
 
-Before discussing the methodological design of the studies associated with the dissertation, this chapter first discusses algorithm design choices in OSDC and RSCD in light of discoveries made during development and implementation of the classifiers.
+Before discussing the methodological design of the studies associated with the dissertation, this chapter first discusses algorithm design choices in OSDC and RSCD in light of discoveries made during development, implementation and validation of the classifiers.
 
-## Development of diabetes classifier
+## Design of diabetes classifiers
 
-Identification of diabetes cases and classification of their specific type in data from general-purpose healthcare registers faces several limitations. This section discusses issues and challenged identified during the development and implementation of diabetes classifiers in this PhD project. Future perspectives of register-based diabetes classification are discussed in [Chapter -@sec-perspectives-and-future-research].
+Using data from general-purpose healthcare registers to classify diabetes cases and their specific diabetes type faces several limitations. This section discusses issues and challenges identified during the development and implementation of diabetes classifiers in this PhD project prior to the validation performed in study I, while the validation study design is discussed in @sec-study-designs and its results are discussed in [Chapter -@sec-discussion-of-results]. Future perspectives of register-based diabetes classification are discussed in [Chapter -@sec-perspectives-and-future-research].
 
 ### Approaches to censoring gestational diabetes mellitus
 
-In an early version of the OSDC, we discovered that when using all the available data on GLD purchases, including the earliest years of the National Prescription Register, a substantial proportion (approximately 7%) of individuals classified as having T1D were insulin non-users during the previous year. Some of these individuals participated in the national health survey, and none of them reported having diabetes in the data, although a few reported having previously had diabetes. This initially led to the index-date specific
+In an early version of the OSDC, we discovered that when using all the available data on GLD purchases, including the earliest years of the National Prescription Register, a substantial proportion of individuals classified as having T1D had no purchases of insulin during the previous year (around 8% of the T1D population in most years). This seemed unlikely from a clinical perspective, and exploring these cases among participants in the National Health Survey, we found that none of them reported having diabetes in the data, although a few reported having previously had diabetes (data not shown). This led to the decision to correct diabetes type on the index-date of cross-sectional studies.
 
-However, pursuing this issue further showed that most of these cases were younger women with diabetes onset before 1997, which might indicate that censoring of GDM was insufficient during this period of time. Censoring of GDM relied on clinical obstetric coding in the National Patient Register to identify individual pregnancy windows, and a rudimentary validation of the number of births registered by codes in the National Patient Register against the number of annual births recorded in the National Birth Register was attempted. This showed that clinical obstetric coding was indeed lacking in the first few years after the adoption of ICD-10 coding in 1994, but appeared sufficient from 1997 onward, as shown in @fig-births.
+However, pursuing this issue further showed that most of these cases were younger women with diabetes onset before 1997, which might indicate that censoring of GDM was insufficient during this period of time. Censoring of GDM relied on clinical obstetric coding in the National Patient Register to identify individual pregnancy windows, and a rudimentary validation of the number of births registered by codes in the National Patient Register against the number of annual births recorded in the National Birth Register was attempted. This showed that clinical obstetric coding was indeed lacking in the first few years after the adoption of ICD-10 coding in 1994, but appeared sufficient from 1997 onward, as shown in @fig-births. This led to the decision to restrict inclusion from prescription data to 1997 onward.
 
-Any algorithm censoring GDM using data from the National Patient Register is likely to include false-positive diabetes cases among women prior to 1997. The RSCD manages these cases (and other potentially misclassified cases) by retrospectively excluding individuals without any inclusion events 10 years prior to a given index date. While such a mechanism solves this issue in a cross-sectional study, it creates new problems, as study designs with dynamic index dates (e.g. longitudinal studies with case-specific index dates at the time of diabetes onset) are no longer possible with the algorithm.
+Any algorithm censoring GDM using obstetrical code from data in the National Patient Register is likely to include false-positive diabetes cases among women prior to 1997. The RSCD censors GDM based on hospital diagnoses of GDM, but ultimate manages these old cases (and other potentially misclassified cases) by retrospectively excluding individuals without any inclusion events 10 years prior to a given index date. While such a mechanism solves this issue in a cross-sectional study, it creates new problems, as study designs with dynamic index dates (e.g. longitudinal studies with case-specific index dates at the time of diabetes onset) are no longer possible with the algorithm.
 
-:::{#fig-births}
-![](figures/births.png)
-Births identified in the National Patient Register with obstetrical ICD-10 codes vs. registrations in the National Birth Register. Note the discrepancy of birth during 1994-1996 after adoption of the ICD-10 coding scheme in 1994.
+::: {#fig-births}
+![](figures/births.png) Births identified in the National Patient Register with obstetrical ICD-10 codes vs. registrations in the National Birth Register. Note the discrepancy in births per year during 1994-1996 after adoption of the ICD-10 coding scheme in 1994.
 
 **Births registered by year**
 :::
@@ -25,12 +24,15 @@ Births identified in the National Patient Register with obstetrical ICD-10 codes
 
 In Denmark, women with PCOS are mainly diagnosed and treated in the primary care sector without any registration in the National Patient Register to assist researchers identify these patients. Metformin, a GLD, is used in the treatment of PCOS, and leads to inclusion of false-positive diabetes cases among women treated with metformin. As PCOS mainly affects younger women, censoring metformin purchases among women below an arbitrary age-cutoff is a possible solution.
 
-In OSDC, we adopted the 40-year age-cutoff previously used in the Danish National Diabetes Register,[@ndr] and also censored metformin purchases in women where the indication code of the prescription was for PCOS. This approach over-censors purchases among younger women, but we expected these patients to be identified through inclusion based on HbA1c data instead.
+In OSDC, we adopted the 40-year age-cutoff previously used in the Danish National Diabetes Register,[@ndr] and also censored metformin purchases in women where the indication code of the prescription was for PCOS. This approach over-censors purchases among younger women, but we expected this to be a minor issue, as most of these patients should be included based on HbA1c data instead. Some women may be treated for PCOS with metformin after the age of 40, and unless this was extremely rare, these were unlikely to be censored correctly, as data on indication codes only contributed very few cases of censoring.
 
-The RSCD chose a very different approach to identify PCOS cases and censor metformin purchases, using data on purchases of contraceptives used in the treatment of PCOS, as well as any diagnoses of PCOS in the National Patient Register. This approach provides a more age-agnostic censoring criteria, and as contraceptives are the first-line treatment drugs of PCOS guidelines, metformin is unlikely to be prescribed without these. However, these contraceptives are also used in women with PCOS, which risks overcensoring.
+The RSCD applies a very different approach to identify PCOS cases and censor metformin purchases, using data on purchases of contraceptives used in the treatment of PCOS, as well as any diagnoses of PCOS in the National Patient Register. This approach provides an age-agnostic censoring criteria, and as contraceptives are the first-line treatment drugs of PCOS guidelines, metformin is unlikely to be prescribed for PCOS without these. However, these contraceptives are also used in women without PCOS, which risks overcensoring women with T2D without PCOS.
 
-Ultimately, the two different approaches to censoring PCOS likely had similar impact, since most differences in real-world performance between the algorithms were minor - as described in [Chapter -@sec-results].
+### Approaches to censoring other sources of false inclusions
 
+Despite much of the data collection being automated, the health registers are ultimately subject to human error, and entries into the data may be the erroneous and lead to false inclusions by the classifier, e.g. a prescription for GLD intended for another patient may be written and purchased by an individual without diabetes or a wrong diagnosis may have been recorded by a hospital physician. In OSDC, diabetes diagnosis was defined at the second occurrence of an event across any of the four types of inclusion events in order to account for errors in the register data and comply with HbA1c-testing recommendations from the World Health Organization and clinical guidelines, which recommend a repeated samples before diagnosis.[@WHO2011; @dsam2019] The drawback of this approach was the potential delay of inclusion after diabetes onset, particularly in the years before HbA1c data was available.
+
+As previously mentioned, the RSCD retrospectively excludes individuals without any inclusion events 10 years prior to a given index date, which avoids unnecessary delay, but accumulates 10 years of falsely included cases on any given index date.
 
 ### Approaches to classification of diabetes type
 
@@ -42,7 +44,57 @@ As previously presented, around 10% of T1D cases in OSDC had purchased non-insul
 
 Concordance was high between the two algorithms in classification of diabetes of any type vs. no diabetes, and the different approaches to classifying diabetes type is likely the main cause of the performance differences observed between the two algorithms.
 
-## Study designs
+### Incidence and demography of register-based diabetes cohorts
+
+Both the OSDC and the RSCD depend on data sources with varying duration of data coverage. In addition, methods to diagnose diabetes have changed in the period of time covered by the data, which leads to spikes in the incidence of diabetes inclusions, as shown in @fig-inclusion-year. Both classifiers show three incidence spikes:
+
+-   1995/1997: The year after incorporation of prescription data.
+-   2011: The year after HbA1c becoming the diagnostic standard.
+-   2016: In the OSDC, this spikes is not surprising, given that this was the year after HbA1c data becoming available from the last of the five Danish regions. The reason for the increased incidence in the RSCD is less clear, but it might indicate that this is not a spike, but rather the end of a plateau that followed after the previous spike in 2011.
+
+::: {#fig-inclusion-year}
+[![](figures/inclusion_plots/inclusion_year_osdc.png){width="80%"}](https://aastedet.github.io/dissertation/figures/inclusion_plots/inclusion_year_osdc.png)
+
+Open-Source Diabetes Classifier
+
+[![](figures/inclusion_plots/inclusion_year_rscd.png){width="80%"}](https://aastedet.github.io/dissertation/figures/inclusion_plots/inclusion_year_rscd.png)
+
+Register for Selected Chronic Diseases
+
+Calendar year of inclusion among prevalent diabetes cases on January 1 2019.
+:::
+
+The different approaches to censoring between the classifiers affect inclusions, which is evident in the distribution of age at inclusion of each sex, as shown in @fig-age-inclusion-sex. In men, where no censoring of GDM nor PCOS is necessary, age at inclusion of T2D is normally distributed and similar between the two classifiers. For women, however, this distribution differs between the classifiers. In the OSDC, the age-based censoring of PCOS results in a spike of T2D cases included at 40 years old, while in the RSCD, the distribution is left-skewed by women included before age 40.
+
+::: {#fig-age-inclusion-sex}
+[![](figures/inclusion_plots/age_by_sex_osdc.png){width="80%"}](https://aastedet.github.io/dissertation/figures/inclusion_plots/age_by_sex_osdc.png)
+
+Open-Source Diabetes Classifier
+
+[![](figures/inclusion_plots/age_by_sex_rscd.png){width="80%"}](https://aastedet.github.io/dissertation/figures/inclusion_plots/age_by_sex_rscd.png)
+
+Register for Selected Chronic Diseases
+
+Age at inclusion for each sex among prevalent diabetes cases on January 1 2019.
+:::
+
+As discussed previously, we expected the addition of HbA1c data in the OSDC classifier to compensate for the overcensoring of metformin prescription data. In density plots of age at inclusion stratified by calendar year period, the observed spike in T2D among women on age 40 appeared to be due to cases with onset during years with partial or no coverage of HbA1c data, as shown in @fig-age-inclusion-by-year. Before 2016, when HbA1c data was not available from all regions of Denmark, there is a clear spike in women with T2D at age 40. This spike is absent in subsequent years, but the distribution is slightly skewed with a plateau in the age-range from 40 to 45 years. This is likely a residual effect of women in this age-range having been prematurely included in the preceding years. In plots of the RSCD classification, the distributions of T2D and T1D are more skewed among individuals included after 2016 than before 2016. Indeed, among cases included during the most recent years, the RSCD T1D and T2D distributions appear bimodal, a visible indication of misclassification and cross-contamination of true T1D and T2D cases in the RSCD classifications.
+
+While the different design approaches between the two classifiers resulted in differences in incidence and demography between their cohorts, their performance in classification of prevalent diabetes was comparable - as described in [Chapter -@sec-results] - and the differences were not specific to T2D in women, where the design of the algorithms differed the most.
+
+::: {#fig-age-inclusion-by-year}
+[![](figures/inclusion_plots/age_by_sex_year_osdc.png){width="80%"}](https://aastedet.github.io/dissertation/figures/inclusion_plots/age_by_sex_year_osdc.png)
+
+Open-Source Diabetes Classifier
+
+[![](figures/inclusion_plots/age_by_sex_year_rscd.png){width="80%"}](https://aastedet.github.io/dissertation/figures/inclusion_plots/age_by_sex_year_rscd.png)
+
+Register for Selected Chronic Diseases
+
+Age at inclusion for each sex among prevalent diabetes cases on January 1 2019, stratified by calendar year of inclusion.
+:::
+
+## Study designs {#sec-study-designs}
 
 All three studies associated with this dissertation were designed as observational, cross-sectional studies based on prospectively collected register data covered the entire adult population in Denmark. The first study also incorporated questionnaire data from the *Health in Central Denmark* survey to serve as the gold standard for validation.
 
@@ -60,23 +112,27 @@ The generalizability of the findings of this dissertation are discussed in the f
 
 In study I, validation was performed in a population of respondents to a survey, a design prone to selection bias. Invites to the survey were conditioned on being aged 18 to 74 years and classified as a diabetes case according to OSDC, or being sampled in a group matched by sex, age and municipality. The choice to subsample OSDC diabetes cases when deriving the study population compensated for the oversampling of OSDC cases compared to non-cases in the survey population, but did not change the other characteristics in the survey population. As a results, the study population contained fewer women and a skewed age distribution compared to a random sample of the general population - and a higher diabetes prevalence.
 
-The accuracy of the classifiers may be different among individuals older than 75, and the predictive values will vary depending on diabetes prevalence.
-However, supplementary validation analyses performed in the *National Health Survey*, which contains a representative sample of the general population, provided results similar to those in the *Health in Central Denmark* survey, although the supplementary analyses were limited to classification of diabetes of any type vs. no diabetes - see Appendix C for details.
+The accuracy of the classifiers may be different among individuals older than 75, and the predictive values will vary depending on diabetes prevalence. However, supplementary validation analyses performed in the *National Health Survey* - which contains a representative sample of the general adult population - provided results similar to those in the *Health in Central Denmark* survey. This does not rule out selection bias, however, as the data in both surveys only covered the Central Denmark Region, and the supplementary analyses were limited to classification of diabetes of any type vs. no diabetes - see Appendix C for details.
 
-In addition to survey invites, non-response among those invited may also be a source of selection bias, as analyses were restricted to respondents. However, several factors suggest that this bias was limited, as response rates were high (>50%) in both the T1D, T2D and no-diabetes groups, and the three groups shared similar non-response patterns.[@hicd] 
+In addition to survey invites, non-response among those invited may also be a source of selection bias, as analyses were restricted to respondents. However, several factors suggest that this bias was limited, as response rates were high (\>50%) in both the T1D, T2D and no-diabetes groups, and the three groups shared similar non-response patterns.[@hicd]
 
+The register-based design of studies II and III meant that data was available on the entire population, minimizing selection bias. Statistical analyses were performed as complete-case analyses, which omits individuals with missing data from analyses and may induce selection bias. In order avoid this, individuals with very short durations of residence on the index dates of the studies were excluded in order to allow time for data to be captured correctly. In addition, the variables included in analyses were chosen to minimize missing data, e.g. we omitted education level from analyses due to a substantial proportion of migrants missing this data.
 
-The register-based design of studies II and III meant that data was available on the entire population, minimizing selection bias. Statistical analyses were performed as complete-case analyses, which omits individuals with missing data from analyses and may induce selection bias. In order avoid this, individuals with very short durations of residence on the index dates of the studies were excluded in order to allow time for data to be captured correctly. In addition, the variables included in analyses were chosen to minimize missing data, e.g. we omitted education level from analyses due to a substantial proportion of migrants missing this data. 
-
-Analyses of pharmacological treatment in study II and all analyses in study III were conditioned on individuals having an HbA1c or/and LDL-C level recorded, but this excluded no more than 2% of the study population and major bias due to this selection was unlikely. In study II, the analyses on pharmacological treatment were also conditioned on individuals still being alive and residing in Denmark at the end of the following year, which could induce selection bias. The alternative - leaving these individuals in the analyses - would likely have had a greater biasing effect, as any individual dying or emigrating before their first drug purchase in next the year would have resulted in their outcome being misclassified if they were in pharmacological treatment prior to the index date (as most individuals with an indication for treatment were).
+Analyses of pharmacological treatment in study II and all analyses in study III were conditioned on individuals having an HbA1c or/and LDL-C level recorded, but this excluded no more than 2% of the study population and substantial bias due to this selection was unlikely. In study II, the analyses on pharmacological treatment were also conditioned on individuals still being alive and residing in Denmark at the end of the following year, which could induce selection bias. However, the alternative - leaving these individuals in the analyses - would likely have had a greater biasing effect, as any individual dying or emigrating before their first drug purchase in next the year would have resulted in their outcome being misclassified if they were in pharmacological treatment prior to the index date (as most individuals with an indication for treatment were, at least in the following year).
 
 ### Information bias
 
+Information bias 
+In study I,
 T2D was validated! Diabetes duration Migrant ethnicity based on country of origin is more accurate than race or continent, but does not capture ethnic differences within the countries of origin.
+
+Employment status
 
 Pros and cons of algorithm design choices.
 
-RLRR coverage, LDL-C in 2018
+RLRR heterogenous, coverage issue, LDL-C in 2018
+
+self-reported gold standard of diabetes type
 
 ### Confounding
 
@@ -92,7 +148,8 @@ Migrant group characteristics, such as distribution of other covariables may pro
 
 Results generalize to migrants with short durations of stay, but not to descendants?
 
-
 ## Analyses
 
 Robust poisson regression provides more intuitive estimates of relative risk than logistic regression in studies where the outcome of interest is not rare.
+
+Which model to emphasize? Adjusting for age, age at onset/duration and income/employment status compares the risk in migrants with a segment of native danes with T2D that is very unrepresentative of the overall population of native Danes with T2D.

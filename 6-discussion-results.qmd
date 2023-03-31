@@ -1,4 +1,4 @@
-# Discussion of results
+# Discussion of results {#sec-discussion-of-results}
 
 ## Key main findings
 
@@ -13,6 +13,8 @@ In the following sections, the main findings out each study will be discussed se
 *\[probably mostly CP from paper?\]*
 
 Comparisons to NDR?
+
+RSCD is implemented ad verbatim from documentation, which may not complete reflect the source code use by the Danish Health Data Authority to generate the register population. We deviated from documentation where we assessed it to be inaccurate, e.g. having no tie-breaker for classifying individuals with equal numbers of T1D-diagnoses and T2D diagnoses who also had a diagnosis of T1D and T2D on the same day as their latest diagnoses. Following documentation to the letter would omit these patients completely from the diabetes population, while our implementation included them as T2D cases.
 
 ### Study II
 
