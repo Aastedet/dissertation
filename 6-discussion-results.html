@@ -211,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Discussion of results</span></h1>
+<h1 class="title"><span id="sec-discussion-of-results" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Discussion of results</span></span></h1>
 </div>
 
 
@@ -235,6 +235,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-number="6.1.1" class="anchored" data-anchor-id="study-i"><span class="header-section-number">6.1.1</span> Study I</h3>
 <p><em>[probably mostly CP from paper?]</em></p>
 <p>Comparisons to NDR?</p>
+<p>RSCD is implemented ad verbatim from documentation, which may not complete reflect the source code use by the Danish Health Data Authority to generate the register population. We deviated from documentation where we assessed it to be inaccurate, e.g.&nbsp;having no tie-breaker for classifying individuals with equal numbers of T1D-diagnoses and T2D diagnoses who also had a diagnosis of T1D and T2D on the same day as their latest diagnoses. Following documentation to the letter would omit these patients completely from the diabetes population, while our implementation included them as T2D cases.</p>
 </section>
 <section id="study-ii" class="level3" data-number="6.1.2">
 <h3 data-number="6.1.2" class="anchored" data-anchor-id="study-ii"><span class="header-section-number">6.1.2</span> Study II</h3>
