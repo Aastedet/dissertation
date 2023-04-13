@@ -2,7 +2,18 @@
 
 ## Perspectives
 
+Based on the findings of this dissertation, diabetes epidemiologists can rely on OSDC and RSCD to provide valid study populations of T1D and T2D for Danish register-based research, and the validated, open-source classifiers provide robust and transparent tools for researchers. In addition, the findings indicate that other register-based diabetes definitions based on Danish register data from similar time-periods with comparable algorithm designs are likely to be provide valid T1D and T2D populations as well.
+Some caveats remain, however, as register-classified diabetes type in cases with atypical age at onset of diabetes should be interpreted with caution, and the onset of diabetes may not be accurately captured by the classifiers.
+
+Migrants are an increasingly important part of the T2D population due to their high T2D prevalence, which will continue to rise in the future as the demography ages. Accordingly, addressing the particular care needs of migrants with T2D is going to become an increasingly pressing matter to clinicians and healthcare planners, if all individuals with T2D are to receive appropriate care.
+
+The disparities in care identified during this dissertation highlight the need for increased attention to the needs of migrant patients with T2D. Furthermore, this dissertation identified pharmacological treatment disparities with the potential to improve care quality and complication risks in migrants. These included increase use of combination therapy and GLP1RAs to lower the excess prevalence of dysglycemia in migrants, and increased use of LLDs to reduce the very high prevalence of dyslipidemia in migrants from Somalia.
+
 The findings call for bla bla bla updated guidelines, increased awareness....
+
+Recommendations for GPs
+
+Recommendations for health planners...
 
 Action card for physicians: which areas of care to pay particular attention in each migrant group, when delivering care to a migrant with T2D.
 
@@ -15,3 +26,7 @@ Qualitative studies? The reasons for the observed disparities should be studied,
 Other vulnerable groups?
 
 Discerning T1D from T2D using insulin vs. non-insulin GLD purchases is likely to become a greater challenge in the future, as SGLT2i and GLP1RA may establish themselves as treatment options in T1D due to their effects on cardiovascular and kidney risk. With novel GLD types becoming indicated in heart and kidney patients without diabetes, inclusion criteria in register-based algorithms will have to adapt accordingly.
+
+LPR3
+
+Finally, there are several factors beyond combination therapy and drug type that contribute to optimal treatment intensity that we did not examine in this project. Factors such as daily dosage of each GLD and adherence to medication may hold potential for improving risk profiles in patients with T2D, and sub-optimal care in these factors could also be more common in migrants than native Danes, if the disparities observed in other aspects of care are any indication.

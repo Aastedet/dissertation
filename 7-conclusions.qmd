@@ -1,17 +1,32 @@
-# Conclusions and implications
+# Conclusions
 
 ## Main conclusions
 
-*\[probably mostly CP from papers\]*
+The main conclusions of this dissertation are:
 
-## Implications
+- Both of the examined register-based diabetes classifiers identified valid populations of T1D and T2D in a general Danish population, with substantially higher sensitivity in the OSDC compared to the RSCD. Neither algorithm was able to accurately classify diabetes type in individuals with T1D onset after age 40, nor T2D onset before age 40, and results from register-based studies of these groups should be interpreted with caution.
+- Compared to native Danes, prevalence of T2D was higher in most migrant groups,
+quality of monitoring was inferior, and most migrant groups had higher
+risks of not achieving glycemic and lipid control, despite similar
+quality of pharmacological treatment.
+- Most migrant groups were less likely to receive combination GLD therapy than native Danes, and migrants were more likely to use oral GLDs, but much less likely to use injection-based GLDs – particularly GLP1RA. 
+- Care was poorest in migrants from Somalia, who had higher risk than native Danes in all of the eleven guideline indicators assessed, as well as the lowest likelihood of receiving combination therapy and GLP1RA of all groups. Their almost double risk of dyslipidemia combined with a lower prevalence of LLD use compared to native Danes appeared to be the single area of care with the biggest potential for improvement and risk reduction identified in this dissertation.
 
-Validation: Diabetes researchers can trust OSDC and RSCD, and very likely also classifiers with similar algorithms used on similar source data and populations.
+## Conclusions for each migrant group
 
-osdc-package
+### Middle East
 
-Atypical age at onset of diabetes
+### Europe
 
-Migrants:
+### Turkey
 
-*\[Structure similar to discussion in paper III\]*
+### Former Yugoslavia
+
+### Pakistan
+
+### Sri Lanka
+
+### Somalia
+
+### Vietnam
+

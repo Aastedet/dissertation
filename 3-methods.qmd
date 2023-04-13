@@ -1,6 +1,6 @@
 # Material and methods {#sec-methods}
 
-This chapter describes the healthcare setting and the register data sources underlying the studies of this PhD project. Secondly, the diabetes classification algorithms used in the project are described, as well as the sources of survey data used to validate them. The last half of the chapter goes over the study designs, populations and statistical methods of the three papers associated with the dissertation.
+This chapter describes the healthcare setting and the register data sources underlying the studies of this PhD project. Secondly, the diabetes classification algorithms used in the project are described, as well as the sources of survey data used to validate them. The last half of the chapter goes over the study designs, populations and statistical methods of the three papers associated with the dissertation, as well as ethical approvals.
 
 ## Setting: The Danish healthcare system
 
@@ -10,7 +10,7 @@ Although referral to outpatient hospital care is possible, patients with T2D are
 
 ## Register data sources
 
-In Denmark, civil registration, public healthcare contacts, and drug prescriptions are recorded with a unique personal identifier (the *CPR number*) given to all Danish residents at immigration or birth. This enables coverage of the entire population and complete linkage between data sources, and forms the foundation of several nationwide Danish healthcare registers.[@regsoverview] The following section briefly describes the data extracted from these registers, as well as other data sources used in the PhD project. A detailed list of variables and code values used is available in [Supplementary material -@sec-supplementary-material].
+In Denmark, civil registration, public healthcare contacts, and drug prescriptions are recorded with a unique personal identifier (the *CPR number*) given to all Danish residents at immigration or birth. This enables coverage of the entire population and complete linkage between data sources, and forms the foundation of several nationwide Danish healthcare registers.[@regsoverview] The following section briefly describes the data extracted from these registers, as well as other data sources used in the PhD project. A detailed list of variables and code values used is available in [Appendix -@sec-supplementary-material].
 
 ### The Danish Civil Registration System
 
@@ -18,7 +18,7 @@ The Danish Civil Registration System contains civil registration data on all res
 
 ### The Danish National Patient Register
 
-The Danish National Patient Register contains information on all hospital admissions and outpatient contacts. Data on diagnoses of diabetes and cardiovascular complications, and procedures relating to retinal screening and treatment of cardiovascular complications was extracted from 1994 through 2018. At the time of this PhD project, the clinical coding system in use was the International Classification of Diseases, $10th$ revision (*ICD-10*), implemented in 1994.[@icd10]
+The Danish National Patient Register contains information on all hospital admissions and outpatient contacts. Data on diagnoses of diabetes and cardiovascular complications, and procedures relating to retinal screening and treatment of cardiovascular complications was extracted from 1994 through 2018. At the time of this PhD project, the clinical coding system in use was the International Classification of Diseases, $10^{th}$ revision (*ICD-10*), implemented in 1994.[@icd10]
 
 ### The Danish National Health Service Register
 
@@ -38,7 +38,13 @@ At the time of data extraction, the Central Denmark Region, one of five administ
 
 As described previously in @sec-register-based-diabetes-classifiers, currently available register-based diabetes classifiers have yet to incorporate the emerging register data on routine HbA1c testing, despite recommendations to do so. Wishing to take advantage of this data, we developed a new classifier, the OSDC. As a point of reference, we developed an implementation of the RSCD diabetes classifier (version 1.0, August 2016) according to official documentation.[@ruks1doc]
 
-The following sections describe the algorithms behind these diabetes classifiers. Pros and cons of their design are discussed in [Chapter -@sec-discussion-of-methods].
+The following sections describe the algorithms behind the two diabetes classifiers. Overall design and flow of populations are summarised in @fig-classifier-diffs. Pros and cons of their design are discussed in [Chapter -@sec-discussion-of-methods].
+
+::: {#fig-classifier-diffs}
+[![](figures/classifierdiffs)](https://aastedet.github.io/dissertation/figures/classifierdiffs.svg)
+
+Overall classifier design and population flow in the Register for selected Chronic Diseases (RSCD) and the Open-Source Diabetes Classifier (OSDC). Click to enlarge.
+:::
 
 ### The Open-Source Diabetes Classifier
 
@@ -72,6 +78,8 @@ Individuals not classified as T1D are classified as T2D.
 Formally, the RSCD includes two separate algorithms, RSCD-T1D and RSCD-T2D, that identify T1D and T2D, respectively. In practice, however, they are inter-dependent, as individuals identified by the T2D classifier are excluded from the T1D classifier.
 
 In RSCD, diabetes is defined by type-specific diagnoses of T1D or T2D, and purchases of GLD. Individuals are defined as having T1D or T2D if they meet any of the algorithm's inclusion criteria without fulfilling any of its exclusion criteria.
+
+RSCD was implemented  as described below, based on available documentation,[@ruks1doc] which may not completely reflect the source code use by the Danish Health Data Authority to generate the register population. Although the implementation is generally ad verbatim to the documentation, we deviated slightly from documentation where we assessed it to be inaccurate, e.g. having no tie-breaker for classifying individuals with an equal number of T1D and T2D diagnoses who also had a diagnosis of T1D and T2D on the same day as their latest diagnoses. Following documentation to the letter would omit these patients completely from the diabetes population, while our implementation included them as T2D cases.
 
 #### Classification of type 2 diabetes
 
@@ -114,7 +122,7 @@ The National Health Survey is a repeated digital and postal questionnaire survey
 
 ## Study design and population
 
-In addition to developing a code package for the statistical programming language *R* containing the source-code behind the diabetes classifiers, three studies were conducted. Study I was designed to examine the validity of register-based definitions of T1D and T2D. After validating the two candidate classifiers, the most accurate classifier - OSDC - was chosen to identify study populations of T2D for use in studies II and III.
+In addition to developing a code package for the statistical programming language *R* containing the source-code behind the diabetes classifiers, three studies were conducted. Study I was designed to examine the validity of register-based definitions of T1D and T2D. After validating the two candidates, the most accurate classifier - OSDC - was chosen to identify study populations of T2D for use in studies II and III.
 
 *\[Overview table of the three studies\]*
 
@@ -128,11 +136,17 @@ Among survey respondents, 2,411 were excluded due to missing data on diabetes it
 
 After these exclusions, 47,350 individuals remained, but due to survey invites being conditioned on OSDC diabetes status, the survey population was biased towards the OSDC classification and OSDC diabetes prevalence was 43.7% (20,692 individuals). To account for this, we first estimated the OSDC diabetes prevalence to be 9.3% (2,483 individuals) in a random sample of 26,665 individuals from the background population with the same age, sex and municipality distributions as the OSDC non-diabetes cases of respondents. To offset the oversampling of OSDC diabetes cases in the survey, OSDC diabetes cases were randomly subsampled to 2,733 individuals to achieve an unbiased OSDC diabetes prevalence of 9.3% in the final study population of 29,391 individuals.
 
+::: {#fig-survey-flow}
+[![](figures/survey_flow/survey_flow)](https://aastedet.github.io/dissertation/figures/survey_flow/survey_flow.svg)
+
+Flow of individuals into the *Health in Central Denmark* survey and the study population of study I. Click to enlarge.
+:::
+
 #### Study II
 
 Register data was used to identify 262,837 individuals with prevalent T2D on 1 January 2018 (index date) from a background population of 3,864,528 native Danes or first-generation migrants from the selected origin categories aged 25 - 99 years, and residing at least 3 years in Denmark on the index date.
 
-T2D prevalence was studied in the above population. In order to study T2D care where it was clinically relevant, the analyses of T2D care were performed in a distinct subsets of the population with T2D, as outlined below:
+T2D prevalence was studied in the above population. In order to study T2D care where it was clinically relevant, the eleven analyses of T2D care were performed in a distinct subsets of the population with T2D, as outlined below and in @fig-study-2-flow:
 
 -   All analyses of T2D care were performed in a subset of 254,097 individuals with T2D onset at least 6 months prior to the index date in order to allow time for baseline-screening, initiation of pharmacological treatment and subsequent biomarker control to occur in the newly-diagnosed.
     -   Monitoring was evaluated among all these individuals:
@@ -145,9 +159,15 @@ T2D prevalence was studied in the above population. In order to study T2D care w
         -   LLD. Prevalent macrovascular complications or DKD, or age above 40 with LDL-C above 2.5 mmol/L: 128,707 individuals.
         -   ACEI/ARB & APT. Prevalent macrovascular complications or DKD: 77,414 individuals.
 
+::: {#fig-study-2-flow}
+[![](figures/study2flow.png)](https://aastedet.github.io/dissertation/figures/study2flow.png)
+
+Study population flow into each analysis of study II. Click to enlarge.
+:::
+
 #### Study III
 
-Register data was used to identify 275,525 individuals with prevalent T2D on 1 January 2019 (index date) from a background population of 4,084,564 individuals above age 25. Among individuals with T2D, 269,011 native Danes or first-generation migrants from the selected origin categories residing at least 3 years in Denmark on the index date were included. After exclusion of 5,518 individuals without records of HbA1c or LDL-cholesterol, the study population contained 263,393 individuals. A subsequent analysis of GLD use in the year 2021 was performed on 241,140 individuals from the above study population still alive and residing in Denmark on 1 January 2021.
+Register data was used to identify 275,525 individuals with prevalent T2D on 1 January 2019 (index date) from a background population of 4,084,564 individuals above age 25. Among individuals with T2D, 269,011 native Danes or first-generation migrants from the selected origin categories residing at least 3 years in Denmark on the index date were included. After exclusion of 15,647 individuals without records of HbA1c or LDL-cholesterol within three years prior to the index date, the study population contained 253,364 individuals.
 
 ### Outcomes
 
@@ -157,52 +177,56 @@ The validation golden standard, self-reported diabetes type, was categorized as 
 
 #### Study II
 
-Twelve outcomes were defined as follows
+Twelve outcomes were defined as follows:
 
--   Prevalent T2D was defined as OSDC-classified T2D prevalent on the index date.
+1.  Prevalent T2D was defined as OSDC-classified T2D prevalent on the index date.
 
-T2D care quality was evaluated in the scope of failure to meet guideline recommendations in terms of monitoring (allowing for three months of leeway), biomarker levels, and pharmacological treatment.
+T2D care quality was evaluated in the scope of failure to meet guideline recommendations in terms of monitoring, biomarker levels, and pharmacological treatment.
 
-T2D monitoring was evaluated in time-frames prior to index date, according to guideline-recommendations:
+T2D monitoring was evaluated in time-frames prior to index date matching guideline-recommendations, with three months of leeway added (e.g. monitoring within 15 months is considered guideline-fulfilling, even if the specific type of monitoring is recommended yearly in guidelines):
 
--   Monitoring of HbA1c and LDL-C, as well as UACR-screening for diabetic nephropathy were identified by records of biomarker samples between October 1, 2016 and December 31, 2017 in the *Register of Laboratory Results for Research* or the *Clinical Laboratory Information System*. Additional monitoring of HbA1c using point-of-care tests was identified by records in the *National Health Service Register*.
--   Screening for diabetic retinopathy was identified by records of retinal photoscreening for diabetic retinopathy between October 1, 2015 and December 31, 2017 - either at hospital departments in the *National Patient Register*, or diabetes-specific examinations at ophthalmologist practice recorded in the *National Health Service Register .*
--   Screening for diabetic foot disease was identified by records of diabetes-specific podiatrist services received between October 1, 2016 and December 31, 2017 in the *National Health Service Register.*
+2.  Monitoring of HbA1c was identified by records of biomarker samples between October 1, 2016 and December 31, 2017 in the *Register of Laboratory Results for Research* or the *Clinical Laboratory Information System*. Additional monitoring of HbA1c using point-of-care tests was identified by records in the *National Health Service Register*.
+3.  Monitoring of LDL-C: was identified by records of biomarker samples between October 1, 2016 and December 31, 2017 in the *Register of Laboratory Results for Research* or the *Clinical Laboratory Information System*.
+4.  UACR-screening for diabetic nephropathy were identified by records of biomarker samples between October 1, 2016 and December 31, 2017 in the *Register of Laboratory Results for Research* or the *Clinical Laboratory Information System*.
+5.  Screening for diabetic retinopathy was identified by records of retinal photoscreening for diabetic retinopathy between October 1, 2015 and December 31, 2017 - either at hospital departments in the *National Patient Register*, or diabetes-specific examinations at ophthalmologist practice recorded in the *National Health Service Register .*
+6.  Screening for diabetic foot disease was identified by records of diabetes-specific podiatrist services received between October 1, 2016 and December 31, 2017 in the *National Health Service Register.*
 
 Biomarker levels on the index date was evaluated using the most recent measurement of HbA1c and LDL-C before the index date:
 
--   The outcome measure for HbA1c control was a level ≥53 mmol/mol.
--   For LDL-C, the outcome measure was a level ≥2.6 mmol/L.
+7.  The outcome measure for HbA1c control was a level ≥53 mmol/mol.
+8.  For LDL-C, the outcome measure was a level ≥2.6 mmol/L.
 
 Pharmacological treatment was assessed in the year following the index date, and treatment was defined by at least one purchase of the respective type of drug based on the following ATC codes (including subcodes):
 
--   GLD: ATC A10.
--   LLD: ATC C10.
--   ACEI/ARB: ATC C09A-C09D.
--   APT: ATC B01AC.
+9.  GLD: ATC codes A10.
+10. LLD: ATC codes C10.
+11. ACEI/ARB: ATC codes C09A-C09D.
+12. APT: ATC codes B01AC.
 
 #### Study III
 
-Use of individual GLD types was defined by any purchases made during the respective year (2019 and 2021). Purchase of the following types of GLD counted towards the total number of drugs used by an individual in a year (fixed-dose combination drugs counting towards both of their component drug types):
+Eight outcomes were defined across combination therapy and individual GLD types used.
 
-1.  Metformin: A10BA02, A10BD0, A10BD10-16, A10BD20, A10BD23.
-2.  Sulfonylureas: A10BB.
-3.  DPP4i: A10BH, A10BD0, A10BD10-11, A10BD13, A10BD19, A10BD21, A10BD24.
-4.  SGLT2i: A10BK, A10BD15-24, A10BX09, A10BX11-12.
-5.  Insulins (including analogues): A10A.
-6.  GLP1RA: A10BJ, A10AE5, A10BX04, A10BX07, A10BX10, A10BX13-14.
-7.  Thiazolidinediones: A10BG.
-8.  Repaglinide: A10BX02.
+GLD combination therapy was analysed using the following two outcome definitions:
 
-Separate outcomes for the use of each individual GLD type were defined for metformin, sulfonylurea, DPP4i, SGLT2i, insulins, and GLP1RA. In addition, combination therapy was analysed using the following two outcome definitions:
+1.  Any combination therapy: two or more GLD types used.
 
--   Any combination therapy: two or more drug types purchased in the year
+2.  Triple combination therapy: three or more GLD types used.
 
--   Triple combination therapy: three or more drug types purchased in the year.
+For each GLD type, individuals were defined as users if at least two purchases were made during 2019, and at least one of these was made in the last six months of the year. The following types of GLDs counted towards the number of GLD types used by an individual in a year (fixed-dose combination drugs counting towards both of their component drug types), and they also defined the six outcomes for analysis of individual GLD type usage:
+
+3.  Metformin: ATC codes A10BA02, A10BD0, A10BD10-16, A10BD20, A10BD23.
+4.  Sulfonylureas: ATC codes A10BB.
+5.  DPP4i: ATC codes A10BH, A10BD0, A10BD10-11, A10BD13, A10BD19, A10BD21, A10BD24.
+6.  SGLT2i: ATC codes A10BK, A10BD15-24, A10BX09, A10BX11-12.
+7.  Insulins (including analogues): ATC codes A10A.
+8.  GLP1RA: ATC codes A10BJ, A10AE5, A10BX04, A10BX07, A10BX10, A10BX13-14.
+
+In addition, thiazolidinediones (ATC codes A10BG) and repaglinide (ATC codes A10BX02) counted towards GLD combination therapy, but were not analysed as individual drug types due to the very low prevalence of use of these drugs.
 
 ### Primary variable of interest: migrant status
 
-Migrant status and country of origin was defined according to the definitions by Statistics Denmark. Based on the national origins with the most T2D cases and the United Nations M49 geoscheme, the population was grouped into nine origin categories:
+Migrant status and country of origin was defined according to the definitions by Statistics Denmark. In order to accomodate the expected heterogeneity between different countries of origin, aggregation of countries was limited to countries with similar reasons for migration, and racial and cultural similarities. Based on the national origins with the most T2D cases and the United Nations M49 geoscheme, the population was grouped into nine origin categories:
 
 -   Native Danes
 -   Europe (M49: Europe, except countries of the former Yugoslavia)
@@ -266,7 +290,7 @@ suppressWarnings(print(p))
 
 None of the outcomes in studies II & III were expected to be rare, and thus logistic regression was unsuitable. While log-binomial regression models are the most natural choice for computing relative risk in a mathematical sense, they are prone to convergence failure.[@convergencefail] Given the large number of outcomes and models that needed fitting, this presented a serious (although not insurmountable) inconvenience, and log-binomial regression was also discarded.
 
-Robust Poisson regression (sometimes termed modified Poisson regression)[@Zou2004] presented an appealing alternative for modeling RR. A comprehensive description of the technique is beyond the scope of this dissertation, but a brief explanation is in order, since ordinary Poisson regression is not the right tool for modeling binary outcomes as such data violate the assumptions behind the model.[@regresscounts] When applied to binomial data, the error for the estimated relative risk will be overestimated in an ordinary Poisson model. However, this problem can be addressed by using robust generalized estimating equations (so-called *sandwich*) variance estimates, which provide accurate standard errors in the presence of over-dispersion and excess zeros,[@Greenland2004] such as in a binary distribution. Ultimately, this allows robust Poisson regression to estimate RR with valid confidence intervals in data with binary outcomes.[@compareperformance]
+Robust Poisson regression (sometimes termed modified Poisson regression)[@Zou2004] presented an appealing alternative for modeling RR. A comprehensive description of the technique is beyond the scope of this dissertation, but a brief explanation is in order, since ordinary Poisson regression is not the right tool for modeling binary outcomes as such data violate the assumptions behind the model.[@regresscounts] When applied to binomial data, the error for the estimated relative risk will be overestimated in an ordinary Poisson model. However, this problem can be addressed by using robust generalized estimating equations (so-called *sandwich*) variance estimates, which provide accurate standard errors in the presence of over-dispersion and excess zeros,[@Greenland2004] such as in a binary distribution. Ultimately, this allows robust Poisson regression to estimate RR with valid confidence intervals in data with binary outcomes.[@compareperformance] It is worth noting that RR is merely a measure of relative probability, despite the semantics around *risk* implying that an adverse outcome is under study, which is not necessarily the case.
 
 All regression models were modeled with native Danes as the reference group. To account for potential non-linearity, continuous variables were modeled as natural splines with knots placed at each quintile of the distribution in the respective study population. Supplementary analyses where continuous variable were modeled as categorical variables (quintiles) were conducted for easier interpretation of these variables. Supplementary analyses also included estimates of absolute risk differences corresponding to the above analyses. In these analyses, a generalized linear model using a Gaussian distribution and identity link with robust *sandwich* variance estimates was used to compute absolute risk difference with 95% confidence intervals.
 
@@ -278,7 +302,18 @@ The following sections describes the statistical analyses of each study.
 
 Validation analyses were performed separately for T1D and T2D, where each register-based diabetes classifier was validated against self-reported diabetes type. Within analyses of each diabetes type, diabetes type was modeled as a distinct binary variable: does the individual have this diabetes type or not (e.g. in the analyses of T1D, diabetes type was modeled as a binary variable of T1D vs. no T1D, the latter category including both T2D and non-diabetes cases).
 
-Concordance tables and associated validation metrics were computed (with 95% confidence intervals) as defined in equations [-@eq-sens], [-@eq-spec], [-@eq-ppv], and [-@eq-npv]: sensitivity, specificity, positive predictive value (PPV), and negative predictive value (NPV). These validation analyses were bootstrapped in 1000 random subsamples in order to assess robustness.
+Concordance tables and associated validation metrics were computed (with 95% confidence intervals) as defined in @tbl-2-by-2 and equations [-@eq-sens], [-@eq-spec], [-@eq-ppv], and [-@eq-npv]: sensitivity, specificity, positive predictive value (PPV), and negative predictive value (NPV). These validation analyses were bootstrapped in 1000 random subsamples in order to assess robustness.
+
+::: {#tbl-2-by-2 layout-ncol="1"}
+|                      |                  |                  |     |
+|----------------------|------------------|------------------|-----|
+|                      | Survey positives | Survey negatives |     |
+| Classifier positives | True positives   | False positives  | PPV |
+| Classifier negatives | False negatives  | True negatives   | NPV |
+|                      | Sensitivity      | Specificity      |     |
+
+: Validation concordance table and metrics.
+:::
 
 $$ Sensitivity = \frac{N_{true positives}}{N_{true positives}+N_{false negatives}}$$ {#eq-sens}
 
