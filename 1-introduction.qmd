@@ -14,14 +14,14 @@ Currently, there is a lack of evidence on T2D care in migrants, and research in 
 
 ## Migrants in Denmark
 
-In 2019, Denmark had a population of approximately 5.8 million residents, of whom 600.000 (10%) were migrants and 1 million (18%) were aged 66 years and older. By 2039, the population is expected to have grown to 6.2 million, with a migrant population of 750.000 (12%) and 1.5 million individuals (23%) aged 66 years and older.[@befpyramide] @fig-demo-pyramids shows the projected demographics of native Danes and migrants.
+In 2019, Denmark had a population of approximately 5.8 million residents, of whom 600,000 (10%) were migrants and 1 million (18%) were aged 66 years and older. By 2039, the population is expected to have grown to 6.2 million, with a migrant population of 750,000 (12%) and 1.5 million individuals (23%) aged 66 years and older. @fig-demo-pyramids shows the projected demographics of native Danes and migrants in 2039 (2019 demographics outlined in light green (adapted from Statistics Denmark).[@befpyramide]
 
 ::: {#fig-demo-pyramids layout-ncol="2"}
 ![Native Danes 2019-2039](figures/pyramid_native_danes.png){#fig-pyramid-native-danes}
 
 ![Migrants 2019-2039](figures/pyramid_migrants.png){#fig-pyramid-migrants}
 
-Demographic projections of native Danes (a) and migrants (b) in 2039. Demographics in 2019 are outlined in green. Adapted from Statistics Denmark.[@befpyramide]
+**Demographic projections of native Danes and migrants**
 :::
 
 ### Migration
@@ -48,14 +48,14 @@ In Danish civil register data, a migrant's country of origin is defined by Stati
 
 > An immigrant is a person born abroad to non-Danish citizens. If Danish civil records contain data on a migrant's mother, country of origin is defined by the mother's country of birth. Otherwise, the father's country of birth is used, or - if no data is available - country of origin is defined by the country of birth of the immigrant themselves.[@migrantsdenmark2019]
 
-Migrants from more than 200 different countries of origin reside in Denmark, which makes the migrant group very heterogenous with respect to geographic and cultural background.[@migrantsdenmark2019] Furthermore, the context of migration differs greatly between migrants of different origins in terms of when and why a particular minority migrated to Denmark. For example, the vast majority of migrants from Turkey were granted residence due to work and family reunification in the 1960s and 1970s, while almost all migrants from Bosnia-Herzegovina were refugees from the Yugoslav wars of the 1990s. By contrast, migrants from other European countries came to Denmark mainly for work, education or other reasons at various points in time.[@migrantsdenmark2019] @fig-reason-migration shows the primary reason for migration among the largest migrant origin groups residing in Denmark.
+Migrants from more than 200 different countries of origin reside in Denmark, which makes the migrant group very heterogenous with respect to geographic and cultural background.[@migrantsdenmark2019] Furthermore, the context of migration differs greatly between migrants of different origins in terms of when and why a particular minority migrated to Denmark. For example, the vast majority of migrants from Turkey were granted residence due to work and family reunification in the 1960s and 1970s, while almost all migrants from Bosnia-Herzegovina were refugees from the Yugoslav wars of the 1990s. By contrast, migrants from other European countries came to Denmark mainly for work, education or other reasons at various points in time.[@migrantsdenmark2019] @fig-reason-migration shows the primary reason for migration among the largest migrant groups in Denmark (adapted from Statistics Denmark).[@dst2022migrants]
 
 ::: {#fig-reason-migration layout-ncol="1"}
 ![Reason for migration: Western countries](figures/reason_migration_origin_west_2022.png){#fig-reason-western}
 
 ![Reason for migration: Non-western countries](figures/reason_migration_origin_nonwest_2022.png){#fig-reason-nonwestern}
 
-Primary reason for migration among the 10 largest migrant groups in Denmark from Western (a) and Non-western countries (b). Adapted from Statistics Denmark.[@dst2022migrants]
+**Primary reason for migration among the largest migrant groups in Denmark**
 :::
 
 The limited size of each ethnic minority and the strongly contrasting characteristics between them poses a challenge to statistical processing. Minority categories should be clinically meaningful, and researchers must balance the need for aggregation to achieve adequate sample sizes against the risk of introducing biases due to aggregation of dissimilar groups.[@challengesdatamultiethnic] For statistical purposes, different geoschemes have been used by different institutions depending on the context and purpose. The Statistical Division of the United Nations developed the *M49 Standard Country or Area Codes for Statistical Use,[@m49]* whereas Statistics Denmark group migrants into Western and Non-western countries, respectively, using a grouping scheme that resembles the more widely-used classification of developed and developing countries.[@docmigrants] See [Chapter -@sec-methods] for a description of grouping of countries of origin in the context of this PhD project.

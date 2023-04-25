@@ -10,15 +10,226 @@ Using data from general-purpose healthcare registers to classify diabetes cases 
 
 In an early version of the OSDC, we discovered that when using all the available data on GLD purchases, including the earliest years of the National Prescription Register, a substantial proportion of the individuals classified as having T1D had no purchases of insulin during the previous year (around 8% of the T1D population in most years). This seemed unlikely from a clinical perspective. When exploring these cases among participants in the National Health Survey, we found that none of them reported having diabetes in the data, although a few reported having previously had diabetes (data not shown). This led to the decision to correct diabetes type on the index date in cross-sectional studies.
 
-However, pursuing this issue further showed that most of these cases were young women with diabetes onset before 1997, which might indicate that censoring of GDM was insufficient during this period of time. Censoring of GDM relied on the clinical obstetric coding recorded in the National Patient Register to identify individual pregnancy windows. Therefore, a rudimentary validation of the number of births registered by codes in the National Patient Register against the number of annual births recorded in the National Birth Register was attempted. This showed that the clinical obstetric coding was indeed lacking in the first few years after the adoption of the ICD-10 coding system in 1994, but it appeared to be sufficient from 1997 onwards, as shown in @fig-births. This led to the decision to restrict inclusion from prescription data to 1997 onward.
+However, pursuing this issue further showed that most of these cases were young women with diabetes onset before 1997, which might indicate that censoring of GDM was insufficient during this period of time. Censoring of GDM relied on the clinical obstetric coding recorded in the National Patient Register to identify individual pregnancy windows. Therefore, a rudimentary validation of the number of births registered by codes in the National Patient Register against the number of annual births recorded in the Danish Medical Birth Register[@RN258] was attempted. This showed that the clinical obstetric diagnosis codes use to capture births in the National Patient Register was indeed lacking in the first few years after the adoption of the ICD-10 coding system in 1994. However, it appeared to be sufficient from 1997 onwards, as shown in @fig-births (note the gap in annual births between the two sources during 1993-1996 highlighted in grey). This led to the decision to restrict inclusion from prescription data to 1997 onward.
 
 Any algorithm censoring GDM by using obstetrical codes from data prior to 1997 in the National Patient Register is likely to include false-positive diabetes cases among women. The RSCD censors GDM based on hospital diagnoses of GDM, but it ultimately manages these old cases (and other potentially misclassified cases) by retrospectively excluding individuals without any inclusion events in the 10 years preceding a given index date. While such a mechanism solves this issue in a cross-sectional study, it may be problematic for study designs with dynamic index dates (e.g. longitudinal studies with index dates at the time of diabetes onset are not possible).
 
-::: {#fig-births}
-![](figures/births.png) Births identified in the National Patient Register with obstetrical ICD-10 codes vs. registrations in the National Birth Register. Note the discrepancy in births per year during 1994-1996 after adoption of the ICD-10 coding scheme in 1994.
 
-**Births registered by year**
-:::
+```{r}
+#| label: fig-births
+#| fig-cap: "**Annually registered births**"
+
+# Create dataframe
+df <-
+  structure(
+    list(
+      Year = c(
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ),
+      count_type = structure(
+        c(
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          1L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L,
+          2L
+        ),
+        levels = c("birth_register",
+                   "patient_register"),
+        class = "factor"
+      ),
+      count = c(
+        67084,
+        69409,
+        69577,
+        67433,
+        67439,
+        65964,
+        66029,
+        66891,
+        65289,
+        63943,
+        64456,
+        64445,
+        64107,
+        64803,
+        63920,
+        64842,
+        62647,
+        63244,
+        58848,
+        57780,
+        55753,
+        56757,
+        58123,
+        61545,
+        61340,
+        61429,
+        247,
+        36444,
+        41495,
+        56107,
+        63400,
+        63001,
+        63272,
+        64320,
+        62899,
+        61833,
+        62549,
+        62621,
+        62440,
+        63114,
+        62463,
+        63207,
+        61048,
+        61608,
+        57257,
+        56172,
+        54446,
+        55683,
+        57092,
+        60300,
+        59954,
+        59611
+      )
+    ),
+    row.names = c(NA,-52L),
+    class = c("data.frame")
+  )
+
+# Create a ggplot object
+library(ggplot2)
+birth_plot <-
+  ggplot(df, aes(x = Year, y = count, fill = count_type)) +
+  geom_col(position = "dodge", alpha = 0.8) +
+  labs(x = "Year", y = "Annual Births", title = "Annual Births by Data Source") +
+  scale_fill_manual(
+    values = c("dodgerblue", "firebrick"),
+    name = "Count Type",
+    labels = c("The Medical Birth Register", "The National Patient Register")
+  ) +
+  theme_bw() +
+  theme(
+    plot.title = element_blank(),
+    axis.text.x = element_text(angle = 90, vjust = 0.5),
+    legend.position = "top",
+    legend.title = element_blank(),
+    legend.text = element_text(size = 12),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  ) +
+  scale_x_continuous(breaks = df$Year, expand = c(0, 0)) +
+  annotate(
+    "rect",
+    xmin = 1992.5,
+    xmax = 1996.5,
+    ymin = -1000,
+    ymax = 75000,
+    fill = "grey",
+    alpha = 0.3
+  )
+
+suppressWarnings(print(birth_plot))
+```
+
 
 ### Approaches to censoring polycystic ovary syndrome
 

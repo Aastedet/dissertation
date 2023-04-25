@@ -43,11 +43,6 @@ The following sections describe the algorithms behind the RSCD and OSDC diabetes
 ::: {#fig-classifier-diffs}
 [![](figures/classifierdiffs)](https://aastedet.github.io/dissertation/figures/classifierdiffs.svg)
 
-Notes
-
--   Population flow numbers in this example correspond to a regional source population.
--   Abbreviations: OSDC: Open-Source Diabetes Classifier. RSCD: Register for selected Chronic Diseases. T1D: Type 1 diabetes. T2D: Type 2 diabetes. PCOS: Polycystic ovary syndrome. GDM: Gestational diabetes. GLD: Glucose-lowering drugs.
-
 **Overall diabetes classifier design differences and population flows**
 :::
 
@@ -208,7 +203,7 @@ T2D prevalence was studied in the above population. To study T2D care where clin
         -   ACEI/ARB & APT: prevalent macrovascular complications or DKD: 77,414 individuals.
 
 ::: {#fig-study-2-flow}
-[![](figures/study2flow.png)](https://aastedet.github.io/dissertation/figures/study2flow.png)
+[![](figures/study2flow_landscape.png)](https://aastedet.github.io/dissertation/figures/study2flow.png)
 
 **Study population flow in analyses in study II**
 :::
@@ -350,9 +345,10 @@ The following sections describe the statistical analyses of each study.
 
 Validation analyses were performed separately for T1D and T2D, and each register-based diabetes classifier was validated against self-reported diabetes type. In the analyses of each diabetes type, diabetes type was modelled as a distinct binary variable; does the individual have this diabetes type or not (e.g. in the analyses of T1D, diabetes type was modelled as a binary variable of T1D vs. no T1D, the latter category including both T2D and non-diabetes cases).
 
-Concordance tables and associated validation metrics were computed (with 95% confidence intervals) as defined in @tbl-2-by-2 and equations [-@eq-sens], [-@eq-spec], [-@eq-ppv] and [-@eq-npv]: sensitivity, specificity, positive predictive value (PPV) and negative predictive value (NPV). These validation analyses were bootstrapped in 1,000 random subsamples in order to assess robustness.
+Concordance tables and associated validation metrics were computed (with 95% confidence intervals) as defined in @tbl-concordance and equations [-@eq-sens], [-@eq-spec], [-@eq-ppv] and [-@eq-npv]: sensitivity, specificity, positive predictive value (PPV) and negative predictive value (NPV). These validation analyses were bootstrapped in 1,000 random subsamples in order to assess robustness.
 
-::: {#tbl-2-by-2 layout-ncol="1"}
+\newpage
+
 +--------------------------+----------------------+----------------------+---------------+
 |                          | **Survey positives** | **Survey negatives** |               |
 +--------------------------+----------------------+----------------------+---------------+
@@ -363,8 +359,8 @@ Concordance tables and associated validation metrics were computed (with 95% con
 |                          | *Sensitivity*        | *Specificity*        |               |
 +--------------------------+----------------------+----------------------+---------------+
 
-**Validation concordance table and metrics**
-:::
+: **Concordance table and validation metrics** {#tbl-concordance}
+
 
 $$ Sensitivity = \frac{N_{true positives}}{N_{true positives}+N_{false negatives}}$$ {#eq-sens}
 

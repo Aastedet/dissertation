@@ -19,7 +19,7 @@ knitr::include_graphics("figures/sdca.png")
 ::: {.content-visible when-format="pdf"}
 
 ## Notes on website version {.unnumbered .unlisted}
-This dissertation is available for viewing online at [aastedet.github.io/dissertation/](https://aastedet.github.io/dissertation/) (or by scanning the QR code in the lower right-hand corner of the title page). While the core contents are identical, the website may offer a more comfortable reading experience compared to the physical booklet for some readers. In particular, the website is recommended for readers with impaired vision, as the small size of the physical booklet can make for a straining and uncomfortable reading experience.
+This dissertation is available for viewing online at [aastedet.github.io/dissertation/](https://aastedet.github.io/dissertation/) (or by scanning the QR code in the lower right-hand corner of the title page). While the core contents are identical, the website may offer a more comfortable reading experience compared to the physical booklet for some readers. In particular, the website is recommended for readers with impaired vision and others who may be uncomfortable reading the small physical book.
 
 {{< include pdf2-acknowledgements.qmd >}} 
 

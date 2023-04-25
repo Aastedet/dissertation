@@ -1,6 +1,6 @@
 # Results in summary {#sec-results}
 
-This chapter presents the nationwide register-based T2D cohort identified by the OSDC and details the flow of individuals through the algorithm. Next, the main results of each study associated with the dissertation are presented. Additional details are available in the respective papers and their supplementary material, attached in [Appendix -@app2-papers].
+This chapter presents the nationwide register-based T2D cohort identified by the OSDC and details the flow of individuals through the algorithm. Next, the main results of each study associated with the dissertation are presented. Additional details are available in the respective papers and their supplementary material, attached in @sec-papers.
 
 ## Register-based type 2 diabetes population
 
@@ -11,8 +11,6 @@ This section shows the OSDC diabetes classification algorithm applied on the reg
 When applied to nationwide register data (described in @sec-methods) on all individuals aged 18 years and above, the OSDC identifies a nationwide cohort of individuals with prevalent diabetes at any point in time of 448,685 individuals, as shown in @fig-osdc-inc-flow. Of the four inclusion criteria, GLD purchase was most the common, being present in roughly 90% of diabetes cases, followed by records of elevated HbA1c levels in 75%, hospital diagnoses of diabetes in 70%, and diabetes-specific podiatrist services in 55% of cases. Censoring of potential GDM affected fewer individuals relative to censoring of potential PCOS and exclusion of cases with only a single inclusion event.
 
 In this diabetes cohort, 34,079 were classified as T1D and 425,300 as T2D, of whom 24,026 and 276,081 were alive and residing in Denmark with prevalent T1D and T2D on 1 January 2019 after adjusting for insulin use in the previous year, as shown in @fig-osdc-type-flow. Among individuals exclusively treated with insulin (left half of @fig-osdc-type-flow), around 75% had at least one primary hospital diagnosis of T1D from a medical department. These constituted the vast majority of T1D cases, as the classification branch containing individuals with any non-insulin GLD purchase (right half of @fig-osdc-type-flow) contributed only 2,748 (8%) of all T1D cases in the cohort. Correcting the cross-sectional classifier populations for recent insulin purchases prior to a particular index date had little impact (e.g. on 1 January 2019, only 413 (1.7%) of the T1D classifications in the cohort had not made a purchase of insulin in the previous year). The classification of T2D cases in the cohort was more homogeneous, as the vast majority (382,116 (90%) of 425,300 cases) were individuals with purchases of non-insulin GLD and no primary hospital diagnoses of T1D from a medical department (the rightmost path of @fig-osdc-type-flow).
-
-\newpage
 
 ::: {#fig-osdc-inc-flow}
 [![](figures/osdc_flow/inclusion_flow.png)](https://aastedet.github.io/dissertation/figures/osdc_flow/inclusion_flow.svg)
@@ -106,7 +104,7 @@ In the analyses stratified by age at onset of diabetes, both sensitivity and PPV
 
 ::: {#tbl-t1d-stratified-panel layout-ncol="1"}
 |          | **Survey: +T1D** | **Survey: -T1D** |      **Sensitivity** |              **PPV** |
-|----------|-----------------:|-----------------:|---------------------:|---------------------:|
+|---------------|--------------:|--------------:|--------------:|--------------:|
 | **OSDC** |                  |                  |                      |                      |
 | **+T1D** |              283 |               13 | 0.884 (0.844, 0.917) | 0.956 (0.926, 0.976) |
 | **-T1D** |               37 |           27,000 |                      |                      |
@@ -117,7 +115,7 @@ In the analyses stratified by age at onset of diabetes, both sensitivity and PPV
 : Type 1 diabetes onset before age 40 years {#tbl-t1d-pre40}
 
 |          | **Survey: +T1D** | **Survey: -T1D** |      **Sensitivity** |              **PPV** |
-|----------|-----------------:|-----------------:|---------------------:|---------------------:|
+|---------------|--------------:|--------------:|--------------:|--------------:|
 | **OSDC** |                  |                  |                      |                      |
 | **+T1D** |               34 |               14 | 0.378 (0.278, 0.486) | 0.708 (0.559, 0.830) |
 | **-T1D** |               56 |           28,712 |                      |                      |
@@ -138,7 +136,7 @@ Notes
 
 ::: {#tbl-t2d-stratified-panel layout-ncol="1"}
 |          | **Survey: +T2D** | **Survey: -T2D** |      **Sensitivity** |              **PPV** |
-|----------|-----------------:|-----------------:|---------------------:|---------------------:|
+|---------------|--------------:|--------------:|--------------:|--------------:|
 | **OSDC** |                  |                  |                      |                      |
 | **+T2D** |              220 |              247 | 0.863 (0.814, 0.902) | 0.471 (0.425, 0.517) |
 | **-T2D** |               35 |           26,831 |                      |                      |
@@ -149,7 +147,7 @@ Notes
 : Type 2 diabetes onset before age 40 years {#tbl-t2d-pre40}
 
 |          | **Survey: +T2D** | **Survey: -T2D** |      **Sensitivity** |              **PPV** |
-|----------|-----------------:|-----------------:|---------------------:|---------------------:|
+|---------------|--------------:|--------------:|--------------:|--------------:|
 | **OSDC** |                  |                  |                      |                      |
 | **+T2D** |            1,878 |              265 | 0.954 (0.944, 0.963) | 0.876 (0.862, 0.890) |
 | **-T2D** |               90 |           26,583 |                      |                      |
@@ -178,8 +176,6 @@ This study contained a series of cross-sectional analyses on T2D prevalence and 
 
 Compared to native Danes, the risk of prevalent T2D was elevated in all migrants, except the Europe group, regardless of model, and it was highest in the Sri Lanka and Pakistan groups (crude RR 3.98 \[3.82-4.14\] and 3.63 \[3.51-3.75\], resp.). In the age-specific model, the increase in prevalence was discernible in all age groups, including the youngest. See @fig-res-2-prevalence for details.
 
-\newpage
-
 ::: {#fig-res-2-prevalence}
 ![](figures/res_2_prevalence.png)
 
@@ -202,7 +198,7 @@ Among individuals with T2D, the proportion without diabetes monitoring within th
 ::: {#fig-res-2-monitoring}
 ![](figures/res_2_monitoring.png)
 
-Prevalence in native Danes and relative risk in each migrant group with 95% CIs.
+Baseline risk in native Danes and relative risk in each migrant group with 95% CIs.
 
 -   Model 1 adjusted for age, sex, diabetes duration and prevalent complications.
 -   Model 2 further adjusted for employment status, household income, duration of residence and region of residence.
@@ -222,7 +218,7 @@ Among native Danes, 37.2% had an HbA1c level ≥ 53 mmol/mol and 28.3% had an LD
 ::: {#fig-res-2-biomarkers}
 ![](figures/res_2_biomarkers.png)
 
-Prevalence in native Danes and relative risk in each migrant group with 95% CIs.
+Baseline risk in native Danes and relative risk in each migrant group with 95% CIs.
 
 -   Model 1 adjusted for age, sex, diabetes duration and prevalent complications.
 -   Model 2 further adjusted for employment status, household income, duration of residence and region of residence.
@@ -246,7 +242,7 @@ Adjustment for clinical and socioeconomic factors had varying effect on risk est
 ::: {#fig-res-2-pharma}
 ![](figures/res_2_pharma.png)
 
-Prevalence in native Danes and relative risk in each migrant group with 95% CIs.
+Baseline risk in native Danes and relative risk in each migrant group with 95% CIs.
 
 -   Model 1 adjusted for age, sex, diabetes duration and prevalent complications.
 -   Model 2 further adjusted for employment status, household income, duration of residence and region of residence.
