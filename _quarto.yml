@@ -46,7 +46,7 @@ format:
     default-image-extension: tif
   pdf:
     documentclass: scrbook
-    default-image-extension: pdf
+    default-image-extension: png
     classoption:
      - headsepline=true
      - open=any
