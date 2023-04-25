@@ -3,10 +3,10 @@ project:
   output-dir: docs
   
 book:
-  title: "Type 2 diabetes in migrants: register-based analyses"
+  title: "Type 2 diabetes in migrants: a register-based analysis"
   author: "Anders Aasted Isaksen"
-  date: today
-  date-format: "MMMM YYYY"
+  date: 2023 04 25
+  date-format: "YYYY"
   chapters:
     - index.qmd
     - 0-disclosure.qmd
@@ -24,11 +24,9 @@ book:
     - summary-english.qmd
     - summary-danish.qmd
   appendices:
-    - app1-papers.qmd
-    - app2-supplementary.qmd
+    - app1-supplementary.qmd
+    - app2-papers.qmd
 
-citation:
-  url: https://aastedet.github.io/dissertation/
 bibliography: references.bib
 csl: citestyle.csl
 
@@ -44,7 +42,7 @@ format:
   docx: 
     toc: true
     number-sections: true
-    number-depth: 3
+    number-depth: 2
     default-image-extension: tif
   pdf:
     documentclass: scrbook
@@ -52,7 +50,8 @@ format:
     classoption:
      - headsepline=true
      - open=any
-    keep-tex: true 
+    keep-tex: true
+    toc-depth: 2
     toc: false
     papersize: a4
     header-includes: |
@@ -101,7 +100,7 @@ format:
         \begin{center}
         \large
         \lineskip 0.5em%
-        (WORK-IN-PROGRESS DRAFT OF!) PhD dissertation\\
+        PhD dissertation\\
         \vspace{25mm}
       }
       \postauthor{
@@ -110,7 +109,7 @@ format:
       \predate{
         \begin{center}
         \vspace*{\fill}
-        Faculty of Health\\        % Degree stream
+        Health\\        % Degree stream
         Aarhus University\\                       % University
       }
       \postdate{

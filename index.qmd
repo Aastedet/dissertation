@@ -23,7 +23,6 @@ knitr::include_graphics("figures/ausegl_blaa.png")
 ```
 
 ::: {style="text-align: center"}
-### THIS IS A WORKING DRAFT, NOT A SUBMITTED OR APPROVED THESIS!
 **PhD Dissertation**\
 **Department of Public Health**\
 **Faculty of Health**\
