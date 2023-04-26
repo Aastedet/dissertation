@@ -28,7 +28,7 @@ This dissertation is available for viewing online at [aastedet.github.io/dissert
 ::: {.content-hidden unless-format="html"}
 ## Notes on website version {.unnumbered .unlisted}
 
-This website contains my PhD dissertation in online format. In terms of core content, it is identical to the pdf-file submitted to the graduate school, although the individual articles have been omitted from the website, as they are all open-access publications. Links to the papers are provided [here](https://aastedet.github.io/dissertation/docs/0-papers.html) as soon as they are published.
+This website contains my PhD dissertation in online format. In terms of core content, it is identical to the pdf-file submitted to the graduate school, although the individual articles have been omitted from the website, as they are all open-access publications. Links to the papers are provided [here](https://aastedet.github.io/dissertation/0-papers.html) as soon as they are published.
 
 Due to the graduate school only accepting dissertation submissions in pdf-format, the supplementary appendix of the submitted dissertation is relatively limited and sparsely referenced throughout this website. In contrast, the electronic supplementary material attached to each publication utilises html to present risk coefficients from main and supplementary analyses in a structured and accessible format.
 
