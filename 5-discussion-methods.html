@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.3.340">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -87,11 +87,16 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discussion of methods</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./5-discussion-methods.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discussion of methods</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -99,110 +104,134 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Type 2 diabetes in migrants: a register-based analysis</a> 
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Cover Page</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cover Page</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./0-disclosure.html" class="sidebar-item-text sidebar-link">Notes and disclosures</a>
+  <a href="./0-disclosure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes and disclosures</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./0-preface.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./0-preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./0-abbreviations.html" class="sidebar-item-text sidebar-link">Abbreviations</a>
+  <a href="./0-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Papers in the dissertation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1-introduction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./0-abbreviations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abbreviations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2-aims.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Aims</span></a>
+  <a href="./1-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3-methods.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Material and methods</span></a>
+  <a href="./2-aims.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Aims</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./4-results.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Results in summary</span></a>
+  <a href="./3-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Material and methods</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./5-discussion-methods.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discussion of methods</span></a>
+  <a href="./4-results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Results in summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./6-discussion-results.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Discussion of results</span></a>
+  <a href="./5-discussion-methods.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discussion of methods</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./7-conclusions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Conclusions</span></a>
+  <a href="./6-discussion-results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Discussion of results</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./8-perspectives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Perspectives and future research</span></a>
+  <a href="./7-conclusions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Conclusions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./8-perspectives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Perspectives and future research</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary-english.html" class="sidebar-item-text sidebar-link">English summary</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary-danish.html" class="sidebar-item-text sidebar-link">Dansk resumé</a>
+  <a href="./summary-english.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">English summary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary-danish.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dansk resumé</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Appendices</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./app1-supplementary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Supplementary validation analyses</span></a>
+  <a href="./app1-supplementary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Supplementary validation analyses</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./app2-papers.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Full papers</span></a>
+  <a href="./app2-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Full papers</span></span></a>
   </div>
 </li>
       </ul>
@@ -210,32 +239,33 @@ div.csl-indent {
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#design-of-diabetes-classifiers" id="toc-design-of-diabetes-classifiers" class="nav-link active" data-scroll-target="#design-of-diabetes-classifiers"><span class="toc-section-number">5.1</span>  Design of diabetes classifiers</a>
+  <li><a href="#design-of-diabetes-classifiers" id="toc-design-of-diabetes-classifiers" class="nav-link active" data-scroll-target="#design-of-diabetes-classifiers"><span class="header-section-number">5.1</span> Design of diabetes classifiers</a>
   <ul class="collapse">
-  <li><a href="#approaches-to-censoring-gestational-diabetes-mellitus" id="toc-approaches-to-censoring-gestational-diabetes-mellitus" class="nav-link" data-scroll-target="#approaches-to-censoring-gestational-diabetes-mellitus"><span class="toc-section-number">5.1.1</span>  Approaches to censoring gestational diabetes mellitus</a></li>
-  <li><a href="#approaches-to-censoring-polycystic-ovary-syndrome" id="toc-approaches-to-censoring-polycystic-ovary-syndrome" class="nav-link" data-scroll-target="#approaches-to-censoring-polycystic-ovary-syndrome"><span class="toc-section-number">5.1.2</span>  Approaches to censoring polycystic ovary syndrome</a></li>
-  <li><a href="#approaches-to-censoring-other-sources-of-false-inclusions" id="toc-approaches-to-censoring-other-sources-of-false-inclusions" class="nav-link" data-scroll-target="#approaches-to-censoring-other-sources-of-false-inclusions"><span class="toc-section-number">5.1.3</span>  Approaches to censoring other sources of false inclusions</a></li>
-  <li><a href="#approaches-to-classification-of-diabetes-type" id="toc-approaches-to-classification-of-diabetes-type" class="nav-link" data-scroll-target="#approaches-to-classification-of-diabetes-type"><span class="toc-section-number">5.1.4</span>  Approaches to classification of diabetes type</a></li>
-  <li><a href="#incidence-and-demographic-characteristics-of-register-based-diabetes-cohorts" id="toc-incidence-and-demographic-characteristics-of-register-based-diabetes-cohorts" class="nav-link" data-scroll-target="#incidence-and-demographic-characteristics-of-register-based-diabetes-cohorts"><span class="toc-section-number">5.1.5</span>  Incidence and demographic characteristics of register-based diabetes cohorts</a></li>
+  <li><a href="#approaches-to-censoring-gestational-diabetes-mellitus" id="toc-approaches-to-censoring-gestational-diabetes-mellitus" class="nav-link" data-scroll-target="#approaches-to-censoring-gestational-diabetes-mellitus"><span class="header-section-number">5.1.1</span> Approaches to censoring gestational diabetes mellitus</a></li>
+  <li><a href="#approaches-to-censoring-polycystic-ovary-syndrome" id="toc-approaches-to-censoring-polycystic-ovary-syndrome" class="nav-link" data-scroll-target="#approaches-to-censoring-polycystic-ovary-syndrome"><span class="header-section-number">5.1.2</span> Approaches to censoring polycystic ovary syndrome</a></li>
+  <li><a href="#approaches-to-censoring-other-sources-of-false-inclusions" id="toc-approaches-to-censoring-other-sources-of-false-inclusions" class="nav-link" data-scroll-target="#approaches-to-censoring-other-sources-of-false-inclusions"><span class="header-section-number">5.1.3</span> Approaches to censoring other sources of false inclusions</a></li>
+  <li><a href="#approaches-to-classification-of-diabetes-type" id="toc-approaches-to-classification-of-diabetes-type" class="nav-link" data-scroll-target="#approaches-to-classification-of-diabetes-type"><span class="header-section-number">5.1.4</span> Approaches to classification of diabetes type</a></li>
+  <li><a href="#incidence-and-demographic-characteristics-of-register-based-diabetes-cohorts" id="toc-incidence-and-demographic-characteristics-of-register-based-diabetes-cohorts" class="nav-link" data-scroll-target="#incidence-and-demographic-characteristics-of-register-based-diabetes-cohorts"><span class="header-section-number">5.1.5</span> Incidence and demographic characteristics of register-based diabetes cohorts</a></li>
   </ul></li>
-  <li><a href="#sec-study-designs" id="toc-sec-study-designs" class="nav-link" data-scroll-target="#sec-study-designs"><span class="toc-section-number">5.2</span>  Study designs</a></li>
-  <li><a href="#internal-validity" id="toc-internal-validity" class="nav-link" data-scroll-target="#internal-validity"><span class="toc-section-number">5.3</span>  Internal validity</a>
+  <li><a href="#sec-study-designs" id="toc-sec-study-designs" class="nav-link" data-scroll-target="#sec-study-designs"><span class="header-section-number">5.2</span> Study designs</a></li>
+  <li><a href="#internal-validity" id="toc-internal-validity" class="nav-link" data-scroll-target="#internal-validity"><span class="header-section-number">5.3</span> Internal validity</a>
   <ul class="collapse">
-  <li><a href="#selection-bias" id="toc-selection-bias" class="nav-link" data-scroll-target="#selection-bias"><span class="toc-section-number">5.3.1</span>  Selection bias</a></li>
-  <li><a href="#information-bias" id="toc-information-bias" class="nav-link" data-scroll-target="#information-bias"><span class="toc-section-number">5.3.2</span>  Information bias</a></li>
-  <li><a href="#confounding" id="toc-confounding" class="nav-link" data-scroll-target="#confounding"><span class="toc-section-number">5.3.3</span>  Confounding</a></li>
+  <li><a href="#selection-bias" id="toc-selection-bias" class="nav-link" data-scroll-target="#selection-bias"><span class="header-section-number">5.3.1</span> Selection bias</a></li>
+  <li><a href="#information-bias" id="toc-information-bias" class="nav-link" data-scroll-target="#information-bias"><span class="header-section-number">5.3.2</span> Information bias</a></li>
+  <li><a href="#confounding" id="toc-confounding" class="nav-link" data-scroll-target="#confounding"><span class="header-section-number">5.3.3</span> Confounding</a></li>
   </ul></li>
-  <li><a href="#external-validity" id="toc-external-validity" class="nav-link" data-scroll-target="#external-validity"><span class="toc-section-number">5.4</span>  External validity</a>
+  <li><a href="#external-validity" id="toc-external-validity" class="nav-link" data-scroll-target="#external-validity"><span class="header-section-number">5.4</span> External validity</a>
   <ul class="collapse">
-  <li><a href="#generalisability" id="toc-generalisability" class="nav-link" data-scroll-target="#generalisability"><span class="toc-section-number">5.4.1</span>  Generalisability</a></li>
+  <li><a href="#generalisability" id="toc-generalisability" class="nav-link" data-scroll-target="#generalisability"><span class="header-section-number">5.4.1</span> Generalisability</a></li>
   </ul></li>
-  <li><a href="#analyses" id="toc-analyses" class="nav-link" data-scroll-target="#analyses"><span class="toc-section-number">5.5</span>  Analyses</a></li>
+  <li><a href="#analyses" id="toc-analyses" class="nav-link" data-scroll-target="#analyses"><span class="header-section-number">5.5</span> Analyses</a></li>
   </ul>
 </nav>
     </div>
@@ -244,7 +274,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-discussion-methods" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discussion of methods</span></span></h1>
+<h1 class="title"><span id="sec-discussion-methods" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discussion of methods</span></span></h1>
 </div>
 
 
@@ -273,7 +303,7 @@ div.csl-indent {
 <div id="fig-births" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="5-discussion-methods_files/figure-html/fig-births-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.1: <strong>Annually registered births</strong></figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;5.1: <strong>Annually registered births</strong></figcaption>
 </figure>
 </div>
 </div>
@@ -312,7 +342,7 @@ div.csl-indent {
 <p><a href="https://aastedet.github.io/dissertation/figures/inclusion_plots/inclusion_year_osdc.png"><img src="figures/inclusion_plots/inclusion_year.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.2: <strong>Calendar year of inclusion among prevalent diabetes cases on 1 January 2019</strong></figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;5.2: <strong>Calendar year of inclusion among prevalent diabetes cases on 1 January 2019</strong></figcaption>
 </figure>
 </div>
 <p>The different approaches to censoring between the classifiers affect the inclusions, which is evident in the distribution of the age at inclusion of each sex, as shown in <a href="#fig-age-inclusion-sex">Figure&nbsp;<span>5.3</span></a>. For men, where no censoring of GDM nor PCOS is necessary, age at inclusion of T2D is normally distributed and similar between the two classifiers. For women, however, this distribution differs between the classifiers. In the OSDC, the age-based censoring of PCOS results in a spike of T2D cases included at age 40 years old. In the RSCD, the distribution is left-skewed by women included before age 40 years.</p>
@@ -323,7 +353,7 @@ div.csl-indent {
 <p><a href="https://aastedet.github.io/dissertation/figures/inclusion_plots/age_by_sex.png"><img src="figures/inclusion_plots/age_by_sex.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.3: <strong>Age at inclusion for each sex among prevalent diabetes cases on 1 January 2019</strong></figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;5.3: <strong>Age at inclusion for each sex among prevalent diabetes cases on 1 January 2019</strong></figcaption>
 </figure>
 </div>
 <p>As discussed previously, we expected the addition of HbA1c data in the OSDC classifier to compensate for the over-censoring of metformin prescription data. In density plots of age at inclusion stratified by calendar year period, the observed spike in T2D among women at age 40 years appeared to be due to cases with onset during calendar years with partial or no coverage of HbA1c data, as shown in <a href="#fig-age-inclusion-by-year">Figure&nbsp;<span>5.4</span></a>. Before 2016, when HbA1c data was not available from all regions of Denmark, a spike of inclusions is seen for women with T2D included at age 40 years. This spike is absent in the subsequent years, but the distribution is slightly skewed with a plateau in the age range 40-45 years. This is likely a residual effect of women in this age range having been prematurely included in the preceding years. In plots of the RSCD classification, the distributions of T2D and T1D are more skewed among individuals included after 2016 than before 2016. Indeed, among cases included during the most recent years, the RSCD T1D and T2D distributions appear bimodal, a visual sign of cross-contamination, which may indicate that the RSCD is more prone to misclassifying cases during the first years after onset/inclusion.</p>
@@ -335,7 +365,7 @@ div.csl-indent {
 <p><a href="https://aastedet.github.io/dissertation/figures/inclusion_plots/age_by_sex_year.png"><img src="figures/inclusion_plots/age_by_sex_year.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.4: <strong>Age at inclusion for each sex among prevalent diabetes cases on 1 January 2019, stratified by calendar year of inclusion</strong></figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;5.4: <strong>Age at inclusion for each sex among prevalent diabetes cases on 1 January 2019, stratified by calendar year of inclusion</strong></figcaption>
 </figure>
 </div>
 </section>
@@ -390,71 +420,71 @@ div.csl-indent {
 <p>In studies II and III, the choice of statistical models and variables for adjustment merits some discussion. Both studies presented risk estimates from three different models with different contexts: crude, adjusted for clinical variables (model 1) and adjusted for clinical and socioeconomic variables (model 2). In study II, the outcomes were closely aligned with guideline recommendations, most of which apply to all T2D patients regardless of patient characteristics. Therefore, the emphasis in study II was placed on the crude risk estimates. In study III, the outcomes were not tied to absolute recommendations, and indication for treatment depended more on the risk profile and characteristics of each individual patient. For this reason, the models were expanded to capture more clinical characteristics in study III, where the emphasis was placed on the fully adjusted estimates (model 2). Due to the very different distributions of some characteristics between migrants and native Danes (e.g.&nbsp;most migrant groups with T2D were much younger and had much lower household incomes), the adjusted estimates should be interpreted with caution, as they compare the risk in migrants with the risk in the most vulnerable minority of native Danes with T2D. Indeed, researchers focussing on causal inference could argue that being young and poor is a causal effect of being a migrant with T2D. Furthermore, if receiving poor T2D care quality is considered a causal effect of being young and poor, then these variables would (in a causal framework) be considered intermediary variables on the causal pathway (and adjusting for them would lead to underestimation of the association). Ultimately, the three models contribute to understanding and interpreting the risk in migrants from different perspectives, and the most relevant model will depend on the aims of the reader.</p>
 
 
-<div id="refs" class="references csl-bib-body" role="doc-bibliography" style="display: none">
-<div id="ref-RN258" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-RN258" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">Bliddal M, Broe A, Pottegård A, Olsen J, Langhoff-Roos J. The danish medical birth register. European Journal of Epidemiology [Internet] 2018;33(1):27–36. Available from: <a href="https://doi.org/10.1007/s10654-018-0356-1">https://doi.org/10.1007/s10654-018-0356-1</a></div>
 </div>
-<div id="ref-ndr" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ndr" class="csl-entry" role="listitem">
 <div class="csl-left-margin">2. </div><div class="csl-right-inline">Carstensen B, Kristensen JK, Marcussen MM, Borch-Johnsen K. <a href="https://doi.org/10.1177/1403494811404278">The national diabetes register</a>. Scand J Public Health 2011;39(7 Suppl):58–61. </div>
 </div>
-<div id="ref-WHO2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-WHO2011" class="csl-entry" role="listitem">
 <div class="csl-left-margin">3. </div><div class="csl-right-inline">World Health Organization. <span class="nocase">Use of glycated haemoglobin (HbA1c) in diagnosis of diabetes mellitus: abbreviated report of a WHO consultation</span> [Internet]. {2011; last accessed on 12 Jan 2022};WHO/NMH/CHP/CPM/11.1. Available from: <a href="https://apps.who.int/iris/handle/10665/70523">https://apps.who.int/iris/handle/10665/70523</a></div>
 </div>
-<div id="ref-dsam2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dsam2019" class="csl-entry" role="listitem">
 <div class="csl-left-margin">4. </div><div class="csl-right-inline">Dansk Selskab for Almen Medicin [English: The Danish College of General Practitioners]. <span class="nocase">Type 2-diabetes - opfølgning og behandling [English: Type 2 diabetes - follow-up and treatment]</span> [Internet]. {2019; last accessed on 7 Feb 2023};Available from: <a href="https://vejledninger.dsam.dk/type2/">https://vejledninger.dsam.dk/type2/</a></div>
 </div>
-<div id="ref-ruks5doc" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ruks5doc" class="csl-entry" role="listitem">
 <div class="csl-left-margin">5. </div><div class="csl-right-inline">Sundhedsdatastyrelsen [English: Danish Health Data Authority]. <span class="nocase">Algoritmer for udvalgte kroniske sygdomme og svære psykiske lidelser [English: Algorithms for selected chronic diseases and serious mental illnesses]</span> [Internet]. {2022, last accessed 7 Feb 2023};Available from: <a href="https://www.esundhed.dk/-/media/Files/Publikationer/Emner/Operationer-og-diagnoser/Udvalgte-kroniske-sygdomme-svaere-psykiske-lidelser/Algoritmer-for-Udvalgte-Kroniske-Sygdomme-og-svre-psykiske-lidelser-RUKS-2022.ashx">https://www.esundhed.dk/-/media/Files/Publikationer/Emner/Operationer-og-diagnoser/Udvalgte-kroniske-sygdomme-svaere-psykiske-lidelser/Algoritmer-for-Udvalgte-Kroniske-Sygdomme-og-svre-psykiske-lidelser-RUKS-2022.ashx</a></div>
 </div>
-<div id="ref-hicd" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hicd" class="csl-entry" role="listitem">
 <div class="csl-left-margin">6. </div><div class="csl-right-inline">Bjerg L, Dalsgaard E-M, Norman K, Isaksen AA, Sandbæk A. Cohort profile: Health in central denmark (HICD) cohort - a register-based questionnaire survey on diabetes and related complications in the central denmark region. BMJ Open [Internet] 2022;12(7):e060410. Available from: <a href="http://bmjopen.bmj.com/content/12/7/e060410.abstract">http://bmjopen.bmj.com/content/12/7/e060410.abstract</a></div>
 </div>
-<div id="ref-t1dincidence" class="csl-entry" role="doc-biblioentry">
+<div id="ref-t1dincidence" class="csl-entry" role="listitem">
 <div class="csl-left-margin">7. </div><div class="csl-right-inline">Green A, Hede SM, Patterson CC, et al. <a href="https://doi.org/10.1007/s00125-021-05571-8">Type 1 diabetes in 2017: Global estimates of incident and prevalent cases in children and adults</a>. Diabetologia 2021;64(12):2741–50. </div>
 </div>
-<div id="ref-health_lit_migrants" class="csl-entry" role="doc-biblioentry">
+<div id="ref-health_lit_migrants" class="csl-entry" role="listitem">
 <div class="csl-left-margin">8. </div><div class="csl-right-inline">Pettersson S, Hadziabdic E, Marklund H, Hjelm K. <a href="https://doi.org/10.1002/nop2.217">Lower knowledge about diabetes among foreign-born compared to swedish-born persons with diabetes-a descriptive study</a>. Nurs Open 2019;6(2):367–76. </div>
 </div>
-<div id="ref-validation_misconceptions" class="csl-entry" role="doc-biblioentry">
+<div id="ref-validation_misconceptions" class="csl-entry" role="listitem">
 <div class="csl-left-margin">9. </div><div class="csl-right-inline">Fox MP, Lash TL, Bodnar LM. Common misconceptions about validation studies. International Journal of Epidemiology [Internet] 2020;49(4):1392–6. Available from: <a href="https://doi.org/10.1093/ije/dyaa090">https://doi.org/10.1093/ije/dyaa090</a></div>
 </div>
-<div id="ref-t1d_young_country" class="csl-entry" role="doc-biblioentry">
+<div id="ref-t1d_young_country" class="csl-entry" role="listitem">
 <div class="csl-left-margin">10. </div><div class="csl-right-inline">Hussen HI, Yang D, Cnattingius S, Moradi T. Type i diabetes among children and young adults: The role of country of birth, socioeconomic position and sex. Pediatric Diabetes [Internet] 2013;14(2):138–48. Available from: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1399-5448.2012.00904.x">https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1399-5448.2012.00904.x</a></div>
 </div>
-<div id="ref-diab_children_nationality" class="csl-entry" role="doc-biblioentry">
+<div id="ref-diab_children_nationality" class="csl-entry" role="listitem">
 <div class="csl-left-margin">11. </div><div class="csl-right-inline">Neu A, Willasch A, Ehehalt S, Kehrer M, Hub R, Ranke MB. <a href="https://doi.org/10.1007/pl00002948">Diabetes incidence in children of different nationalities: An epidemiological approach to the pathogenesis of diabetes</a>. Diabetologia 2001;44 Suppl 3:B21–6. </div>
 </div>
-<div id="ref-isostandard" class="csl-entry" role="doc-biblioentry">
+<div id="ref-isostandard" class="csl-entry" role="listitem">
 <div class="csl-left-margin">12. </div><div class="csl-right-inline">The International Organization for Standardization. <span class="nocase">ISO 15189: Medical laboratories — Requirements for quality and competence</span> [Internet]. {2022, last accessed 7 Feb 2023};Available from: <a href="https://www.iso.org/standard/76677.html">https://www.iso.org/standard/76677.html</a></div>
 </div>
-<div id="ref-Nielsen2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Nielsen2012" class="csl-entry" role="listitem">
 <div class="csl-left-margin">13. </div><div class="csl-right-inline">Nielsen SS, Hempler NF, Waldorff FB, Kreiner S, Krasnik A. <a href="https://doi.org/10.1177/1403494812443602"><span class="nocase">Is there equity in use of healthcare services among immigrants, their descendents, and ethnic Danes?</span></a> Scandinavian Journal of Public Health 2012;40:260–70. </div>
 </div>
-<div id="ref-su_switching" class="csl-entry" role="doc-biblioentry">
+<div id="ref-su_switching" class="csl-entry" role="listitem">
 <div class="csl-left-margin">14. </div><div class="csl-right-inline">Tan X, Yang L, Khunti K, et al. Factors associated with switching from sulphonylureas to dipeptidyl peptidase 4 inhibitors among patients with type 2 diabetes in the united states. Diabetes, Obesity and Metabolism [Internet] 2021;23(10):2251–60. Available from: <a href="https://dom-pubs.onlinelibrary.wiley.com/doi/abs/10.1111/dom.14466">https://dom-pubs.onlinelibrary.wiley.com/doi/abs/10.1111/dom.14466</a></div>
 </div>
-<div id="ref-medication_bc" class="csl-entry" role="doc-biblioentry">
+<div id="ref-medication_bc" class="csl-entry" role="listitem">
 <div class="csl-left-margin">15. </div><div class="csl-right-inline">Carney G, Kim JD, O’Sullivan C, et al. Treatment pattern trends of medications for type 2 diabetes in british columbia, canada. BMJ Open Diabetes Research and Care [Internet] 2022;10(6). Available from: <a href="https://drc.bmj.com/content/10/6/e002995">https://drc.bmj.com/content/10/6/e002995</a></div>
 </div>
-<div id="ref-erayil2021raceethnicity" class="csl-entry" role="doc-biblioentry">
+<div id="ref-erayil2021raceethnicity" class="csl-entry" role="listitem">
 <div class="csl-left-margin">16. </div><div class="csl-right-inline">Erayil SE, Smith MK, Gebreslasse T, et al. The value and interpretation of race and ethnicity data in the era of global migration: A change is in order. The American Journal of Tropical Medicine and Hygiene [Internet] 2021;105(6):1453–5. Available from: <a href="https://www.ajtmh.org/view/journals/tpmd/105/6/article-p1453.xml">https://www.ajtmh.org/view/journals/tpmd/105/6/article-p1453.xml</a></div>
 </div>
-<div id="ref-pad_valid" class="csl-entry" role="doc-biblioentry">
+<div id="ref-pad_valid" class="csl-entry" role="listitem">
 <div class="csl-left-margin">17. </div><div class="csl-right-inline">Lasota AN, Overvad K, Eriksen HH, Tjonneland A, Schmidt EB, Gronholdt MM. <a href="https://doi.org/10.1016/j.ejvs.2016.12.031">Validity of peripheral arterial disease diagnoses in the danish national patient registry</a>. Eur J Vasc Endovasc Surg 2017;53(5):679–85. </div>
 </div>
-<div id="ref-stroke_valid" class="csl-entry" role="doc-biblioentry">
+<div id="ref-stroke_valid" class="csl-entry" role="listitem">
 <div class="csl-left-margin">18. </div><div class="csl-right-inline">Lühdorf P, Overvad K, Schmidt EB, Johnsen SP, Bach FW. Predictive value of stroke discharge diagnoses in the danish national patient register. Scandinavian Journal of Public Health [Internet] 2017;45(6):630–6. Available from: <a href="https://doi.org/10.1177/1403494817716582">https://doi.org/10.1177/1403494817716582</a></div>
 </div>
-<div id="ref-cvd_valid" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cvd_valid" class="csl-entry" role="listitem">
 <div class="csl-left-margin">19. </div><div class="csl-right-inline">Sundboll J, Adelborg K, Munch T, et al. <a href="https://doi.org/10.1136/bmjopen-2016-012832">Positive predictive value of cardiovascular diagnoses in the danish national patient registry: A validation study</a>. BMJ Open 2016;6(11):e012832. </div>
 </div>
-<div id="ref-Vandenheede2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Vandenheede2012" class="csl-entry" role="listitem">
 <div class="csl-left-margin">20. </div><div class="csl-right-inline">Vandenheede H, Deboosere P, Stirbu I, et al. <a href="https://doi.org/10.1007/s10654-011-9638-6"><span class="nocase">Migrant mortality from diabetes mellitus across Europe: the importance of socio-economic change</span></a>. Eur J Epidemiol 2012;Feb; 27(2):109-17. </div>
 </div>
-<div id="ref-Whyte2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Whyte2019" class="csl-entry" role="listitem">
 <div class="csl-left-margin">21. </div><div class="csl-right-inline">Whyte MB, Hinton W, McGovern A, et al. <a href="https://doi.org/10.1371/journal.pmed.1002942"><span class="nocase">Disparities in glycaemic control, monitoring, and treatment of type 2 diabetes in England: A retrospective cohort analysis</span></a>. PLoS Med 2019;Oct 7; 16(10):e1002942. </div>
 </div>
-<div id="ref-Knudsen2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Knudsen2021" class="csl-entry" role="listitem">
 <div class="csl-left-margin">22. </div><div class="csl-right-inline">Knudsen ST, Bodegård J, Birkeland KI, et al. <a href="https://doi.org/10.1016/j.jcd.2020.09.006"><span class="nocase">Risk factor management of type 2 diabetic patients in primary care in the Scandinavian countries between 2003 and 2015</span></a>. Primary Care Diabetes 2021;15:262–8. </div>
 </div>
 </div>
@@ -488,9 +518,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -555,6 +599,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

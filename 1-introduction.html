@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.3.340">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -80,6 +80,7 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
@@ -88,11 +89,16 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -100,110 +106,134 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Type 2 diabetes in migrants: a register-based analysis</a> 
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Cover Page</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cover Page</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./0-disclosure.html" class="sidebar-item-text sidebar-link">Notes and disclosures</a>
+  <a href="./0-disclosure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes and disclosures</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./0-preface.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./0-preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./0-abbreviations.html" class="sidebar-item-text sidebar-link">Abbreviations</a>
+  <a href="./0-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Papers in the dissertation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1-introduction.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./0-abbreviations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abbreviations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2-aims.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Aims</span></a>
+  <a href="./1-introduction.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3-methods.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Material and methods</span></a>
+  <a href="./2-aims.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Aims</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./4-results.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Results in summary</span></a>
+  <a href="./3-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Material and methods</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./5-discussion-methods.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discussion of methods</span></a>
+  <a href="./4-results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Results in summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./6-discussion-results.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Discussion of results</span></a>
+  <a href="./5-discussion-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discussion of methods</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./7-conclusions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Conclusions</span></a>
+  <a href="./6-discussion-results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Discussion of results</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./8-perspectives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Perspectives and future research</span></a>
+  <a href="./7-conclusions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Conclusions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./8-perspectives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Perspectives and future research</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary-english.html" class="sidebar-item-text sidebar-link">English summary</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary-danish.html" class="sidebar-item-text sidebar-link">Dansk resumé</a>
+  <a href="./summary-english.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">English summary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary-danish.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dansk resumé</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Appendices</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./app1-supplementary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Supplementary validation analyses</span></a>
+  <a href="./app1-supplementary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Supplementary validation analyses</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./app2-papers.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Full papers</span></a>
+  <a href="./app2-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Full papers</span></span></a>
   </div>
 </li>
       </ul>
@@ -211,42 +241,43 @@ div.csl-indent {
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#migrants-and-type-2-diabetes" id="toc-migrants-and-type-2-diabetes" class="nav-link active" data-scroll-target="#migrants-and-type-2-diabetes"><span class="toc-section-number">1.1</span>  Migrants and type 2 diabetes</a></li>
-  <li><a href="#migrants-in-denmark" id="toc-migrants-in-denmark" class="nav-link" data-scroll-target="#migrants-in-denmark"><span class="toc-section-number">1.2</span>  Migrants in Denmark</a>
+  <li><a href="#migrants-and-type-2-diabetes" id="toc-migrants-and-type-2-diabetes" class="nav-link active" data-scroll-target="#migrants-and-type-2-diabetes"><span class="header-section-number">1.1</span> Migrants and type 2 diabetes</a></li>
+  <li><a href="#migrants-in-denmark" id="toc-migrants-in-denmark" class="nav-link" data-scroll-target="#migrants-in-denmark"><span class="header-section-number">1.2</span> Migrants in Denmark</a>
   <ul class="collapse">
-  <li><a href="#migration" id="toc-migration" class="nav-link" data-scroll-target="#migration"><span class="toc-section-number">1.2.1</span>  Migration</a></li>
-  <li><a href="#migrants-in-the-danish-data-infrastructure" id="toc-migrants-in-the-danish-data-infrastructure" class="nav-link" data-scroll-target="#migrants-in-the-danish-data-infrastructure"><span class="toc-section-number">1.2.2</span>  Migrants in the Danish data infrastructure</a></li>
-  <li><a href="#migrant-groups-in-denmark" id="toc-migrant-groups-in-denmark" class="nav-link" data-scroll-target="#migrant-groups-in-denmark"><span class="toc-section-number">1.2.3</span>  Migrant groups in Denmark</a></li>
-  <li><a href="#descendants" id="toc-descendants" class="nav-link" data-scroll-target="#descendants"><span class="toc-section-number">1.2.4</span>  Descendants</a></li>
+  <li><a href="#migration" id="toc-migration" class="nav-link" data-scroll-target="#migration"><span class="header-section-number">1.2.1</span> Migration</a></li>
+  <li><a href="#migrants-in-the-danish-data-infrastructure" id="toc-migrants-in-the-danish-data-infrastructure" class="nav-link" data-scroll-target="#migrants-in-the-danish-data-infrastructure"><span class="header-section-number">1.2.2</span> Migrants in the Danish data infrastructure</a></li>
+  <li><a href="#migrant-groups-in-denmark" id="toc-migrant-groups-in-denmark" class="nav-link" data-scroll-target="#migrant-groups-in-denmark"><span class="header-section-number">1.2.3</span> Migrant groups in Denmark</a></li>
+  <li><a href="#descendants" id="toc-descendants" class="nav-link" data-scroll-target="#descendants"><span class="header-section-number">1.2.4</span> Descendants</a></li>
   </ul></li>
-  <li><a href="#type-2-diabetes-care" id="toc-type-2-diabetes-care" class="nav-link" data-scroll-target="#type-2-diabetes-care"><span class="toc-section-number">1.3</span>  Type 2 diabetes care</a>
+  <li><a href="#type-2-diabetes-care" id="toc-type-2-diabetes-care" class="nav-link" data-scroll-target="#type-2-diabetes-care"><span class="header-section-number">1.3</span> Type 2 diabetes care</a>
   <ul class="collapse">
-  <li><a href="#complications-and-risk-factors" id="toc-complications-and-risk-factors" class="nav-link" data-scroll-target="#complications-and-risk-factors"><span class="toc-section-number">1.3.1</span>  Complications and risk factors</a></li>
-  <li><a href="#pharmacological-treatment" id="toc-pharmacological-treatment" class="nav-link" data-scroll-target="#pharmacological-treatment"><span class="toc-section-number">1.3.2</span>  Pharmacological treatment</a></li>
-  <li><a href="#monitoring" id="toc-monitoring" class="nav-link" data-scroll-target="#monitoring"><span class="toc-section-number">1.3.3</span>  Monitoring</a></li>
+  <li><a href="#complications-and-risk-factors" id="toc-complications-and-risk-factors" class="nav-link" data-scroll-target="#complications-and-risk-factors"><span class="header-section-number">1.3.1</span> Complications and risk factors</a></li>
+  <li><a href="#pharmacological-treatment" id="toc-pharmacological-treatment" class="nav-link" data-scroll-target="#pharmacological-treatment"><span class="header-section-number">1.3.2</span> Pharmacological treatment</a></li>
+  <li><a href="#monitoring" id="toc-monitoring" class="nav-link" data-scroll-target="#monitoring"><span class="header-section-number">1.3.3</span> Monitoring</a></li>
   </ul></li>
-  <li><a href="#clinical-guidelines-for-type-2-diabetes-care" id="toc-clinical-guidelines-for-type-2-diabetes-care" class="nav-link" data-scroll-target="#clinical-guidelines-for-type-2-diabetes-care"><span class="toc-section-number">1.4</span>  Clinical guidelines for type 2 diabetes care</a>
+  <li><a href="#clinical-guidelines-for-type-2-diabetes-care" id="toc-clinical-guidelines-for-type-2-diabetes-care" class="nav-link" data-scroll-target="#clinical-guidelines-for-type-2-diabetes-care"><span class="header-section-number">1.4</span> Clinical guidelines for type 2 diabetes care</a>
   <ul class="collapse">
-  <li><a href="#context" id="toc-context" class="nav-link" data-scroll-target="#context"><span class="toc-section-number">1.4.1</span>  Context</a></li>
-  <li><a href="#diagnosis" id="toc-diagnosis" class="nav-link" data-scroll-target="#diagnosis"><span class="toc-section-number">1.4.2</span>  Diagnosis</a></li>
-  <li><a href="#monitoring-1" id="toc-monitoring-1" class="nav-link" data-scroll-target="#monitoring-1"><span class="toc-section-number">1.4.3</span>  Monitoring</a></li>
-  <li><a href="#biomarker-levels" id="toc-biomarker-levels" class="nav-link" data-scroll-target="#biomarker-levels"><span class="toc-section-number">1.4.4</span>  Biomarker levels</a></li>
-  <li><a href="#pharmacological-treatment-1" id="toc-pharmacological-treatment-1" class="nav-link" data-scroll-target="#pharmacological-treatment-1"><span class="toc-section-number">1.4.5</span>  Pharmacological treatment</a></li>
+  <li><a href="#context" id="toc-context" class="nav-link" data-scroll-target="#context"><span class="header-section-number">1.4.1</span> Context</a></li>
+  <li><a href="#diagnosis" id="toc-diagnosis" class="nav-link" data-scroll-target="#diagnosis"><span class="header-section-number">1.4.2</span> Diagnosis</a></li>
+  <li><a href="#monitoring-1" id="toc-monitoring-1" class="nav-link" data-scroll-target="#monitoring-1"><span class="header-section-number">1.4.3</span> Monitoring</a></li>
+  <li><a href="#biomarker-levels" id="toc-biomarker-levels" class="nav-link" data-scroll-target="#biomarker-levels"><span class="header-section-number">1.4.4</span> Biomarker levels</a></li>
+  <li><a href="#pharmacological-treatment-1" id="toc-pharmacological-treatment-1" class="nav-link" data-scroll-target="#pharmacological-treatment-1"><span class="header-section-number">1.4.5</span> Pharmacological treatment</a></li>
   </ul></li>
-  <li><a href="#sec-id-t2d-registers" id="toc-sec-id-t2d-registers" class="nav-link" data-scroll-target="#sec-id-t2d-registers"><span class="toc-section-number">1.5</span>  Identification of type 2 diabetes cases in healthcare registers</a>
+  <li><a href="#sec-id-t2d-registers" id="toc-sec-id-t2d-registers" class="nav-link" data-scroll-target="#sec-id-t2d-registers"><span class="header-section-number">1.5</span> Identification of type 2 diabetes cases in healthcare registers</a>
   <ul class="collapse">
-  <li><a href="#danish-register-data-infrastructure" id="toc-danish-register-data-infrastructure" class="nav-link" data-scroll-target="#danish-register-data-infrastructure"><span class="toc-section-number">1.5.1</span>  Danish register data infrastructure</a></li>
-  <li><a href="#benefits" id="toc-benefits" class="nav-link" data-scroll-target="#benefits"><span class="toc-section-number">1.5.2</span>  Benefits</a></li>
-  <li><a href="#challenges" id="toc-challenges" class="nav-link" data-scroll-target="#challenges"><span class="toc-section-number">1.5.3</span>  Challenges</a></li>
-  <li><a href="#sec-register-based-diabetes-classifiers" id="toc-sec-register-based-diabetes-classifiers" class="nav-link" data-scroll-target="#sec-register-based-diabetes-classifiers"><span class="toc-section-number">1.5.4</span>  Register-based diabetes classifiers</a></li>
+  <li><a href="#danish-register-data-infrastructure" id="toc-danish-register-data-infrastructure" class="nav-link" data-scroll-target="#danish-register-data-infrastructure"><span class="header-section-number">1.5.1</span> Danish register data infrastructure</a></li>
+  <li><a href="#benefits" id="toc-benefits" class="nav-link" data-scroll-target="#benefits"><span class="header-section-number">1.5.2</span> Benefits</a></li>
+  <li><a href="#challenges" id="toc-challenges" class="nav-link" data-scroll-target="#challenges"><span class="header-section-number">1.5.3</span> Challenges</a></li>
+  <li><a href="#sec-register-based-diabetes-classifiers" id="toc-sec-register-based-diabetes-classifiers" class="nav-link" data-scroll-target="#sec-register-based-diabetes-classifiers"><span class="header-section-number">1.5.4</span> Register-based diabetes classifiers</a></li>
   </ul></li>
-  <li><a href="#introduction-at-a-glance" id="toc-introduction-at-a-glance" class="nav-link" data-scroll-target="#introduction-at-a-glance"><span class="toc-section-number">1.6</span>  Introduction at a glance</a></li>
+  <li><a href="#introduction-at-a-glance" id="toc-introduction-at-a-glance" class="nav-link" data-scroll-target="#introduction-at-a-glance"><span class="header-section-number">1.6</span> Introduction at a glance</a></li>
   </ul>
 </nav>
     </div>
@@ -255,7 +286,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-introduction" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></h1>
+<h1 class="title"><span id="sec-introduction" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></h1>
 </div>
 
 
@@ -288,7 +319,7 @@ div.csl-indent {
 <div id="fig-pyramid-native-danes" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/pyramid_native_danes.png" class="img-fluid figure-img" data-ref-parent="fig-demo-pyramids"></p>
-<p></p><figcaption class="figure-caption">(a) Native Danes 2019-2039</figcaption><p></p>
+<figcaption class="figure-caption">(a) Native Danes 2019-2039</figcaption>
 </figure>
 </div>
 </div>
@@ -296,7 +327,7 @@ div.csl-indent {
 <div id="fig-pyramid-migrants" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/pyramid_migrants.png" class="img-fluid figure-img" data-ref-parent="fig-demo-pyramids"></p>
-<p></p><figcaption class="figure-caption">(b) Migrants 2019-2039</figcaption><p></p>
+<figcaption class="figure-caption">(b) Migrants 2019-2039</figcaption>
 </figure>
 </div>
 </div>
@@ -333,7 +364,7 @@ div.csl-indent {
 <div id="fig-reason-western" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/reason_migration_origin_west_2022.png" class="img-fluid figure-img" data-ref-parent="fig-reason-migration"></p>
-<p></p><figcaption class="figure-caption">(a) Reason for migration: Western countries</figcaption><p></p>
+<figcaption class="figure-caption">(a) Reason for migration: Western countries</figcaption>
 </figure>
 </div>
 </div>
@@ -343,7 +374,7 @@ div.csl-indent {
 <div id="fig-reason-nonwestern" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="figures/reason_migration_origin_nonwest_2022.png" class="img-fluid figure-img" data-ref-parent="fig-reason-migration"></p>
-<p></p><figcaption class="figure-caption">(b) Reason for migration: Non-western countries</figcaption><p></p>
+<figcaption class="figure-caption">(b) Reason for migration: Non-western countries</figcaption>
 </figure>
 </div>
 </div>
@@ -489,238 +520,238 @@ div.csl-indent {
 <p>In Denmark, clinical guidelines are available to direct clinicians and patients towards the best possible outcomes. Despite the special challenges faced by migrants, the current guidelines do not contain specific recommendations for T2D care in migrants, and the evidence on care disparities between migrants and native Danes is limited.</p>
 
 
-<div id="refs" class="references csl-bib-body" role="doc-bibliography" style="display: none">
-<div id="ref-socialdiabetes" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-socialdiabetes" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">Agardh E, Allebeck P, Hallqvist J, Moradi T, Sidorchuk A. <span class="nocase">Type 2 diabetes incidence and socio-economic position: a systematic review and meta-analysis</span>. International Journal of Epidemiology [Internet] 2011;40(3):804–18. Available from: <a href="https://doi.org/10.1093/ije/dyr029">https://doi.org/10.1093/ije/dyr029</a></div>
 </div>
-<div id="ref-diabetesatlas" class="csl-entry" role="doc-biblioentry">
+<div id="ref-diabetesatlas" class="csl-entry" role="listitem">
 <div class="csl-left-margin">2. </div><div class="csl-right-inline">Sun H, Saeedi P, Karuranga S, et al. IDF diabetes atlas: Global, regional and country-level diabetes prevalence estimates for 2021 and projections for 2045. Diabetes Research and Clinical Practice [Internet] 2022;183:109119. Available from: <a href="https://www.sciencedirect.com/science/article/pii/S0168822721004782">https://www.sciencedirect.com/science/article/pii/S0168822721004782</a></div>
 </div>
-<div id="ref-eurostat_migrants" class="csl-entry" role="doc-biblioentry">
+<div id="ref-eurostat_migrants" class="csl-entry" role="listitem">
 <div class="csl-left-margin">3. </div><div class="csl-right-inline">Eurostat. <span class="nocase">Migrant integration statistics</span> [Internet]. {2022, last accessed 7 Feb 2023};Available from: <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Migrant_integration_statistics">https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Migrant_integration_statistics</a></div>
 </div>
-<div id="ref-eurostat_popstruct" class="csl-entry" role="doc-biblioentry">
+<div id="ref-eurostat_popstruct" class="csl-entry" role="listitem">
 <div class="csl-left-margin">4. </div><div class="csl-right-inline">Eurostat. <span class="nocase">Population structure and ageing</span> [Internet]. {2022, last accessed 7 Feb 2023};Available from: <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Population_structure_and_ageing">https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Population_structure_and_ageing</a></div>
 </div>
-<div id="ref-eurostat_ageing_europe" class="csl-entry" role="doc-biblioentry">
+<div id="ref-eurostat_ageing_europe" class="csl-entry" role="listitem">
 <div class="csl-left-margin">5. </div><div class="csl-right-inline">Eurostat. <span class="nocase">Ageing Europe - statistics on health and disability</span> [Internet]. {2022, last accessed 7 Feb 2023};Available from: <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Ageing_Europe_-_statistics_on_health_and_disability">https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Ageing_Europe_-_statistics_on_health_and_disability</a></div>
 </div>
-<div id="ref-meeks2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-meeks2016" class="csl-entry" role="listitem">
 <div class="csl-left-margin">6. </div><div class="csl-right-inline">Meeks KA, Freitas-Da-Silva D, Adeyemo A, et al. <a href="https://doi.org/10.1007/s11739-015-1302-9"><span class="nocase">Disparities in type 2 diabetes prevalence among ethnic minority groups resident in Europe: a systematic review and meta-analysis</span></a>. Intern Emerg Med 2016;Apr; 11(3):327-40. </div>
 </div>
-<div id="ref-andersen2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-andersen2016" class="csl-entry" role="listitem">
 <div class="csl-left-margin">7. </div><div class="csl-right-inline">Andersen GS, Kamper-Jørgensen Z, Carstensen B, Norredam M, Bygbjerg IC, Jørgensen ME. <a href="https://doi.org/10.1016/j.diabres.2016.09.020"><span class="nocase">Diabetes among migrants in Denmark: Incidence, mortality, and prevalence based on a longitudinal register study of the entire Danish population</span></a>. Diabetes Res Clin Pract 2016;Dec:122:9–16. </div>
 </div>
-<div id="ref-befpyramide" class="csl-entry" role="doc-biblioentry">
+<div id="ref-befpyramide" class="csl-entry" role="listitem">
 <div class="csl-left-margin">8. </div><div class="csl-right-inline">Danmarks Statistik [Statistics Denmark]. <span class="nocase">Befolkningsfremskrivning: Indvandrere og efterkommere [English: Population projection: Immigrants and descendants]</span> [Internet]. {2019-2039; last accessed on 7 Feb 2023};Available from: <a href="https://extranet.dst.dk/pyramide/pyramide.htm#!y=2039&amp;o=2019&amp;c=4">https://extranet.dst.dk/pyramide/pyramide.htm#!y=2039&amp;o=2019&amp;c=4</a></div>
 </div>
-<div id="ref-nonresponse_migrants" class="csl-entry" role="doc-biblioentry">
+<div id="ref-nonresponse_migrants" class="csl-entry" role="listitem">
 <div class="csl-left-margin">9. </div><div class="csl-right-inline">Ahlmark N, Algren MH, Holmberg T, et al. <a href="https://doi.org/10.1080/13557858.2014.979768">Survey nonresponse among ethnic minorities in a national health survey – a mixed-method study of participation, barriers, and potentials</a>. Ethnicity &amp; Health 2015;20(6):611–32. </div>
 </div>
-<div id="ref-erayil2021raceethnicity" class="csl-entry" role="doc-biblioentry">
+<div id="ref-erayil2021raceethnicity" class="csl-entry" role="listitem">
 <div class="csl-left-margin">10. </div><div class="csl-right-inline">Erayil SE, Smith MK, Gebreslasse T, et al. The value and interpretation of race and ethnicity data in the era of global migration: A change is in order. The American Journal of Tropical Medicine and Hygiene [Internet] 2021;105(6):1453–5. Available from: <a href="https://www.ajtmh.org/view/journals/tpmd/105/6/article-p1453.xml">https://www.ajtmh.org/view/journals/tpmd/105/6/article-p1453.xml</a></div>
 </div>
-<div id="ref-unhcrfaq" class="csl-entry" role="doc-biblioentry">
+<div id="ref-unhcrfaq" class="csl-entry" role="listitem">
 <div class="csl-left-margin">11. </div><div class="csl-right-inline">UNHCR. <span class="nocase"><span>“Refugees”</span> and <span>“Migrants”</span> – Frequently Asked Questions (FAQs)</span> [Internet]. {2016; last accessed on 7 Feb 2023};Available from: <a href="https://www.unhcr.org/en-us/news/latest/2016/3/56e95c676/refugees-migrants-frequently-asked-questions-faqs.html">https://www.unhcr.org/en-us/news/latest/2016/3/56e95c676/refugees-migrants-frequently-asked-questions-faqs.html</a></div>
 </div>
-<div id="ref-dublinregulation" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dublinregulation" class="csl-entry" role="listitem">
 <div class="csl-left-margin">12. </div><div class="csl-right-inline">European Commission, Migration and Home Affairs. <span class="nocase">Country responsible for asylum application (Dublin Regulation)</span> [Internet]. {last accessed on 7 Feb 2023};Available from: <a href="https://home-affairs.ec.europa.eu/policies/migration-and-asylum/common-european-asylum-system/country-responsible-asylum-application-dublin-regulation_en">https://home-affairs.ec.europa.eu/policies/migration-and-asylum/common-european-asylum-system/country-responsible-asylum-application-dublin-regulation_en</a></div>
 </div>
-<div id="ref-familyreunion" class="csl-entry" role="doc-biblioentry">
+<div id="ref-familyreunion" class="csl-entry" role="listitem">
 <div class="csl-left-margin">13. </div><div class="csl-right-inline">The Danish Immigration Service. <span class="nocase">New to Denmark: You want to apply as a family member</span> [Internet]. {last accessed on 7 Feb 2023};Available from: <a href="https://nyidanmark.dk/uk-UA/You-want-to-apply/Family">https://nyidanmark.dk/uk-UA/You-want-to-apply/Family</a></div>
 </div>
-<div id="ref-residencework" class="csl-entry" role="doc-biblioentry">
+<div id="ref-residencework" class="csl-entry" role="listitem">
 <div class="csl-left-margin">14. </div><div class="csl-right-inline">The Danish Immigration Service. <span class="nocase">New to Denmark: You want to apply for a work permit</span> [Internet]. {last accessed on 7 Feb 2023};Available from: <a href="https://nyidanmark.dk/uk-UA/You-want-to-apply/Work">https://nyidanmark.dk/uk-UA/You-want-to-apply/Work</a></div>
 </div>
-<div id="ref-residencestudy" class="csl-entry" role="doc-biblioentry">
+<div id="ref-residencestudy" class="csl-entry" role="listitem">
 <div class="csl-left-margin">15. </div><div class="csl-right-inline">The Danish Immigration Service. <span class="nocase">New to Denmark: You want to apply for a residence and work permit as a student</span> [Internet]. {last accessed on 7 Feb 2023};Available from: <a href="https://nyidanmark.dk/uk-UA/You-want-to-apply/Study">https://nyidanmark.dk/uk-UA/You-want-to-apply/Study</a></div>
 </div>
-<div id="ref-residencenordic" class="csl-entry" role="doc-biblioentry">
+<div id="ref-residencenordic" class="csl-entry" role="listitem">
 <div class="csl-left-margin">16. </div><div class="csl-right-inline">The Danish Immigration Service. <span class="nocase">New to Denmark: Nordic citizens</span> [Internet]. {last accessed on 7 Feb 2023};Available from: <a href="https://nyidanmark.dk/uk-UA/You-want-to-apply/Residence-as-a-Nordic-citizen-or-EU-or-EEA-citizen/Nordic-citizens">https://nyidanmark.dk/uk-UA/You-want-to-apply/Residence-as-a-Nordic-citizen-or-EU-or-EEA-citizen/Nordic-citizens</a></div>
 </div>
-<div id="ref-interpreterlaw" class="csl-entry" role="doc-biblioentry">
+<div id="ref-interpreterlaw" class="csl-entry" role="listitem">
 <div class="csl-left-margin">17. </div><div class="csl-right-inline">Indenrigs- og Boligministeriet [English: Ministry of the Interior and Health]. <span class="nocase">Bekendtgørelse om tolkebistand efter sundhedsloven [English: Executive Order on Interpretation Services under the Health Care Act]</span> [Internet]. {2018; last accessed on 7 Feb 2023};Available from: <a href="https://www.retsinformation.dk/eli/lta/2018/855">https://www.retsinformation.dk/eli/lta/2018/855</a></div>
 </div>
-<div id="ref-eventsabroad" class="csl-entry" role="doc-biblioentry">
+<div id="ref-eventsabroad" class="csl-entry" role="listitem">
 <div class="csl-left-margin">18. </div><div class="csl-right-inline">Indenrigs- og Boligministeriet [English: Ministry of the Interior and Housing]. <span class="nocase">Vejledning om folkeregistrering, bilag 1: Registrering af hændelser i udlandet [English: Civil registration guidelines, appendix 1: Registration of events abroad]</span> [Internet]. {2013; last accessed on 7 Feb 2023};Available from: <a href="https://www.retsinformation.dk/eli/retsinfo/2013/9273#Bil1">https://www.retsinformation.dk/eli/retsinfo/2013/9273#Bil1</a></div>
 </div>
-<div id="ref-educationmigrants" class="csl-entry" role="doc-biblioentry">
+<div id="ref-educationmigrants" class="csl-entry" role="listitem">
 <div class="csl-left-margin">19. </div><div class="csl-right-inline">Danmarks Statistik [English: Statistics Denmark]. <span class="nocase">Indvandrernes medbragte uddannelse [English: Education carried by immigrants]</span> [Internet]. {2020; last accessed on 7 Feb 2023};Available from: <a href="https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=formid&amp;fo=medbragt-udd--pdf">https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=formid&amp;fo=medbragt-udd--pdf</a></div>
 </div>
-<div id="ref-migrantsdenmark2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-migrantsdenmark2019" class="csl-entry" role="listitem">
 <div class="csl-left-margin">20. </div><div class="csl-right-inline">Danmarks Statistik [English: Statistics Denmark]. <span class="nocase">Indvandrere i Danmark 2019 [English: Immigrants in Denmark 2019]</span> [Internet]. {2019; last accessed on 7 Feb 2023};Available from: <a href="https://www.dst.dk/Site/Dst/Udgivelser/GetPubFile.aspx?id=29446&amp;sid=indv2019">https://www.dst.dk/Site/Dst/Udgivelser/GetPubFile.aspx?id=29446&amp;sid=indv2019</a></div>
 </div>
-<div id="ref-dst2022migrants" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dst2022migrants" class="csl-entry" role="listitem">
 <div class="csl-left-margin">21. </div><div class="csl-right-inline">Danmarks Statistik [English: Statistics Denmark]. <span class="nocase">Fakta om indvandrere og efterkommere i Danmark [English: Facts on immigrants and descendants in Denmark]</span> [Internet]. {2022; last accessed on 7 Feb 2023};Available from: <a href="https://www.dst.dk/da/Statistik/nyheder-analyser-publ/bagtal/2022/2022-08-18-fakta-om-indvandrere">https://www.dst.dk/da/Statistik/nyheder-analyser-publ/bagtal/2022/2022-08-18-fakta-om-indvandrere</a></div>
 </div>
-<div id="ref-challengesdatamultiethnic" class="csl-entry" role="doc-biblioentry">
+<div id="ref-challengesdatamultiethnic" class="csl-entry" role="listitem">
 <div class="csl-left-margin">22. </div><div class="csl-right-inline">Kaneshiro B, Geling O, Gellert K, Millar L. The challenges of collecting data on race and ethnicity in a diverse, multiethnic state. Hawaii Med J 2011;70(8):168–71. </div>
 </div>
-<div id="ref-m49" class="csl-entry" role="doc-biblioentry">
+<div id="ref-m49" class="csl-entry" role="listitem">
 <div class="csl-left-margin">23. </div><div class="csl-right-inline">United Nations Statistics Division. <span class="nocase">Standard country or area codes for statistical use (M49)</span> [Internet]. {2022; last accessed on 7 Feb 2023};Available from: <a href="https://unstats.un.org/unsd/methodology/m49/">https://unstats.un.org/unsd/methodology/m49/</a></div>
 </div>
-<div id="ref-docmigrants" class="csl-entry" role="doc-biblioentry">
+<div id="ref-docmigrants" class="csl-entry" role="listitem">
 <div class="csl-left-margin">24. </div><div class="csl-right-inline">Statistics Denmark. <span class="nocase">Documentation of statistics for Population Projections 2019</span> [Internet]. {2019; last accessed on 7 Feb 2023};Available from: <a href="https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=49459100303&amp;fo=0&amp;ext=kvaldel">https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=49459100303&amp;fo=0&amp;ext=kvaldel</a></div>
 </div>
-<div id="ref-bennetfirstsecondgen" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bennetfirstsecondgen" class="csl-entry" role="listitem">
 <div class="csl-left-margin">25. </div><div class="csl-right-inline">Bennet L, Udumyan R, Östgren CJ, Rolandsson O, Jansson SPO, Wändell P. <a href="https://doi.org/10.1007/s00125-020-05279-1">Mortality in first- and second-generation immigrants to sweden diagnosed with type 2 diabetes: A 10&nbsp;year nationwide cohort study</a>. Diabetologia 2021;64(1):95–108. </div>
 </div>
-<div id="ref-ADA2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ADA2022" class="csl-entry" role="listitem">
 <div class="csl-left-margin">26. </div><div class="csl-right-inline">American Diabetes Association Professional Practice Committee. <span class="nocase">2. Classification and Diagnosis of Diabetes: Standards of Medical Care in Diabetes—2022</span>. Diabetes Care [Internet] 2021;45(Supplement_1):S17–38. Available from: <a href="https://doi.org/10.2337/dc22-S002">https://doi.org/10.2337/dc22-S002</a></div>
 </div>
-<div id="ref-Holm2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Holm2018" class="csl-entry" role="listitem">
 <div class="csl-left-margin">27. </div><div class="csl-right-inline">Holm AL, Andersen GS, Diderichsen F, Jørgensen ME. <a href="https://doi.org/10.1136/bmjopen-2018-023211"><span class="nocase">Is the Rule of Halves framework relevant for diabetes care in <span>Copenhagen</span> today? A register-based cross-sectional study</span></a>. BMJ Open 2018;8:e023211. </div>
 </div>
-<div id="ref-Kristensen2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Kristensen2007" class="csl-entry" role="listitem">
 <div class="csl-left-margin">28. </div><div class="csl-right-inline">Kristensen J, Bak J, Wittrup I, Lauritzen T. <a href="https://doi.org/10.1016/j.pcd.2007.07.007"><span class="nocase">Diabetes prevalence and quality of diabetes care among Lebanese or Turkish immigrants compared to a native Danish population</span></a>. Prim Care Diabetes 2007;Sep:1(3):159–65. </div>
 </div>
-<div id="ref-Tran2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Tran2010" class="csl-entry" role="listitem">
 <div class="csl-left-margin">29. </div><div class="csl-right-inline">Tran AT, Diep LM, Cooper JG, et al. <a href="https://doi.org/10.1186/1472-6963-10-145"><span class="nocase">Quality of care for patients with type 2 diabetes in general practice according to patients’ ethnic background: a cross-sectional study from Oslo, Norway</span></a>. BMC Health Serv Res 2010;10, 145. </div>
 </div>
-<div id="ref-Negandhi2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Negandhi2013" class="csl-entry" role="listitem">
 <div class="csl-left-margin">30. </div><div class="csl-right-inline">Negandhi PH, Ghouri N, Colhoun HM, et al. <a href="https://doi.org/10.1371/journal.pone.0083292"><span class="nocase">Ethnic Differences in Glycaemic Control in People with Type 2 Diabetes Mellitus Living in Scotland</span></a>. PLoS ONE 2013;8. </div>
 </div>
-<div id="ref-Rawshani2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Rawshani2015" class="csl-entry" role="listitem">
 <div class="csl-left-margin">31. </div><div class="csl-right-inline">Rawshani A, Svensson A, Rosengren A, Zethelius B, Eliasson B, Gudbjörnsdottir S. <a href="https://doi.org/10.1136/bmjopen-2015-007599"><span class="nocase">Impact of ethnicity on progress of glycaemic control in 131935 newly diagnosed patients with type 2 diabetes: a nationwide observational study from the Swedish National Diabetes Register</span></a>. BMJ Open 2015;5;e007599. </div>
 </div>
-<div id="ref-Whyte2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Whyte2019" class="csl-entry" role="listitem">
 <div class="csl-left-margin">32. </div><div class="csl-right-inline">Whyte MB, Hinton W, McGovern A, et al. <a href="https://doi.org/10.1371/journal.pmed.1002942"><span class="nocase">Disparities in glycaemic control, monitoring, and treatment of type 2 diabetes in England: A retrospective cohort analysis</span></a>. PLoS Med 2019;Oct 7; 16(10):e1002942. </div>
 </div>
-<div id="ref-Eastwood2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Eastwood2021" class="csl-entry" role="listitem">
 <div class="csl-left-margin">33. </div><div class="csl-right-inline">Eastwood SV, Mathur R, Sattar N, Smeeth L, Bhaskaran K, Chaturvedi N. <a href="https://doi.org/10.1371/journal.pmed.1003672"><span class="nocase">Ethnic differences in guideline-indicated statin initiation for people with type 2 diabetes in UK primary care, 2006-2019: A cohort study</span></a>. PLoS Med 2021;18. </div>
 </div>
-<div id="ref-Vandenheede2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Vandenheede2012" class="csl-entry" role="listitem">
 <div class="csl-left-margin">34. </div><div class="csl-right-inline">Vandenheede H, Deboosere P, Stirbu I, et al. <a href="https://doi.org/10.1007/s10654-011-9638-6"><span class="nocase">Migrant mortality from diabetes mellitus across Europe: the importance of socio-economic change</span></a>. Eur J Epidemiol 2012;Feb; 27(2):109-17. </div>
 </div>
-<div id="ref-t2d_burden_migrants" class="csl-entry" role="doc-biblioentry">
+<div id="ref-t2d_burden_migrants" class="csl-entry" role="listitem">
 <div class="csl-left-margin">35. </div><div class="csl-right-inline">Agyemang C, Linden EL van der, Bennet L. Type 2 diabetes burden among migrants in europe: Unravelling the causal pathways. Diabetologia [Internet] 2021;64(12):2665–75. Available from: <a href="https://doi.org/10.1007/s00125-021-05586-1">https://doi.org/10.1007/s00125-021-05586-1</a></div>
 </div>
-<div id="ref-haller2011arb" class="csl-entry" role="doc-biblioentry">
+<div id="ref-haller2011arb" class="csl-entry" role="listitem">
 <div class="csl-left-margin">36. </div><div class="csl-right-inline">Haller H, Ito S, Izzo JL, et al. Olmesartan for the delay or prevention of microalbuminuria in type 2 diabetes. New England Journal of Medicine [Internet] 2011;364(10):907–17. Available from: <a href="https://doi.org/10.1056/NEJMoa1007994">https://doi.org/10.1056/NEJMoa1007994</a></div>
 </div>
-<div id="ref-zoungas2011advance" class="csl-entry" role="doc-biblioentry">
+<div id="ref-zoungas2011advance" class="csl-entry" role="listitem">
 <div class="csl-left-margin">37. </div><div class="csl-right-inline">Zoungas S, Galan BE de, Ninomiya T, et al. <span class="nocase">Combined Effects of Routine Blood Pressure Lowering and Intensive Glucose Control on Macrovascular and Microvascular Outcomes in Patients With Type 2 Diabetes: New results from the ADVANCE trial</span>. Diabetes Care [Internet] 2009;32(11):2068–74. Available from: <a href="https://doi.org/10.2337/dc09-0959">https://doi.org/10.2337/dc09-0959</a></div>
 </div>
-<div id="ref-chron_kidney_dis" class="csl-entry" role="doc-biblioentry">
+<div id="ref-chron_kidney_dis" class="csl-entry" role="listitem">
 <div class="csl-left-margin">38. </div><div class="csl-right-inline">Stephens JW, Brown KE, Min T. Chronic kidney disease in type 2 diabetes: Implications for managing glycaemic control, cardiovascular and renal risk. Diabetes, Obesity and Metabolism [Internet] 2020;22(S1):32–45. Available from: <a href="https://dom-pubs.onlinelibrary.wiley.com/doi/abs/10.1111/dom.13942">https://dom-pubs.onlinelibrary.wiley.com/doi/abs/10.1111/dom.13942</a></div>
 </div>
-<div id="ref-RN237" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN237" class="csl-entry" role="listitem">
 <div class="csl-left-margin">39. </div><div class="csl-right-inline">Kim K, Unni S, Brixner DI, et al. Longitudinal changes in glycated haemoglobin following treatment intensification after inadequate response to two oral antidiabetic agents in patients with type 2 diabetes. Diabetes, Obesity and Metabolism [Internet] 2019;21(7):1725–33. Available from: <a href="https://dom-pubs.onlinelibrary.wiley.com/doi/abs/10.1111/dom.13694">https://dom-pubs.onlinelibrary.wiley.com/doi/abs/10.1111/dom.13694</a></div>
 </div>
-<div id="ref-RN228" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN228" class="csl-entry" role="listitem">
 <div class="csl-left-margin">40. </div><div class="csl-right-inline">Bonnet F, Chen H, Cooper A, et al. What are the factors associated with long-term glycaemic control in patients with type 2 diabetes and elevated glycated haemoglobin (≥7.0. Diabetes, Obesity and Metabolism [Internet] 2021;23(10):2336–43. Available from: <a href="https://dom-pubs.onlinelibrary.wiley.com/doi/abs/10.1111/dom.14476">https://dom-pubs.onlinelibrary.wiley.com/doi/abs/10.1111/dom.14476</a></div>
 </div>
-<div id="ref-RN226" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN226" class="csl-entry" role="listitem">
 <div class="csl-left-margin">41. </div><div class="csl-right-inline">Mathur R, Farmer RE, Eastwood SV, Chaturvedi N, Douglas I, Smeeth L. <a href="https://doi.org/10.1371/journal.pmed.1003106">Ethnic disparities in initiation and intensification of diabetes treatment in adults with type 2 diabetes in the UK, 1990-2017: A cohort study</a>. PLoS Med 2020;17(5):e1003106. </div>
 </div>
-<div id="ref-Marchesini2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Marchesini2014" class="csl-entry" role="listitem">
 <div class="csl-left-margin">42. </div><div class="csl-right-inline">Marchesini G, Bernardi D, Miccoli R, et al. <a href="https://doi.org/10.1016/j.numecd.2013.09.012"><span class="nocase">Under-treatment of migrants with diabetes in a universalistic health care system: The ARNO Observatory</span></a>. Nutr Metab Cardiovasc Dis 2014;24. </div>
 </div>
-<div id="ref-RN208" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN208" class="csl-entry" role="listitem">
 <div class="csl-left-margin">43. </div><div class="csl-right-inline">Vasti EC, Basina M, Calma J, Maron DJ, Rodriguez F, Sandhu AT. Disparities in adoption of new diabetic therapies with cardiovascular benefits. Diabetes Research and Clinical Practice [Internet] 2022;110233. Available from: <a href="https://www.sciencedirect.com/science/article/pii/S0168822722010476">https://www.sciencedirect.com/science/article/pii/S0168822722010476</a></div>
 </div>
-<div id="ref-RN218" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN218" class="csl-entry" role="listitem">
 <div class="csl-left-margin">44. </div><div class="csl-right-inline">Morton JI, Ilomӓki J, Magliano DJ, Shaw JE. The association of socioeconomic disadvantage and remoteness with receipt of type 2 diabetes medications in australia: A nationwide registry study. Diabetologia [Internet] 2021;64(2):349–60. Available from: <a href="https://doi.org/10.1007/s00125-020-05304-3">https://doi.org/10.1007/s00125-020-05304-3</a></div>
 </div>
-<div id="ref-RN225" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN225" class="csl-entry" role="listitem">
 <div class="csl-left-margin">45. </div><div class="csl-right-inline">Elhussein A, Anderson A, Bancks MP, et al. <a href="https://doi.org/10.1016/j.lana.2021.100111">Racial/ethnic and socioeconomic disparities in the use of newer diabetes medications in the look AHEAD study</a>. Lancet Reg Health Am 2022;6. </div>
 </div>
-<div id="ref-RN211" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN211" class="csl-entry" role="listitem">
 <div class="csl-left-margin">46. </div><div class="csl-right-inline">Falkentoft AC, Andersen J, Malik ME, et al. Impact of socioeconomic position on initiation of SGLT-2 inhibitors or GLP-1 receptor agonists in patients with type 2 diabetes – a danish nationwide observational study. The Lancet Regional Health - Europe [Internet] 2022;14:100308. Available from: <a href="https://www.sciencedirect.com/science/article/pii/S2666776222000011">https://www.sciencedirect.com/science/article/pii/S2666776222000011</a></div>
 </div>
-<div id="ref-RN224" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN224" class="csl-entry" role="listitem">
 <div class="csl-left-margin">47. </div><div class="csl-right-inline">Nicolucci A, Charbonnel B, Gomes MB, et al. Treatment patterns and associated factors in 14 668 people with type 2 diabetes initiating a second-line therapy: Results from the global DISCOVER study programme. Diabetes, Obesity and Metabolism [Internet] 2019;21(11):2474–85. Available from: <a href="https://dom-pubs.onlinelibrary.wiley.com/doi/abs/10.1111/dom.13830">https://dom-pubs.onlinelibrary.wiley.com/doi/abs/10.1111/dom.13830</a></div>
 </div>
-<div id="ref-RamirezSanchez2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RamirezSanchez2013" class="csl-entry" role="listitem">
 <div class="csl-left-margin">48. </div><div class="csl-right-inline">Ramirez-Sanchez DC, Krasnik A, Kildemoes HW. <a href="https://doi.org/10.1007/s00228-012-1306-6"><span class="nocase">Do immigrants from Turkey, Pakistan and Ex-Yugoslavia with newly diagnosed type 2 diabetes initiate recommended statin therapy to the same extent as Danish-born residents? A nationwide register study</span></a>. Eur J Clin Pharmacol 2013;69:87–95. </div>
 </div>
-<div id="ref-Marzona2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Marzona2018" class="csl-entry" role="listitem">
 <div class="csl-left-margin">49. </div><div class="csl-right-inline">Marzona I, Avanzini F, Tettamanti M, et al. <a href="https://doi.org/10.1007/s00592-018-1102-6"><span class="nocase">Prevalence and management of diabetes in immigrants resident in the Lombardy Region: the importance of ethnicity and duration of stay</span></a>. Acta Diabetol 2018;55:355–62. </div>
 </div>
-<div id="ref-selecting_indicators" class="csl-entry" role="doc-biblioentry">
+<div id="ref-selecting_indicators" class="csl-entry" role="listitem">
 <div class="csl-left-margin">50. </div><div class="csl-right-inline">Nicolucci A, Greenfield S, Mattke S. <span class="nocase">Selecting indicators for the quality of diabetes care at the health systems level in OECD countries</span>. International Journal for Quality in Health Care [Internet] 2006;18(suppl_1):26–30. Available from: <a href="https://doi.org/10.1093/intqhc/mzl023">https://doi.org/10.1093/intqhc/mzl023</a></div>
 </div>
-<div id="ref-dvdd" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dvdd" class="csl-entry" role="listitem">
 <div class="csl-left-margin">51. </div><div class="csl-right-inline">Jørgensen ME, Kristensen JK, Reventlov Husted G, Cerqueira C, Rossing P. The danish adult diabetes registry. Clinical epidemiology [Internet] 2016;8:429–34. Available from: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27843339
 https://www.ncbi.nlm.nih.gov/pmc/PMC5098513/">https://www.ncbi.nlm.nih.gov/pubmed/27843339 https://www.ncbi.nlm.nih.gov/pmc/PMC5098513/</a></div>
 </div>
-<div id="ref-fbv2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fbv2022" class="csl-entry" role="listitem">
 <div class="csl-left-margin">52. </div><div class="csl-right-inline">Dansk Selskab for Almen Medicin &amp; Dansk Endokrinologisk Selskab [English: The Danish College of General Practitioners &amp; The Danish Endocrine Society. <span class="nocase">Farmakologisk behandling af type 2-diabetes [English: Pharmacological treatment of type 2 diabetes]</span> [Internet]. {2022; 2023 revision};Available from: <a href="https://vejledninger.dsam.dk/fbv-t2dm/">https://vejledninger.dsam.dk/fbv-t2dm/</a></div>
 </div>
-<div id="ref-swedenguidelines" class="csl-entry" role="doc-biblioentry">
+<div id="ref-swedenguidelines" class="csl-entry" role="listitem">
 <div class="csl-left-margin">53. </div><div class="csl-right-inline">Socialstyrelsen [English: The National Board of Health and Welfare]. <span class="nocase">Nationella riktlinjer för diabetesvård [English: National guidelines for diabetes care]</span> [Internet]. 2018;Available from: <a href="https://www.socialstyrelsen.se/kunskapsstod-och-regler/regler-och-riktlinjer/nationella-riktlinjer/riktlinjer-och-utvarderingar/diabetes/">https://www.socialstyrelsen.se/kunskapsstod-och-regler/regler-och-riktlinjer/nationella-riktlinjer/riktlinjer-och-utvarderingar/diabetes/</a></div>
 </div>
-<div id="ref-germanguidelines" class="csl-entry" role="doc-biblioentry">
+<div id="ref-germanguidelines" class="csl-entry" role="listitem">
 <div class="csl-left-margin">54. </div><div class="csl-right-inline">Nationale VersorgungsLeitlinie [English: National Care Guidelines]. <span>NVL Typ-2-Diabetes</span> [Internet]. 2021;Available from: <a href="https://www.leitlinien.de/themen/diabetes/2-auflage/">https://www.leitlinien.de/themen/diabetes/2-auflage/</a></div>
 </div>
-<div id="ref-dutchguidelines" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dutchguidelines" class="csl-entry" role="listitem">
 <div class="csl-left-margin">55. </div><div class="csl-right-inline">Nederlands Huisarten Genootschap [English: Dutch College of General Practitioners]. <span class="nocase">NHG STANDARD: Diabetes mellitus type 2</span> [Internet]. {2018, latest revision January 2023};Available from: <a href="https://richtlijnen.nhg.org/standaarden/diabetes-mellitus-type-2">https://richtlijnen.nhg.org/standaarden/diabetes-mellitus-type-2</a></div>
 </div>
-<div id="ref-niceguidelines" class="csl-entry" role="doc-biblioentry">
+<div id="ref-niceguidelines" class="csl-entry" role="listitem">
 <div class="csl-left-margin">56. </div><div class="csl-right-inline">National Institute for Health and Care Excellence. <span class="nocase">NICE guideline [NG28]: Type 2 diabetes in adults: management</span> [Internet]. {2015, latest revision June 2022};Available from: <a href="https://www.nice.org.uk/guidance/ng28">https://www.nice.org.uk/guidance/ng28</a></div>
 </div>
-<div id="ref-norwayguidelines" class="csl-entry" role="doc-biblioentry">
+<div id="ref-norwayguidelines" class="csl-entry" role="listitem">
 <div class="csl-left-margin">57. </div><div class="csl-right-inline">Helsedirektoratet [English: Norwegian Directorate of Health]. <span class="nocase">Nasjonal faglig retningslinje for diabetes [English: National professional guideline for diabetes]</span> [Internet]. {2016, latest revision March 2021};Available from: <a href="https://www.helsedirektoratet.no/retningslinjer/diabetes">https://www.helsedirektoratet.no/retningslinjer/diabetes</a></div>
 </div>
-<div id="ref-dsam2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dsam2004" class="csl-entry" role="listitem">
 <div class="csl-left-margin">58. </div><div class="csl-right-inline">Dansk Selskab for Almen Medicin [English: The Danish College of General Practitioners]. <span class="nocase">Type 2-diabetes i almen praksis - en evidensbaseret vejledning [English: Type 2 diabetes in general practice - an evidence-based guideline]</span> [Internet]. {2004; last accessed on 7 Feb 2023};Available from: <a href="https://vejledninger.dsam.dk/media/files/20/type_2_diabetes_2004_rettet.pdf">https://vejledninger.dsam.dk/media/files/20/type_2_diabetes_2004_rettet.pdf</a></div>
 </div>
-<div id="ref-dsam2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dsam2012" class="csl-entry" role="listitem">
 <div class="csl-left-margin">59. </div><div class="csl-right-inline">Dansk Selskab for Almen Medicin [English: The Danish College of General Practitioners]. <span class="nocase">Type 2-diabetes - et metabolisk syndrom [English: Type 2 diabetes - a metabolic syndrome]</span> [Internet]. {2012; last accessed on 7 Feb 2023};Available from: <a href="https://vejledninger.dsam.dk/media/files/20/type-2-diabetes-2012-med-links.pdf">https://vejledninger.dsam.dk/media/files/20/type-2-diabetes-2012-med-links.pdf</a></div>
 </div>
-<div id="ref-dsam2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dsam2019" class="csl-entry" role="listitem">
 <div class="csl-left-margin">60. </div><div class="csl-right-inline">Dansk Selskab for Almen Medicin [English: The Danish College of General Practitioners]. <span class="nocase">Type 2-diabetes - opfølgning og behandling [English: Type 2 diabetes - follow-up and treatment]</span> [Internet]. {2019; last accessed on 7 Feb 2023};Available from: <a href="https://vejledninger.dsam.dk/type2/">https://vejledninger.dsam.dk/type2/</a></div>
 </div>
-<div id="ref-dos2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dos2018" class="csl-entry" role="listitem">
 <div class="csl-left-margin">61. </div><div class="csl-right-inline">Danish Ophthalmological Society. <span class="nocase">National retningslinje for screening for diabetisk retinopati [English: National guideline on screening for diabetic retinopathy]</span> [Internet]. {2018; last accessed on 7 Feb 2023};Available from: <a href="https://dansk-oftalmologisk-selskab.dk/wp-content/uploads/2021/05/National-retningslinje-for-screening-af-diabetisk-retinopati.pdf">https://dansk-oftalmologisk-selskab.dk/wp-content/uploads/2021/05/National-retningslinje-for-screening-af-diabetisk-retinopati.pdf</a></div>
 </div>
-<div id="ref-RN184" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN184" class="csl-entry" role="listitem">
 <div class="csl-left-margin">62. </div><div class="csl-right-inline">Marszalek RT, Flintoft L. Being open: Our policy on source code. Genome Biology [Internet] 2016;17(1):172. Available from: <a href="https://doi.org/10.1186/s13059-016-1040-y">https://doi.org/10.1186/s13059-016-1040-y</a></div>
 </div>
-<div id="ref-RN89" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN89" class="csl-entry" role="listitem">
 <div class="csl-left-margin">63. </div><div class="csl-right-inline">Dima AL, Dediu D. <a href="https://doi.org/10.1371/journal.pone.0174426">Computation of adherence to medication and visualization of medication histories in r with AdhereR: Towards transparent and reproducible use of electronic healthcare data</a>. PLoS One 2017;12(4):e0174426. </div>
 </div>
-<div id="ref-RN165" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN165" class="csl-entry" role="listitem">
 <div class="csl-left-margin">64. </div><div class="csl-right-inline">Nielsen AA, Christensen H, Lund ED, Christensen C, Brandslund I, Green A. Diabetes mortality differs between registers due to various disease definitions. Dan Med J 2014;61(5):A4840. </div>
 </div>
-<div id="ref-RN167" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN167" class="csl-entry" role="listitem">
 <div class="csl-left-margin">65. </div><div class="csl-right-inline">Rawshani A, Landin-Olsson M, Svensson AM, et al. <a href="https://doi.org/10.1007/s00125-014-3225-9">The incidence of diabetes among 0-34 year olds in sweden: New data and better methods</a>. Diabetologia 2014;57(7):1375–81. </div>
 </div>
-<div id="ref-RN166" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN166" class="csl-entry" role="listitem">
 <div class="csl-left-margin">66. </div><div class="csl-right-inline">Bak JCG, Serné EH, Kramer MHH, Nieuwdorp M, Verheugt CL. National diabetes registries: Do they make a difference? Acta Diabetologica [Internet] 2021;58(3):267–78. Available from: <a href="https://doi.org/10.1007/s00592-020-01576-8">https://doi.org/10.1007/s00592-020-01576-8</a></div>
 </div>
-<div id="ref-RN168" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN168" class="csl-entry" role="listitem">
 <div class="csl-left-margin">67. </div><div class="csl-right-inline">Hallgren Elfgren I-M, Grodzinsky E, Törnvall E. The swedish national diabetes register in clinical practice and evaluation in primary health care. Primary Health Care Research &amp;amp; Development [Internet] 2016;17(6):549–58. Available from: <a href="https://www.cambridge.org/core/article/swedish-national-diabetes-register-in-clinical-practice-and-evaluation-in-primary-health-care/F3A9B74FED1E7B36147FF63382939B9A">https://www.cambridge.org/core/article/swedish-national-diabetes-register-in-clinical-practice-and-evaluation-in-primary-health-care/F3A9B74FED1E7B36147FF63382939B9A</a></div>
 </div>
-<div id="ref-RN169" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN169" class="csl-entry" role="listitem">
 <div class="csl-left-margin">68. </div><div class="csl-right-inline">Cooper JG, Thue G, Claudi T, Løvaas K, Carlsen S, Sandberg S. The norwegian diabetes register for adults – an overview of the first years. Norsk Epidemiologi [Internet] 2013;23(1). Available from: <a href="https://www.ntnu.no/ojs/index.php/norepid/article/view/1599">https://www.ntnu.no/ojs/index.php/norepid/article/view/1599</a></div>
 </div>
-<div id="ref-RN174" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN174" class="csl-entry" role="listitem">
 <div class="csl-left-margin">69. </div><div class="csl-right-inline">Klompas M, Eggleston E, McVetta J, Lazarus R, Li L, Platt R. <a href="https://doi.org/10.2337/dc12-0964">Automated detection and classification of type 1 versus type 2 diabetes using electronic health record data</a>. Diabetes Care 2013;36(4):914–21. </div>
 </div>
-<div id="ref-RN175" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN175" class="csl-entry" role="listitem">
 <div class="csl-left-margin">70. </div><div class="csl-right-inline">Schroeder EB, Donahoo WT, Goodrich GK, Raebel MA. <a href="https://doi.org/10.1002/pds.4377">Validation of an algorithm for identifying type 1 diabetes in adults based on electronic health record data</a>. Pharmacoepidemiol Drug Saf 2018;27(10):1053–9. </div>
 </div>
-<div id="ref-RN176" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN176" class="csl-entry" role="listitem">
 <div class="csl-left-margin">71. </div><div class="csl-right-inline">Lo-Ciganic W, Zgibor JC, Ruppert K, Arena VC, Stone RA. <a href="https://doi.org/10.1177/193229681100500303">Identifying type 1 and type 2 diabetic cases using administrative data: A tree-structured model</a>. J Diabetes Sci Technol 2011;5(3):486–93. </div>
 </div>
-<div id="ref-RN177" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN177" class="csl-entry" role="listitem">
 <div class="csl-left-margin">72. </div><div class="csl-right-inline">Weisman A, Tu K, Young J, et al. <a href="https://doi.org/10.1136/bmjdrc-2020-001224">Validation of a type 1 diabetes algorithm using electronic medical records and administrative healthcare data to study the population incidence and prevalence of type 1 diabetes in ontario, canada</a>. BMJ Open Diabetes Res Care 2020;8(1). </div>
 </div>
-<div id="ref-RN178" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RN178" class="csl-entry" role="listitem">
 <div class="csl-left-margin">73. </div><div class="csl-right-inline">Lynam A, McDonald T, Hill A, et al. <a href="https://doi.org/10.1136/bmjopen-2019-031586">Development and validation of multivariable clinical diagnostic models to identify type 1 diabetes requiring rapid insulin therapy in adults aged 18-50 years</a>. BMJ Open 2019;9(9):e031586. </div>
 </div>
-<div id="ref-ndr" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ndr" class="csl-entry" role="listitem">
 <div class="csl-left-margin">74. </div><div class="csl-right-inline">Carstensen B, Kristensen JK, Marcussen MM, Borch-Johnsen K. <a href="https://doi.org/10.1177/1403494811404278">The national diabetes register</a>. Scand J Public Health 2011;39(7 Suppl):58–61. </div>
 </div>
-<div id="ref-validationndr" class="csl-entry" role="doc-biblioentry">
+<div id="ref-validationndr" class="csl-entry" role="listitem">
 <div class="csl-left-margin">75. </div><div class="csl-right-inline">Green A, Sortsø C, Jensen PB, Emneus M. Validation of the danish national diabetes register. Clinical epidemiology [Internet] 2014;7:5–15. Available from: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25565889
 https://www.ncbi.nlm.nih.gov/pmc/PMC4274151/">https://www.ncbi.nlm.nih.gov/pubmed/25565889 https://www.ncbi.nlm.nih.gov/pmc/PMC4274151/</a></div>
 </div>
-<div id="ref-ruks1doc" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ruks1doc" class="csl-entry" role="listitem">
 <div class="csl-left-margin">76. </div><div class="csl-right-inline">Sundhedsdatastyrelsen [English: Danish Health Data Authority]. <span class="nocase">Algoritmer for udvalgte kroniske sygdomme og svære psykiske lidelser [English: Algorithms for selected chronic diseases and serious mental illnesses]</span> [Internet]. {2016, last accessed 7 Feb 2023};Available from: <a href="https://www.esundhed.dk/-/media/Files/Dokumentation/Register-for-Udvalgte-Kroniske-Sygdomme-og-Svaere-Psykiske-Lidelser/29_Algoritmer_for_RUKS.ashx">https://www.esundhed.dk/-/media/Files/Dokumentation/Register-for-Udvalgte-Kroniske-Sygdomme-og-Svaere-Psykiske-Lidelser/29_Algoritmer_for_RUKS.ashx</a></div>
 </div>
-<div id="ref-rlrr" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rlrr" class="csl-entry" role="listitem">
 <div class="csl-left-margin">77. </div><div class="csl-right-inline">Sundhedsdatastyrelsen [English: Danish Health Data Authority]. <span class="nocase">Dokumentation af Laboratoriedatabasens Forskertabel – Version 1.3 [English: Documentation on Register of Laboratory Results for Research - version 1.3]</span> [Internet]. {2018, last accessed 7 Feb 2023};Available from: <a href="https://sundhedsdatastyrelsen.dk/-/media/sds/filer/registre-og-services/nationale-sundhedsregistre/doedsaarsager-og-biologisk-materiale/laboratoriedatabasen/dokumentation-af-labdatabasens-forskertabel.pdf">https://sundhedsdatastyrelsen.dk/-/media/sds/filer/registre-og-services/nationale-sundhedsregistre/doedsaarsager-og-biologisk-materiale/laboratoriedatabasen/dokumentation-af-labdatabasens-forskertabel.pdf</a></div>
 </div>
 </div>
@@ -754,9 +785,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -821,6 +866,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
