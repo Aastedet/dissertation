@@ -1,6 +1,14 @@
 # Results in summary {#sec-results}
 
-This chapter presents the nationwide register-based T2D cohort identified by the OSDC and details the flow of individuals through the algorithm. Next, the main results of each study associated with the dissertation are presented. Additional details are available in the respective papers and their supplementary material, attached in @sec-papers.
+This chapter presents the nationwide register-based T2D cohort identified by the OSDC and details the flow of individuals through the algorithm. Next, the main results of each study associated with the dissertation are presented.
+
+::: {.content-visible when-format="pdf"}
+Additional details are available in the respective papers and their supplementary material, attached in @sec-papers.
+:::
+
+::: {.content-visible when-format="html"}
+Additional details are available in the respective papers and their supplementary material, linked [here](https://aastedet.github.io/dissertation/0-papers.html)
+:::
 
 ## Register-based type 2 diabetes population
 

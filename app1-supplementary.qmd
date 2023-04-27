@@ -61,3 +61,17 @@ Validation analyses performed among respondents in the National Health Survey 20
 
 **Supplementary: Validation of uspecified diabetes in the National Health Survey**
 :::
+
+::: {.content-visible when-format="pdf"}
+# Full papers {#sec-papers}
+
+## Paper I
+
+\newpage
+
+## Paper II
+
+\newpage
+
+## Paper III
+:::
