@@ -42,11 +42,25 @@
     "text": "Outline of the dissertation\nChapter 1 describes type 2 diabetes (T2D) and how migrants are at particular risk. It then outlines the context of migration and health care in Denmark and clinical guideline recommendations for T2D. Finally, it introduces the reader to identification of diabetes patients in Danish healthcare registers.\nChapter 2 states the overall aims of this PhD project and each individual study.\nChapter 3 describes the setting, data sources, methods and study designs used in the studies of this PhD project.\nChapter 4 presents the main results of the studies.\nChapter 5 contains a discussion of the methods used and their potential impact on results.\nChapter 6 discusses the main findings of each study and compares them to existing literature. Finally, the clinical implications of the results are discussed.\nChapter 7 presents the main conclusions.\nChapter 8 addresses the future perspectives raised by the dissertation and discusses the opportunities for research in the evolving research field.\nThe rest of the dissertation includes a list of references, English and Danish summaries, a supplementary validation analysis, and the three papers of the dissertation and their supplementary materials."
   },
   {
-    "objectID": "0-papers.html",
-    "href": "0-papers.html",
+    "objectID": "0-papers.html#study-i",
+    "href": "0-papers.html#study-i",
     "title": "Papers in the dissertation",
-    "section": "",
-    "text": "Isaksen AA, Sandbæk A, Bjerg L. Validation of Register-Based Diabetes Classifiers in Danish Data. Clinical Epidemiology. In press 2023.\nIsaksen AA, Sandbæk A, Skriver MV, Andersen GS, Bjerg L. Guideline-level monitoring, biomarker levels and pharmacological treatment in migrants and native Danes with type 2 diabetes: population-wide analyses. PLOS Global Public Health. In review 2023.\nIsaksen AA, Sandbæk A, Skriver MV, Bjerg L. Glucose-lowering drug use in migrants and native Danes with type 2 diabetes: Disparities in combination therapy and drug types. Diabetes, Obesity and Metabolism. In review 2023."
+    "section": "Study I",
+    "text": "Study I\nIsaksen AA, Sandbæk A, Bjerg L. Validation of Register-Based Diabetes Classifiers in Danish Data. Clinical Epidemiology. In press 2023."
+  },
+  {
+    "objectID": "0-papers.html#study-ii",
+    "href": "0-papers.html#study-ii",
+    "title": "Papers in the dissertation",
+    "section": "Study II",
+    "text": "Study II\nIsaksen AA, Sandbæk A, Skriver MV, Andersen GS, Bjerg L. Guideline-level monitoring, biomarker levels and pharmacological treatment in migrants and native Danes with type 2 diabetes: population-wide analyses. PLOS Global Public Health. In review 2023."
+  },
+  {
+    "objectID": "0-papers.html#study-iii",
+    "href": "0-papers.html#study-iii",
+    "title": "Papers in the dissertation",
+    "section": "Study III",
+    "text": "Study III\nIsaksen AA, Sandbæk A, Skriver MV, Bjerg L. Glucose-lowering drug use in migrants and native Danes with type 2 diabetes: Disparities in combination therapy and drug types. Diabetes, Obesity and Metabolism. In review 2023."
   },
   {
     "objectID": "0-abbreviations.html",
@@ -313,26 +327,5 @@
     "title": "Appendix A — Supplementary validation analyses",
     "section": "",
     "text": "A.0.1 Validation of unspecified diabetes in the Health In Central Denmark survey and in the National Health Survey.\nValidation analyses performed in the HICD study population from study I:\n\n\nTable A.1: Supplementary: Validation of uspecified diabetes in the HICD study population\n\n\n\n\n(a) The Open-Source Diabetes Classifier (OSDC)\n\n\n\n\n\n\n\n\nOSDC\nSurvey: +DM\nSurvey: -DM\nTotal N\n\n\n\n\nOSDC: +DM\n2,512\n221\n2,733\n\n\nOSDC: -DM\n121\n26,537\n26,658\n\n\nTotal N\n2,633\n26,758\n29,391\n\n\nSensitivity\n0.954 (0.945, 0.962)\n\n\n\n\nSpecificity\n0.992 (0.991, 0.993)\n\n\n\n\nPPV\n0.919 (0.908, 0.929)\n\n\n\n\nNPV\n0.995 (0.995, 0.996)\n\n\n\n\n\n\n\n\n\n\n(b) The Register for Selected Chronic Diseases (RSCD)\n\n\n\n\n\n\n\n\n\nRSCD\nSurvey: +DM\nSurvey: -DM\nTotal N\n****\n\n\n\n\nRSCD: +DM\n2,422\n122\n2,544\n\n\n\nRSCD: -DM\n211\n26,636\n26,847\n\n\n\nTotal N\n2,633\n26,758\n29,391\n\n\n\nSensitivity\n0.920 (0.909, 0.930)\n\n\n\n\n\nSpecificity\n0.995 (0.995, 0.996)\n\n\n\n\n\nPPV\n0.952 (0.943, 0.960)\n\n\n\n\n\nNPV\n0.992 (0.991, 0.993)\n\n\n\n\n\n\n\n\n\nValidation analyses performed among respondents in the National Health Survey 2017 (individuals reporting diabetes as a current disease were considered diabetes cases).\n\n\nTable A.2: Supplementary: Validation of uspecified diabetes in the National Health Survey\n\n\n\n\n(a) The Open-Source Diabetes Classifier (OSDC)\n\n\nOSDC\nSurvey: +DM\nSurvey: -DM\nTotal N\n\n\n\n\nOSDC: +DM\n1,630\n258\n1,888\n\n\nOSDC: -DM\n87\n26,46\n26,547\n\n\nTotal N\n1,717\n26,718\n28,435\n\n\nSensitivity\n0.95 (0.94, 0.96)\n\n\n\n\nSpecificity\n0.99 (0.99, 0.99)\n\n\n\n\nPPV\n0.86 (0.85, 0.88)\n\n\n\n\nNPV\n1.00 (1.00, 1.00)\n\n\n\n\n\n\n\n\n\n\n(b) The Register for Selected Chronic Diseases (RSCD)\n\n\nRSCD\nSurvey: +DM\nSurvey: -DM\nTotal N\n\n\n\n\nRSCD: +DM\n1,546\n184\n1,730\n\n\nRSCD: -DM\n171\n26,534\n26,705\n\n\nTotal N\n1,717\n26,718\n28,435\n\n\nSensitivity\n0.90 (0.89, 0.91)\n\n\n\n\nSpecificity\n0.99 (0.99, 0.99)\n\n\n\n\nPPV\n0.89 (0.88, 0.91)\n\n\n\n\nNPV\n0.99 (0.99, 0.99)"
-  },
-  {
-    "objectID": "app2-papers.html#paper-i",
-    "href": "app2-papers.html#paper-i",
-    "title": "Appendix B — Full papers",
-    "section": "B.1 Paper I",
-    "text": "B.1 Paper I"
-  },
-  {
-    "objectID": "app2-papers.html#paper-ii",
-    "href": "app2-papers.html#paper-ii",
-    "title": "Appendix B — Full papers",
-    "section": "B.2 Paper II",
-    "text": "B.2 Paper II"
-  },
-  {
-    "objectID": "app2-papers.html#paper-iii",
-    "href": "app2-papers.html#paper-iii",
-    "title": "Appendix B — Full papers",
-    "section": "B.3 Paper III",
-    "text": "B.3 Paper III"
   }
 ]
