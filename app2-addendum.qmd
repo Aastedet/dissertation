@@ -1,0 +1,19 @@
+# Addenda and errata
+
+This chapter contains an overview of:
+
+-   Addenda: contents added since the submitted version of the disseration ([commit db88939](https://github.com/Aastedet/dissertation/commit/db889394f613a8e0b034904f97a75e2d4e09da9c)).
+-   Errata: corrections to errors discovered since submission of the dissertation.
+
+## Addenda
+
+## Errata
+
+-   In section 5.1.5. Incidence and demographic characteristics of register-based diabetes cohorts, the following excerpt on the interpretation of @fig-age-inclusion-by-year states:
+    -   "Before 2016, when HbA1c data was not available from all regions of Denmark, a spike of inclusions is seen for women with T2D included at age 40 years. This spike is absent in the subsequent years, but the distribution is slightly skewed with a plateau in the age range 40-45 years. This is likely a residual effect of women in this age range having been prematurely included in the preceding years."
+
+        -   This statement misinterprets some elements of the figure, addressed below:
+
+            -   The density plots are smoothed, and spikes in single years are less visible compared to a histogram of observed counts (due to statistical disclosure requirements, this data could not be visualised using histograms). While the spike in included OSDC T2D-cases among women age 40 is indeed much lower in the years 2016-2018 than in the previous years, it is still present.
+
+            -   The spike is likely to be caused by women from Southern Denmark Region (which did not supply complete HbA1c data before 2016) with onset of T2D before the age of 40 years during calendar years before 2016. These women may have initiated metformin treatment before 2016. If they achieved stable euglycaemia using only metformin, they would not be be captured by the HbA1c inclusion criterion. Their inclusion into the cohort would be delayed until censoring of metformin purchases ceases at age 40 years, thus causing a spike.
