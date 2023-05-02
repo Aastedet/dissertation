@@ -26,6 +26,7 @@ book:
     - summary-danish.qmd
   appendices:
     - app1-supplementary.qmd
+    - app1-addendum.qmd
 
 bibliography: references.bib
 csl: citestyle.csl
