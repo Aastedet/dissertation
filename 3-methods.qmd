@@ -202,8 +202,14 @@ T2D prevalence was studied in the above population. To study T2D care where clin
         -   LLD: prevalent macrovascular complications or DKD, or age above 40 with LDL-C above 2.5 mmol/L: 128,707 individuals.
         -   ACEI/ARB & APT: prevalent macrovascular complications or DKD: 77,414 individuals.
 
-::: {#fig-study-2-flow}
-[![](figures/study2flow_landscape.png)](https://aastedet.github.io/dissertation/figures/study2flow.png)
+::: {#fig-study-2-flow .content-hidden unless-format="pdf"}
+[![](figures/study2flow_landscape.png)](https://raw.githubusercontent.com/Aastedet/dissertation/main/figures/study2flow.png)
+
+**Study population flow in analyses in study II**
+:::
+
+::: {#fig-study-2-flow .content-hidden when-format="pdf"}
+[![](figures/study2flow.png)](https://raw.githubusercontent.com/Aastedet/dissertation/main/figures/study2flow.png)
 
 **Study population flow in analyses in study II**
 :::

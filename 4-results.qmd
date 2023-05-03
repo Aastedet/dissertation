@@ -21,7 +21,7 @@ When applied to nationwide register data (described in @sec-methods) on all indi
 In this diabetes cohort, 34,079 were classified as T1D and 425,300 as T2D, of whom 24,026 and 276,081 were alive and residing in Denmark with prevalent T1D and T2D on 1 January 2019 after adjusting for insulin use in the previous year, as shown in @fig-osdc-type-flow. Among individuals exclusively treated with insulin (left half of @fig-osdc-type-flow), around 75% had at least one primary hospital diagnosis of T1D from a medical department. These constituted the vast majority of T1D cases, as the classification branch containing individuals with any non-insulin GLD purchase (right half of @fig-osdc-type-flow) contributed only 2,748 (8%) of all T1D cases in the cohort. Correcting the cross-sectional classifier populations for recent insulin purchases prior to a particular index date had little impact (e.g. on 1 January 2019, only 413 (1.7%) of the T1D classifications in the cohort had not made a purchase of insulin in the previous year). The classification of T2D cases in the cohort was more homogeneous, as the vast majority (382,116 (90%) of 425,300 cases) were individuals with purchases of non-insulin GLD and no primary hospital diagnoses of T1D from a medical department (the rightmost path of @fig-osdc-type-flow).
 
 ::: {#fig-osdc-inc-flow}
-[![](figures/osdc_flow/inclusion_flow.png)](https://aastedet.github.io/dissertation/figures/osdc_flow/inclusion_flow.svg)
+[![](figures/osdc_flow/inclusion_flow.png)](https://raw.githubusercontent.com/Aastedet/dissertation/main/figures/osdc_flow/inclusion_flow.svg)
 
 Counts indicate the number of individuals with any records of each inclusion criteria, and with any censored inclusion events (thus, an individual may contribute to several counts, and individuals with censored events may have uncensored events recorded at other points in time).
 
@@ -29,7 +29,7 @@ Counts indicate the number of individuals with any records of each inclusion cri
 :::
 
 ::: {#fig-osdc-type-flow}
-[![](figures/osdc_flow/type_flow.png)](https://aastedet.github.io/dissertation/figures/osdc_flow/type_flow.svg)
+[![](figures/osdc_flow/type_flow.png)](https://raw.githubusercontent.com/Aastedet/dissertation/main/figures/osdc_flow/type_flow.svg)
 
 **Logic and flow of classification of diabetes type in the Open-Source Diabetes Classifier**
 :::
