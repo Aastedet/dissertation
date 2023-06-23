@@ -38,7 +38,7 @@ Validation analyses performed among respondents in the National Health Survey 20
 | **OSDC**        | **Survey: +DM**   | **Survey: -DM** | **Total N** |
 |-----------------|-------------------|-----------------|-------------|
 | **OSDC: +DM**   | 1,630             | 258             | 1,888       |
-| **OSDC: -DM**   | 87                | 26,46           | 26,547      |
+| **OSDC: -DM**   | 87                | 26,460          | 26,547      |
 | **Total N**     | 1,717             | 26,718          | 28,435      |
 | **Sensitivity** | 0.95 (0.94, 0.96) |                 |             |
 | **Specificity** | 0.99 (0.99, 0.99) |                 |             |
