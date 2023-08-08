@@ -35,12 +35,13 @@ execute:
   freeze: auto
   echo: false # change to false to hide code
   
+website:
+  google-analytics: "G-98HE1VGDR4"
 
 format:
   html:
     theme: cosmo
     default-image-extension: svg
-    google-analytics: "G-98HE1VGDR4"
   docx: 
     toc: true
     number-sections: true
