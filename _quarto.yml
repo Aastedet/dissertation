@@ -27,7 +27,13 @@ book:
   appendices:
     - app1-supplementary.qmd
     - app2-addendum.qmd
-  google-analytics: "G-98HE1VGDR4"
+  cookie-consent:
+    type: express
+    style: headline
+    palette: light
+  google-analytics:
+    tracking-id: "G-98HE1VGDR4"
+    anonymize-ip: true
 
 bibliography: references.bib
 csl: citestyle.csl
