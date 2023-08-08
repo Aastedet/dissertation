@@ -28,8 +28,6 @@ book:
     - app1-supplementary.qmd
     - app2-addendum.qmd
   cookie-consent:
-    type: express
-    style: headline
     palette: light
   google-analytics:
     tracking-id: "G-98HE1VGDR4"
