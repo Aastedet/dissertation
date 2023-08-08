@@ -31,7 +31,6 @@ book:
     palette: light
   google-analytics:
     tracking-id: "G-98HE1VGDR4"
-    anonymize-ip: true
 
 bibliography: references.bib
 csl: citestyle.csl
