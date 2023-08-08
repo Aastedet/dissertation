@@ -27,6 +27,7 @@ book:
   appendices:
     - app1-supplementary.qmd
     - app2-addendum.qmd
+  google-analytics: "G-98HE1VGDR4"
 
 bibliography: references.bib
 csl: citestyle.csl
@@ -35,9 +36,6 @@ execute:
   freeze: auto
   echo: false # change to false to hide code
   
-website:
-  google-analytics: "G-98HE1VGDR4"
-
 format:
   html:
     theme: cosmo
