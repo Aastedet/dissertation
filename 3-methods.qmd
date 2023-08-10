@@ -189,13 +189,13 @@ After these exclusions, 47,350 survey respondents remained. However, as survey i
 
 Register data was used to identify 262,837 individuals with prevalent T2D on 1 January 2018 (index date) from a background population of 3,864,528 native Danes or first-generation migrants from the selected origin categories aged 25-99 years and residing in Denmark for at least three years on the index date.
 
-::: .content-hidden unless-format="pdf"}
+::: {.content-hidden unless-format="pdf"}
 
 T2D prevalence was studied in the above population. To study T2D care where clinically relevant, the eleven analyses of T2D care were performed in distinct subsets of the population with T2D, as outlined below and in @fig-study-2-flow-pdf:
 
 :::
 
-::: .content-hidden when-format="pdf"}
+::: {.content-hidden when-format="pdf"}
 
 T2D prevalence was studied in the above population. To study T2D care where clinically relevant, the eleven analyses of T2D care were performed in distinct subsets of the population with T2D, as outlined below and in @fig-study-2-flow-nonpdf:
 
