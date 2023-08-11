@@ -193,13 +193,25 @@ Register data was used to identify 262,837 individuals with prevalent T2D on 1 J
 
 T2D prevalence was studied in the above population. To study T2D care where clinically relevant, the eleven analyses of T2D care were performed in distinct subsets of the population with T2D, as outlined below and in @fig-study-2-flow-pdf:
 
+-   All analyses of T2D care were performed in a subset of 254,097 individuals with T2D onset at least six months prior to the index date to allow time for baseline screening, initiation of pharmacological treatment and subsequent biomarker control to occur in the newly diagnosed.
+    -   Monitoring was evaluated among all these individuals:
+        -   Monitoring of HbA1c, LDL-C, nephropathy, retinopathy and foot disease: 254,097 individuals.
+    -   Biomarker levels were evaluated in those with at least one measurement prior to the index date:
+        -   HbA1c levels: 250,075 individuals.
+        -   LDL-C levels: 248,813 individuals.
+    -   Each analysis of pharmacological treatment was limited to individuals with a clear guideline recommendation for that particular treatment according to complication status or biomarker levels on the index date (excluding individuals not alive and residing in Denmark in the year following the index date, thus unable to purchase medication):
+        -   GLD: HbA1c ≥48 mmol/mol at the most recent measurement: 140,208 individuals.
+        -   LLD: prevalent macrovascular complications or DKD, or age above 40 with LDL-C above 2.5 mmol/L: 128,707 individuals.
+        -   ACEI/ARB & APT: prevalent macrovascular complications or DKD: 77,414 individuals.
+
+
+[![**Study population flow in analyses in study II**](figures/study2flow_landscape.png){#fig-study-2-flow-pdf}](https://raw.githubusercontent.com/Aastedet/dissertation/main/figures/study2flow.png)
+
 :::
 
 ::: {.content-hidden when-format="pdf"}
 
 T2D prevalence was studied in the above population. To study T2D care where clinically relevant, the eleven analyses of T2D care were performed in distinct subsets of the population with T2D, as outlined below and in @fig-study-2-flow-nonpdf:
-
-:::
 
 -   All analyses of T2D care were performed in a subset of 254,097 individuals with T2D onset at least six months prior to the index date to allow time for baseline screening, initiation of pharmacological treatment and subsequent biomarker control to occur in the newly diagnosed.
     -   Monitoring was evaluated among all these individuals:
@@ -212,16 +224,8 @@ T2D prevalence was studied in the above population. To study T2D care where clin
         -   LLD: prevalent macrovascular complications or DKD, or age above 40 with LDL-C above 2.5 mmol/L: 128,707 individuals.
         -   ACEI/ARB & APT: prevalent macrovascular complications or DKD: 77,414 individuals.
 
-::: {#fig-study-2-flow-pdf .content-hidden unless-format="pdf"}
-[![](figures/study2flow_landscape.png)](https://raw.githubusercontent.com/Aastedet/dissertation/main/figures/study2flow.png)
+[![**Study population flow in analyses in study II**](figures/study2flow.png){#fig-study-2-flow-nonpdf}](https://raw.githubusercontent.com/Aastedet/dissertation/main/figures/study2flow.png)
 
-**Study population flow in analyses in study II**
-:::
-
-::: {#fig-study-2-flow-nonpdf .content-hidden when-format="pdf"}
-[![](figures/study2flow.png)](https://raw.githubusercontent.com/Aastedet/dissertation/main/figures/study2flow.png)
-
-**Study population flow in analyses in study II**
 :::
 
 #### Study III
